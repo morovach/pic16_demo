@@ -1,11 +1,11 @@
 /******************************************************************************/
 /* System Level #define Macros                                                */
 /******************************************************************************/
-#define _XTAL_FREQ 4000000
+#define _XTAL_FREQ 8000000L
 #define BAUDRATE 9600
 
 /* Microcontroller MIPs (FCY) */
-#define SYS_FREQ        4000000L
+#define SYS_FREQ        SYS_FREQ
 #define FCY             SYS_FREQ/4
 
 /******************************************************************************/

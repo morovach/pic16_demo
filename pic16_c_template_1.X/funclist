@@ -1,8 +1,16 @@
-___awmod: CODE, 22 0 79
-_ConfigureOscillator: CODE, 194 0 14
-_main: CODE, 101 0 64
-_initUart: CODE, 165 0 29
-__initialization: CODE, 19 0 0
-_isr: CODE, 208 0 11
-_putch_JEC: CODE, 219 0 8
-Total: 205
+exp@coeff: STRING, 0 0 60
+_strcpy: CODE, 261 0 30
+__stringtab: STRING, 24 0 6
+__stringdata: STRING, 87 0 13
+_strlen: CODE, 188 0 40
+_ConfigureOscillator: CODE, 319 0 12
+_main: CODE, 100 0 48
+_initUart: CODE, 228 0 33
+__initialization: CODE, 19 0 2
+_uart_getc: CODE, 331 0 10
+_isr: CODE, 291 0 28
+_uart_printf: CODE, 148 0 40
+_uart_putc: CODE, 341 0 8
+log@coeff: STRING, 0 0 87
+i1_uart_putc: CODE, 349 0 8
+Total: 425

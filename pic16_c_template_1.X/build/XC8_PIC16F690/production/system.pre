@@ -1972,13 +1972,16 @@ typedef unsigned char bool;
 void ConfigureOscillator(void);
 void initUart(void);
 
+# 25 "misc.h"
+int itoh(int n);
+
 # 18 "system.c"
 void ConfigureOscillator(void)
 {
 
 
 OSCCONbits.SCS=0x1;
-OSCCONbits.IRCF=0x6;
+OSCCONbits.IRCF=0x7;
 
 
 OPTION_REGbits.T0CS = 0;
@@ -2000,11 +2003,18 @@ while(OSCCONbits.HTS==0)
 
 void initUart(void)
 {
+
+INTCONbits.GIE = 1;
+INTCONbits.PEIE =1;
+PIE1bits.RCIE =1;
+
 TXSTAbits.TXEN = 0;
 
 
-SPBRG = (4000000/(9600*64))-1;
 
+
+SPBRG = 12;
+SPBRGH = 0x00;
 
 ANSEL =0;
 ANSELH= 0;
