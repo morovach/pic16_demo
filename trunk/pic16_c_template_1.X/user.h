@@ -11,5 +11,3 @@
 void wait_1_ms(void);
 void delay_ms(int delay_ms);
 void wait_1_sec(void);
-void UART_send_char(unsigned char c);
-void putch_JEC(unsigned char data);

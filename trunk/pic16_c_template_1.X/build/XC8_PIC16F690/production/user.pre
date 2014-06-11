@@ -1972,8 +1972,6 @@ typedef unsigned char bool;
 void wait_1_ms(void);
 void delay_ms(int delay_ms);
 void wait_1_sec(void);
-void UART_send_char(unsigned char c);
-void putch_JEC(unsigned char data);
 
 # 24 "user.c"
 void wait_1_ms(void){
@@ -1999,24 +1997,4 @@ for (i=0;i<1000;i++)
 {
 wait_1_ms();
 }
-}
-
-void UART_send_char(unsigned char c){
-
-
-while(!TXSTAbits.TRMT)
-continue;
-TXREG=c;
-
-while(!TXSTAbits.TRMT)
-continue;
-
-
-}
-
-
-void putch_JEC(unsigned char data) {
-while( ! TXIF)
-continue;
-TXREG = data;
 }

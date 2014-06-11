@@ -11,6 +11,7 @@
 #include <stdint.h>         /* For uint8_t definition */
 #include <stdbool.h>        /* For true/false definition */
 
+#include "uart.h"
 /******************************************************************************/
 /* Interrupt Routines                                                         */
 /******************************************************************************/
@@ -27,25 +28,17 @@ void interrupt isr(void)
     Do not use a seperate if block for each interrupt flag to avoid run
     time errors. */
 
-#if 0
-    
-    /* TODO Add interrupt routine code here. */
-
-    /* Determine which flag generated the interrupt */
-    if(<Interrupt Flag 1>)
+    if (PIR1bits.RCIF)
     {
-        <Interrupt Flag 1=0>; /* Clear Interrupt Flag 1 */
+        PORTC = 0xFF;
+        if (RCSTAbits.OERR)
+        {
+            RCSTAbits.CREN = 0;
+            RCSTAbits.CREN = 1;
+            return;
+        }
+        uart_putc(uart_getc());
     }
-    else if (<Interrupt Flag 2>)
-    {
-        <Interrupt Flag 2=0>; /* Clear Interrupt Flag 2 */
-    }
-    else
-    {
-        /* Unhandled interrupts */
-    }
-
-#endif
 
 }
 #endif

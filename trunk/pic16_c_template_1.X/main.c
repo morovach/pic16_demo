@@ -9,16 +9,14 @@
 #elif defined(HI_TECH_C)
     #include <htc.h>        /* HiTech General Include File */
 #endif
-
-#include <stdint.h>        /* For uint8_t definition */
-#include <stdbool.h>       /* For true/false definition */
+#include <string.h>
 #include <stdio.h>
+
+
+
 #include "system.h"        /* System funct/params, like osc/peripheral config */
 #include "user.h"          /* User funct/params, such as InitApp */
-
-#include<pic.h>
-
-
+#include "uart.h"
 /******************************************************************************/
 /* User Global Variable Declaration                                           */
 /******************************************************************************/
@@ -44,19 +42,20 @@ void main(void)
     TRISC = 0x0; // set all port D bits to be output
     PORTC = 0x0;
 
-    unsigned char sender=0x41;
+
+    char  * string;
+    strcpy(string, "end of line\n");
+
     int j=1;
 
     while(1)
     {
 
         __delay_ms(500);
-        PORTC = j;
-        j = (j<<1) % 0x0F;
+        //PORTC = j;
+        //j = (j<<1) % 0x0F;
 
-       
-        putch_JEC(sender);
-        //sender++;
+        uart_printf(string);
 
 
 

@@ -1968,10 +1968,29 @@ typedef uint16_t uintptr_t;
 # 12 "C:\CAE_tools\Microchip\xc8\v1.31\include\stdbool.h"
 typedef unsigned char bool;
 
-# 23 "interrupts.c"
+# 24 "uart.h"
+void uart_putc(unsigned char data);
+void uart_printf(char * string);
+unsigned char uart_getc(void);
+char * uart_get_str(void);
+void __interrupt ISR(void);
+
+# 24 "interrupts.c"
 void interrupt isr(void)
 {
 
-# 50
+# 31
+if (PIR1bits.RCIF)
+{
+PORTC = 0xFF;
+if (RCSTAbits.OERR)
+{
+RCSTAbits.CREN = 0;
+RCSTAbits.CREN = 1;
+return;
+}
+uart_putc(uart_getc());
+}
+
 }
 

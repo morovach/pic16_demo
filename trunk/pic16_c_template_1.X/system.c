@@ -12,7 +12,7 @@
 #include <stdbool.h>       /* For true/false definition */
 
 #include "system.h"
-
+#include "misc.h"
 /* Refer to the device datasheet for information about available
 oscillator configurations. */
 void ConfigureOscillator(void)
@@ -20,7 +20,7 @@ void ConfigureOscillator(void)
 
     //Timer is set to 4MHz
     OSCCONbits.SCS=0x1;
-    OSCCONbits.IRCF=0x6;
+    OSCCONbits.IRCF=0x7;
 
     //Timer mode, clocked by the system clock (Fosc/4)
     OPTION_REGbits.T0CS = 0;
@@ -42,11 +42,18 @@ void ConfigureOscillator(void)
 
 void initUart(void)
 {
+    //Enable interrupts
+    INTCONbits.GIE = 1;
+    INTCONbits.PEIE =1;
+    PIE1bits.RCIE =1;
+
     TXSTAbits.TXEN = 0;
     //The baudrate for the UART is : FOSC/((64*[SPBRGH:SPBRG])+1) where : means a concatenation
     //Here we have thus a 9600 bauds for the UART
-    SPBRG  =   (_XTAL_FREQ/(BAUDRATE*64))-1;
-    //SPBRGH = 0x00;
+
+    //SPBRG  = (_XTAL_FREQ/(BAUDRATE*64))-1;
+    SPBRG  = 12;
+    SPBRGH = 0x00;
 
     ANSEL =0;
     ANSELH= 0;

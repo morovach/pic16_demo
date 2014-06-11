@@ -1,18 +1,6 @@
 Version 3.2 HI-TECH Software Intermediate Code
 "53 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
 [v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
-[s S94 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S94 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
-[s S95 :3 `uc 1 :1 `uc 1 ]
-[n S95 . . SENB ]
-[u S93 `S94 1 `S95 1 ]
-[n S93 . . . ]
-"2318
-[v _TXSTAbits `VS93 ~T0 @X0 0 e@152 ]
-"879
-[v _TXREG `Vuc ~T0 @X0 0 e@25 ]
-"3736
-[v _TXIF `Vb ~T0 @X0 0 e@100 ]
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic16f690.h: 47: extern volatile unsigned char INDF @ 0x000;
@@ -1392,8 +1380,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;user.h: 11: void wait_1_ms(void);
 [; ;user.h: 12: void delay_ms(int delay_ms);
 [; ;user.h: 13: void wait_1_sec(void);
-[; ;user.h: 14: void UART_send_char(unsigned char c);
-[; ;user.h: 15: void putch_JEC(unsigned char data);
 "24 user.c
 [v _wait_1_ms `(v ~T0 @X0 1 ef ]
 {
@@ -1489,65 +1475,4 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;user.c: 47: }
 "47
 [e :UE 141 ]
-}
-"49
-[v _UART_send_char `(v ~T0 @X0 1 ef1`uc ]
-{
-[; ;user.c: 49: void UART_send_char(unsigned char c){
-[e :U _UART_send_char ]
-[v _c `uc ~T0 @X0 1 r1 ]
-[f ]
-[; ;user.c: 52: while(!TXSTAbits.TRMT)
-"52
-[e $U 146  ]
-[e :U 147 ]
-[; ;user.c: 53: continue;
-"53
-[e $U 146  ]
-[e :U 146 ]
-"52
-[e $ ! != -> . . _TXSTAbits 0 1 `i -> -> -> 0 `i `Vuc `i 147  ]
-[e :U 148 ]
-[; ;user.c: 54: TXREG=c;
-"54
-[e = _TXREG _c ]
-[; ;user.c: 56: while(!TXSTAbits.TRMT)
-"56
-[e $U 149  ]
-[e :U 150 ]
-[; ;user.c: 57: continue;
-"57
-[e $U 149  ]
-[e :U 149 ]
-"56
-[e $ ! != -> . . _TXSTAbits 0 1 `i -> -> -> 0 `i `Vuc `i 150  ]
-[e :U 151 ]
-[; ;user.c: 60: }
-"60
-[e :UE 145 ]
-}
-"63
-[v _putch_JEC `(v ~T0 @X0 1 ef1`uc ]
-{
-[; ;user.c: 63: void putch_JEC(unsigned char data) {
-[e :U _putch_JEC ]
-[v _data `uc ~T0 @X0 1 r1 ]
-[f ]
-[; ;user.c: 64: while( ! TXIF)
-"64
-[e $U 153  ]
-[e :U 154 ]
-[; ;user.c: 65: continue;
-"65
-[e $U 153  ]
-[e :U 153 ]
-"64
-[e $ ! _TXIF 154  ]
-[e :U 155 ]
-[; ;user.c: 66: TXREG = data;
-"66
-[e = _TXREG _data ]
-[; ;user.c: 67: }
-"67
-[e :UE 152 ]
 }

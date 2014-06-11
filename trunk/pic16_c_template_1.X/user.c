@@ -45,23 +45,3 @@ void wait_1_sec(void){
         wait_1_ms();
     }
 }
-
-void UART_send_char(unsigned char c){
-
-    //TX uart not empty
-    while(!TXSTAbits.TRMT)
-        continue;
-    TXREG=c;
-    //TX uart not empty
-    while(!TXSTAbits.TRMT)
-        continue;
-
-
-}
-
-
-void putch_JEC(unsigned char data) {
-    while( ! TXIF) // check buffer
-    continue; // wait till ready
-    TXREG = data; // send data
-}
