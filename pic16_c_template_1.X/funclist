@@ -1,0 +1,8 @@
+___awmod: CODE, 22 0 79
+_ConfigureOscillator: CODE, 194 0 14
+_main: CODE, 101 0 64
+_initUart: CODE, 165 0 29
+__initialization: CODE, 19 0 0
+_isr: CODE, 208 0 11
+_putch_JEC: CODE, 219 0 8
+Total: 205
