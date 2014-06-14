@@ -56,6 +56,7 @@ char * uart_get_str(void)
         result[i]=uart_getc();
         i++;
     }
+    return result;
 }
 
 

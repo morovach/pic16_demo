@@ -30,7 +30,7 @@ void interrupt isr(void)
 
     if (PIR1bits.RCIF)
     {
-        PORTC = 0xFF;
+        //PORTC = 0xFF;
         if (RCSTAbits.OERR)
         {
             RCSTAbits.CREN = 0;

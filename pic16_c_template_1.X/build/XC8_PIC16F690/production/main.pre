@@ -1978,7 +1978,14 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 
-# 19 "system.h"
+# 47 "system.h"
+typedef enum {
+OK ,
+MISC_ERR
+
+} err_t;
+
+# 63
 void ConfigureOscillator(void);
 void initUart(void);
 
@@ -1994,7 +2001,35 @@ unsigned char uart_getc(void);
 char * uart_get_str(void);
 void __interrupt ISR(void);
 
-# 29 "main.c"
+# 24 "LCD_screen.h"
+err_t test_screen_1L();
+err_t test_screen_2L();
+
+
+
+void Lcd8_Port(char a);
+void Lcd8_Cmd(char a);
+void Lcd8_Clear();
+void Lcd8_Set_Cursor(char a, char b);
+void Lcd8_Init();
+void Lcd8_Write_Char(char a);
+void Lcd8_Write_String(char *a);
+void Lcd8_Shift_Right();
+void Lcd8_Shift_Left();
+
+
+
+void Lcd4_Port(char a);
+void Lcd4_Cmd(char a);
+void Lcd4_Clear();
+void Lcd4_Set_Cursor(char a, char b);
+void Lcd4_Init();
+void Lcd4_Write_Char(char a);
+void Lcd4_Write_String(char *a);
+void Lcd4_Shift_Right();
+void Lcd4_Shift_Left();
+
+# 30 "main.c"
 void main(void)
 {
 
@@ -2017,19 +2052,43 @@ strcpy(string, "end of line\n");
 
 int j=1;
 
-while(1)
-{
+TRISA = 0x0;
+TRISB = 0x0;
+TRISC = 0x0;
 
-_delay((unsigned long)((500)*(8000000L/4000.0)));
+PORTA = 0x00;
+PORTB = 0x00;
+PORTC = 0x00;
+
+_delay((unsigned long)((2000)*(8000000UL/4000.0)));
+
+Lcd4_Init();
+char character = 0x49;
+char address = 0x00;
+Lcd4_Cmd(0x08);
+Lcd4_Cmd(address);
+int i = 0;
+while(1){
 
 
 
-uart_printf(string);
 
+Lcd4_Cmd(0x08);
+Lcd4_Cmd(address);
+_delay((unsigned long)((10)*(8000000UL/4000.0)));
 
+Lcd4_Write_String("salut");
 
+_delay((unsigned long)((500)*(8000000UL/4000.0)));
+
+for(i=0;i<15;i++){
+Lcd4_Shift_Right();
+_delay((unsigned long)((300)*(8000000UL/4000.0)));
+}
+
+Lcd4_Clear();
 
 }
 
+# 94
 }
-

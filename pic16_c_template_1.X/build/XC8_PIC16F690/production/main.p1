@@ -1,8 +1,8 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
-"19 system.h
+"63 system.h
 [v _ConfigureOscillator `(v ~T0 @X0 0 ef ]
-"20
+"64
 [v _initUart `(v ~T0 @X0 0 ef ]
 "1297 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
 [v _TRISC `Vuc ~T0 @X0 0 e@135 ]
@@ -10,12 +10,28 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTC `Vuc ~T0 @X0 0 e@7 ]
 "36 C:\CAE_tools\Microchip\xc8\v1.31\include\string.h
 [v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"1210 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"1259
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"158
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+"207
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
 [v F1459 `(v ~T0 @X0 1 tf1`ul ]
 "154 C:\CAE_tools\Microchip\xc8\v1.31\include\pic.h
 [v __delay `JF1459 ~T0 @X0 0 e ]
 [p i __delay ]
-"25 uart.h
-[v _uart_printf `(v ~T0 @X0 0 ef1`*uc ]
+"45 LCD_screen.h
+[v _Lcd4_Init `(v ~T0 @X0 0 ef ]
+"42
+[v _Lcd4_Cmd `(v ~T0 @X0 0 ef1`uc ]
+"47
+[v _Lcd4_Write_String `(v ~T0 @X0 0 ef1`*uc ]
+"48
+[v _Lcd4_Shift_Right `(v ~T0 @X0 0 ef ]
+"43
+[v _Lcd4_Clear `(v ~T0 @X0 0 ef ]
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic16f690.h: 47: extern volatile unsigned char INDF @ 0x000;
@@ -1423,8 +1439,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdio.h: 201: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
 [; ;stdio.h: 205: extern int sprintf(char *, const char *, ...);
 [; ;stdio.h: 206: extern int printf(const char *, ...);
-[; ;system.h: 19: void ConfigureOscillator(void);
-[; ;system.h: 20: void initUart(void);
+[; ;system.h: 47: typedef enum {
+[; ;system.h: 48: OK ,
+[; ;system.h: 49: MISC_ERR
+[; ;system.h: 51: } err_t;
+[; ;system.h: 63: void ConfigureOscillator(void);
+[; ;system.h: 64: void initUart(void);
 [; ;user.h: 11: void wait_1_ms(void);
 [; ;user.h: 12: void delay_ms(int delay_ms);
 [; ;user.h: 13: void wait_1_sec(void);
@@ -1433,58 +1453,153 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;uart.h: 26: unsigned char uart_getc(void);
 [; ;uart.h: 27: char * uart_get_str(void);
 [; ;uart.h: 28: void __interrupt ISR(void);
-"29 main.c
+[; ;LCD_screen.h: 24: err_t test_screen_1L();
+[; ;LCD_screen.h: 25: err_t test_screen_2L();
+[; ;LCD_screen.h: 29: void Lcd8_Port(char a);
+[; ;LCD_screen.h: 30: void Lcd8_Cmd(char a);
+[; ;LCD_screen.h: 31: void Lcd8_Clear();
+[; ;LCD_screen.h: 32: void Lcd8_Set_Cursor(char a, char b);
+[; ;LCD_screen.h: 33: void Lcd8_Init();
+[; ;LCD_screen.h: 34: void Lcd8_Write_Char(char a);
+[; ;LCD_screen.h: 35: void Lcd8_Write_String(char *a);
+[; ;LCD_screen.h: 36: void Lcd8_Shift_Right();
+[; ;LCD_screen.h: 37: void Lcd8_Shift_Left();
+[; ;LCD_screen.h: 41: void Lcd4_Port(char a);
+[; ;LCD_screen.h: 42: void Lcd4_Cmd(char a);
+[; ;LCD_screen.h: 43: void Lcd4_Clear();
+[; ;LCD_screen.h: 44: void Lcd4_Set_Cursor(char a, char b);
+[; ;LCD_screen.h: 45: void Lcd4_Init();
+[; ;LCD_screen.h: 46: void Lcd4_Write_Char(char a);
+[; ;LCD_screen.h: 47: void Lcd4_Write_String(char *a);
+[; ;LCD_screen.h: 48: void Lcd4_Shift_Right();
+[; ;LCD_screen.h: 49: void Lcd4_Shift_Left();
+"30 main.c
 [v _main `(v ~T0 @X0 1 ef ]
-"30
+"31
 {
-[; ;main.c: 29: void main(void)
-[; ;main.c: 30: {
+[; ;main.c: 30: void main(void)
+[; ;main.c: 31: {
 [e :U _main ]
 [f ]
-[; ;main.c: 35: ConfigureOscillator();
-"35
+[; ;main.c: 36: ConfigureOscillator();
+"36
 [e ( _ConfigureOscillator ..  ]
-[; ;main.c: 37: initUart();
-"37
+[; ;main.c: 38: initUart();
+"38
 [e ( _initUart ..  ]
-[; ;main.c: 42: TRISC = 0x0;
-"42
-[e = _TRISC -> -> 0 `i `uc ]
-[; ;main.c: 43: PORTC = 0x0;
+[; ;main.c: 43: TRISC = 0x0;
 "43
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;main.c: 44: PORTC = 0x0;
+"44
 [e = _PORTC -> -> 0 `i `uc ]
-"46
-[v _string `*uc ~T0 @X0 1 a ]
-[; ;main.c: 46: char * string;
-[; ;main.c: 47: strcpy(string, "end of line\n");
 "47
+[v _string `*uc ~T0 @X0 1 a ]
+[; ;main.c: 47: char * string;
+[; ;main.c: 48: strcpy(string, "end of line\n");
+"48
 [e ( _strcpy (2 , _string :s 1C ]
-"49
+"50
 [v _j `i ~T0 @X0 1 a ]
-[; ;main.c: 49: int j=1;
+[; ;main.c: 50: int j=1;
 [e = _j -> 1 `i ]
-[; ;main.c: 51: while(1)
-"51
-[e :U 135 ]
-[; ;main.c: 52: {
+[; ;main.c: 52: TRISA = 0x0;
 "52
-{
-[; ;main.c: 54: _delay((unsigned long)((500)*(8000000L/4000.0)));
+[e = _TRISA -> -> 0 `i `uc ]
+[; ;main.c: 53: TRISB = 0x0;
+"53
+[e = _TRISB -> -> 0 `i `uc ]
+[; ;main.c: 54: TRISC = 0x0;
 "54
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 58: uart_printf(string);
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;main.c: 56: PORTA = 0x00;
+"56
+[e = _PORTA -> -> 0 `i `uc ]
+[; ;main.c: 57: PORTB = 0x00;
+"57
+[e = _PORTB -> -> 0 `i `uc ]
+[; ;main.c: 58: PORTC = 0x00;
 "58
-[e ( _uart_printf (1 _string ]
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;main.c: 60: _delay((unsigned long)((2000)*(8000000UL/4000.0)));
+"60
+[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+[; ;main.c: 62: Lcd4_Init();
+"62
+[e ( _Lcd4_Init ..  ]
 "63
+[v _character `uc ~T0 @X0 1 a ]
+[; ;main.c: 63: char character = 0x49;
+[e = _character -> -> 73 `i `uc ]
+"64
+[v _address `uc ~T0 @X0 1 a ]
+[; ;main.c: 64: char address = 0x00;
+[e = _address -> -> 0 `i `uc ]
+[; ;main.c: 65: Lcd4_Cmd(0x08);
+"65
+[e ( _Lcd4_Cmd (1 -> -> 8 `i `uc ]
+[; ;main.c: 66: Lcd4_Cmd(address);
+"66
+[e ( _Lcd4_Cmd (1 _address ]
+"67
+[v _i `i ~T0 @X0 1 a ]
+[; ;main.c: 67: int i = 0;
+[e = _i -> 0 `i ]
+[; ;main.c: 68: while(1){
+"68
+[e :U 135 ]
+{
+[; ;main.c: 73: Lcd4_Cmd(0x08);
+"73
+[e ( _Lcd4_Cmd (1 -> -> 8 `i `uc ]
+[; ;main.c: 74: Lcd4_Cmd(address);
+"74
+[e ( _Lcd4_Cmd (1 _address ]
+[; ;main.c: 75: _delay((unsigned long)((10)*(8000000UL/4000.0)));
+"75
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+[; ;main.c: 77: Lcd4_Write_String("salut");
+"77
+[e ( _Lcd4_Write_String (1 -> :s 2C `*uc ]
+[; ;main.c: 79: _delay((unsigned long)((500)*(8000000UL/4000.0)));
+"79
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+[; ;main.c: 81: for(i=0;i<15;i++){
+"81
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 15 `i 137  ]
+[e $U 138  ]
+[e :U 137 ]
+{
+[; ;main.c: 82: Lcd4_Shift_Right();
+"82
+[e ( _Lcd4_Shift_Right ..  ]
+[; ;main.c: 83: _delay((unsigned long)((300)*(8000000UL/4000.0)));
+"83
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"84
+}
+"81
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 15 `i 137  ]
+[e :U 138 ]
+"84
+}
+[; ;main.c: 84: }
+[; ;main.c: 86: Lcd4_Clear();
+"86
+[e ( _Lcd4_Clear ..  ]
+"88
 }
 [e :U 134 ]
-"51
+"68
 [e $U 135  ]
 [e :U 136 ]
-[; ;main.c: 63: }
-[; ;main.c: 65: }
-"65
+[; ;main.c: 88: }
+[; ;main.c: 94: }
+"94
 [e :UE 133 ]
 }
+[a 2C 115 97 108 117 116 0 ]
 [a 1C 101 110 100 32 111 102 32 108 105 110 101 10 0 ]
-

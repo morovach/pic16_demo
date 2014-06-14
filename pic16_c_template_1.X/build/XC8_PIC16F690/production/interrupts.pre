@@ -1982,7 +1982,7 @@ void interrupt isr(void)
 # 31
 if (PIR1bits.RCIF)
 {
-PORTC = 0xFF;
+
 if (RCSTAbits.OERR)
 {
 RCSTAbits.CREN = 0;
