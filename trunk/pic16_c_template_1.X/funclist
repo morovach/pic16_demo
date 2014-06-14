@@ -1,16 +1,20 @@
-exp@coeff: STRING, 0 0 60
-_strcpy: CODE, 261 0 30
-__stringtab: STRING, 24 0 6
-__stringdata: STRING, 87 0 13
-_strlen: CODE, 188 0 40
-_ConfigureOscillator: CODE, 319 0 12
-_main: CODE, 100 0 48
-_initUart: CODE, 228 0 33
+_Lcd4_Port: CODE, 557 0 26
+_Lcd4_Write_Char: CODE, 338 0 72
+exp@coeff: STRING, 0 0 292
+_strcpy: CODE, 527 0 30
+__stringtab: STRING, 256 0 6
+__stringdata: STRING, 319 0 19
+_Lcd4_Cmd: CODE, 609 0 24
+_ConfigureOscillator: CODE, 633 0 12
+_main: CODE, 24 0 169
+_Lcd4_Shift_Right: CODE, 655 0 8
+_initUart: CODE, 462 0 33
+_Lcd4_Clear: CODE, 663 0 8
 __initialization: CODE, 19 0 2
-_uart_getc: CODE, 331 0 10
-_isr: CODE, 291 0 28
-_uart_printf: CODE, 148 0 40
-_uart_putc: CODE, 341 0 8
-log@coeff: STRING, 0 0 87
-i1_uart_putc: CODE, 349 0 8
-Total: 425
+_uart_getc: CODE, 645 0 10
+_isr: CODE, 583 0 26
+_uart_putc: CODE, 671 0 8
+_Lcd4_Write_String: CODE, 495 0 32
+log@coeff: STRING, 0 0 319
+_Lcd4_Init: CODE, 410 0 52
+Total: 1148

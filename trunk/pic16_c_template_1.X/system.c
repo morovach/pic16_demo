@@ -51,8 +51,8 @@ void initUart(void)
     //The baudrate for the UART is : FOSC/((64*[SPBRGH:SPBRG])+1) where : means a concatenation
     //Here we have thus a 9600 bauds for the UART
 
-    //SPBRG  = (_XTAL_FREQ/(BAUDRATE*64))-1;
-    SPBRG  = 12;
+    SPBRG  = (_XTAL_FREQ/BAUDRATE/64)-1;
+    //SPBRG  = 12;
     SPBRGH = 0x00;
 
     ANSEL =0;

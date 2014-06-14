@@ -1968,7 +1968,14 @@ typedef uint16_t uintptr_t;
 # 12 "C:\CAE_tools\Microchip\xc8\v1.31\include\stdbool.h"
 typedef unsigned char bool;
 
-# 19 "system.h"
+# 47 "system.h"
+typedef enum {
+OK ,
+MISC_ERR
+
+} err_t;
+
+# 63
 void ConfigureOscillator(void);
 void initUart(void);
 
@@ -2012,8 +2019,8 @@ TXSTAbits.TXEN = 0;
 
 
 
+SPBRG = (8000000UL/9600/64)-1;
 
-SPBRG = 12;
 SPBRGH = 0x00;
 
 ANSEL =0;

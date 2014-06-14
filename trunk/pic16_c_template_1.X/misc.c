@@ -12,7 +12,7 @@ int itoh(int n){
     {
         tot+=pow(10,i)*(n%16);
         n /= 16;
-        n = trunc(n);
+        n = (int)trunc(n);
         i++;
     }
 }

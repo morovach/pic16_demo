@@ -1441,8 +1441,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 210: typedef int16_t intptr_t;
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
 [; ;stdbool.h: 12: typedef unsigned char bool;
-[; ;system.h: 19: void ConfigureOscillator(void);
-[; ;system.h: 20: void initUart(void);
+[; ;system.h: 47: typedef enum {
+[; ;system.h: 48: OK ,
+[; ;system.h: 49: MISC_ERR
+[; ;system.h: 51: } err_t;
+[; ;system.h: 63: void ConfigureOscillator(void);
+[; ;system.h: 64: void initUart(void);
 [; ;misc.h: 25: int itoh(int n);
 "18 system.c
 [v _ConfigureOscillator `(v ~T0 @X0 1 ef ]
@@ -1506,9 +1510,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;system.c: 50: TXSTAbits.TXEN = 0;
 "50
 [e = . . _TXSTAbits 0 5 -> -> 0 `i `uc ]
-[; ;system.c: 55: SPBRG = 12;
-"55
-[e = _SPBRG -> -> 12 `i `uc ]
+[; ;system.c: 54: SPBRG = (8000000UL/9600/64)-1;
+"54
+[e = _SPBRG -> - / / -> 8000000 `ul -> -> -> 9600 `i `l `ul -> -> -> 64 `i `l `ul -> -> -> 1 `i `l `ul `uc ]
 [; ;system.c: 56: SPBRGH = 0x00;
 "56
 [e = _SPBRGH -> -> 0 `i `uc ]
