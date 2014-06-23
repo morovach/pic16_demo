@@ -21,23 +21,6 @@ extern "C" {
 
 #endif	/* LCD_SCREEN_H */
 
-err_t test_screen_1L();
-err_t test_screen_2L();
-
-
-
-void Lcd8_Port(char a);
-void Lcd8_Cmd(char a);
-void Lcd8_Clear();
-void Lcd8_Set_Cursor(char a, char b);
-void Lcd8_Init();
-void Lcd8_Write_Char(char a);
-void Lcd8_Write_String(char *a);
-void Lcd8_Shift_Right();
-void Lcd8_Shift_Left();
-
-
-
 void Lcd4_Port(char a);
 void Lcd4_Cmd(char a);
 void Lcd4_Clear();

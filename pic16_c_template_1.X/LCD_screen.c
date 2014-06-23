@@ -5,211 +5,9 @@
 #endif
 
 #include "system.h"
-
-
-err_t test_screen(){
-
-    EN = 0;
-    __delay_ms(10);
-
-    DB7 = 0;
-    DB6 = 0;
-    DB5 = 1;
-    DB4 = 1;
-    DB3 = 0;
-    DB2 = 0;
-    //DB1 = 0;
-    DB0 = 0;
-
-    RS = 0;
-    RW = 0;
-    EN = 1;
-    __delay_ms(10);
-    EN = 0;
-    __delay_ms(1);
-
-    return OK;
-}
-
-
-
-
-err_t test_screen_2L(){
-    
-    EN = 0;
-    __delay_ms(10);
-
-    DB7 = 0;
-    DB6 = 0;
-    DB5 = 1;
-    DB4 = 0;
-    DB3 = 1;
-    DB2 = 0;
-    //DB1 = 0;
-    DB0 = 0;
-    
-    RS = 0;
-    RW = 0;
-    EN = 1;
-    __delay_ms(10);
-    EN = 0;
-    __delay_ms(1);
-
-    return OK;
-}
-
-
-
-err_t test_screen_1L(){
-
-    EN = 0;
-    __delay_ms(10);
-
-    DB7 = 0;
-    DB6 = 0;
-    DB5 = 0;
-    DB4 = 1;
-    DB3 = 0;
-    DB2 = 0;
-    //DB1 = 0;
-    DB0 = 0;
-
-    RS = 0;
-    RW = 0;
-    EN = 1;
-    __delay_ms(10);
-    EN = 0;
-    __delay_ms(1);
-
-    return OK;
-}
-
-
-
-
-
-//LCD 8 Bit Interfacing Functions
-void Lcd8_Port(char a)
-{
-	if(a & 1)
-		DB0 = 1;
-	else
-		DB0 = 0;
-
-	if(a & 2)
-		DB1 = 1;
-	else
-		DB1 = 0;
-        
-	if(a & 4)
-		DB2 = 1;
-	else
-		DB2 = 0;
-
-	if(a & 8)
-		DB3 = 1;
-	else
-		DB3 = 0;
-
-	if(a & 16)
-		DB4 = 1;
-	else
-		DB4 = 0;
-
-	if(a & 32)
-		DB5 = 1;
-	else
-		DB5 = 0;
-
-	if(a & 64)
-		DB6 = 1;
-	else
-		DB6 = 0;
-
-	if(a & 128)
-		DB7 = 1;
-	else
-		DB7 = 0;
-}
-void Lcd8_Cmd(char a)
-{
-  RS = 0;             // => RS = 0
-  Lcd8_Port(a);             //Data transfer
-  EN  = 1;             // => E = 1
-  __delay_ms(5);
-  EN  = 0;             // => E = 0
-}
-
-void Lcd8_Clear()
-{
-      Lcd8_Cmd(1);
-}
-
-void Lcd8_Set_Cursor(char a, char b)
-{
-	if(a == 1)
-	  Lcd8_Cmd(0x80 + b);
-	else if(a == 2)
-		Lcd8_Cmd(0xC0 + b);
-}
-
-void Lcd8_Init()
-{
-	Lcd8_Port(0x00);
-	RS = 0;
-	__delay_ms(25);
-	///////////// Reset process from datasheet /////////
-  Lcd8_Cmd(0x30);
-  __delay_ms(5);
-  Lcd8_Cmd(0x30);
-  __delay_ms(15);
-  Lcd8_Cmd(0x30);
-  /////////////////////////////////////////////////////
-  Lcd8_Cmd(0x38);    //function set
-  Lcd8_Cmd(0x0C);    //display on,cursor off,blink off
-  Lcd8_Cmd(0x01);    //clear display
-  Lcd8_Cmd(0x06);    //entry mode, set increment
-}
-
-void Lcd8_Write_Char(char a)
-{
-   RS = 1;             // => RS = 1
-   Lcd8_Port(a);             //Data transfer
-   EN  = 1;             // => E = 1
-  __delay_ms(4);
-   EN  = 0;             // => E = 04
-}
-
-void Lcd8_Write_String(char *a)
-{
-	int i;
-	for(i=0;a[i]!='\0';i++)
-	 Lcd8_Write_Char(a[i]);
-}
-
-void Lcd8_Shift_Right()
-{
-	Lcd8_Cmd(0x1C);
-}
-
-void Lcd8_Shift_Left()
-{
-	Lcd8_Cmd(0x18);
-}
-//End LCD 8 Bit Interfacing Functions
-
-
-
-
-
-
-
-
-
-
+#include "misc.h"
 
 //LCD 4 Bit Interfacing Functions
-
 void Lcd4_Port(char a)
 {
 	if(a & 1)
@@ -247,25 +45,13 @@ Lcd4_Clear()
 	Lcd4_Cmd(1);
 }
 
-void Lcd4_Set_Cursor(char a, char b)
+void Lcd4_Set_Cursor(char ligne, char pixel_nb)
 {
-	char temp,z,y;
-	if(a == 1)
-	{
-	  temp = 0x80 + b;
-		z = temp>>4;
-		y = (0x80+b) & 0x0F;
-		Lcd4_Cmd(z);
-		Lcd4_Cmd(y);
-	}
-	else if(a == 2)
-	{
-		temp = 0xC0 + b;
-		z = temp>>4;
-		y = (0xC0+b) & 0x0F;
-		Lcd4_Cmd(z);
-		Lcd4_Cmd(y);
-	}
+    char lCmdMsb,lCmdLsb;
+    lCmdMsb = 0x08 | (ligne <<2) | ( ((pixel_nb)& (0x30)) >> 4);
+    lCmdLsb = pixel_nb & 0x0F;
+    Lcd4_Cmd(lCmdMsb);
+    Lcd4_Cmd(lCmdLsb);
 }
 
 void Lcd4_Init()
@@ -289,8 +75,7 @@ void Lcd4_Init()
      __delay_ms(10);
 
     //Clear display
-    Lcd4_Cmd(0x00);
-    Lcd4_Cmd(0x01);
+    Lcd4_Clear();
 
 
 
@@ -318,6 +103,7 @@ void Lcd4_Write_String(char *a)
 	int i;
 	for(i=0;a[i]!='\0';i++)
 	 Lcd4_Write_Char(a[i]);
+        LOG(a,0);
 }
 
 void Lcd4_Shift_Right()

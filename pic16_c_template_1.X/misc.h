@@ -23,3 +23,5 @@ extern "C" {
 
 
 int itoh(int n);
+void time_shapping(char * buffer, int time);
+void LOG(char * string, char level);

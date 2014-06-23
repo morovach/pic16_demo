@@ -11,66 +11,96 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\moise\AppData\Local\Temp\s608.obj
+$C:\Users\moise\AppData\Local\Temp\s68g.obj
 end_init CODE 0 11 11 2 2
 reset_vec CODE 0 0 0 2 2
 config CONFIG 0 2007 2007 1 2
 $dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-cinit CODE 0 13 13 5 2
+cinit CODE 0 13 13 1B 2
 intentry CODE 0 4 4 D 2
-text13 CODE 0 285 285 A 2
-text12 CODE 0 29F 29F 8 2
-text11 CODE 0 247 247 1A 2
-text10 CODE 0 279 279 C 2
-text9 CODE 0 22D 22D 1A 2
-text8 CODE 0 261 261 18 2
-text7 CODE 0 297 297 8 2
-text6 CODE 0 19A 19A 34 2
-text5 CODE 0 28F 28F 8 2
-text4 CODE 0 152 152 48 2
-text3 CODE 0 1EF 1EF 20 2
-text2 CODE 0 1CE 1CE 21 2
-text1 CODE 0 20F 20F 1E 2
-maintext CODE 0 18 18 A9 2
-cstackBANK0 BANK0 1 20 20 12 1
-cstackCOMMON COMMON 1 70 70 7 1
-bssCOMMON COMMON 1 77 77 2 1
-strings STRING 0 100 100 52 2
+text48 CODE 0 2F8 2F8 5D 2
+text47 CODE 0 3F6 3F6 4D 2
+text46 CODE 0 4C9 4C9 3E 2
+text45 CODE 0 53D 53D 34 2
+text44 CODE 0 20B 20B 78 2
+text43 CODE 0 2E 2E DC 2
+text42 CODE 0 F29 F29 1A 2
+text41 CODE 0 F11 F11 18 2
+text40 CODE 0 738 738 28 2
+text39 CODE 0 7D2 7D2 26 2
+text38 CODE 0 EB1 EB1 8 2
+text37 CODE 0 FBA FBA 22 2
+text36 CODE 0 E9E E9E 5 2
+text35 CODE 0 443 443 46 2
+text34 CODE 0 7AC 7AC 26 2
+text33 CODE 0 571 571 33 2
+text32 CODE 0 EE0 EE0 E 2
+text31 CODE 0 FDC FDC 24 2
+text30 CODE 0 F43 F43 1C 2
+text29 CODE 0 606 606 2F 2
+text28 CODE 0 EFD EFD 14 2
+text27 CODE 0 EC9 EC9 A 2
+text26 CODE 0 283 283 75 2
+text25 CODE 0 3A7 3A7 4F 2
+text24 CODE 0 663 663 2E 2
+text23 CODE 0 F5F F5F 1E 2
+text22 CODE 0 691 691 2C 2
+text21 CODE 0 710 710 28 2
+text20 CODE 0 ED3 ED3 D 2
+text19 CODE 0 6E8 6E8 28 2
+text18 CODE 0 EA3 EA3 7 2
+text17 CODE 0 355 355 52 2
+text16 CODE 0 786 786 26 2
+text15 CODE 0 760 760 26 2
+text14 CODE 0 F7D F7D 1E 2
+text13 CODE 0 489 489 40 2
+text12 CODE 0 507 507 36 2
+text11 CODE 0 193 193 78 2
+text10 CODE 0 5D5 5D5 31 2
+text9 CODE 0 10A 10A 89 2
+text8 CODE 0 EB9 EB9 8 2
+text7 CODE 0 EC1 EC1 8 2
+text6 CODE 0 5A4 5A4 31 2
+text5 CODE 0 F9B F9B 1F 2
+text4 CODE 0 E9B E9B 3 2
+text3 CODE 0 EAA EAA 7 2
+text2 CODE 0 EEE EEE F 2
+text1 CODE 0 6BD 6BD 2B 2
+maintext CODE 0 635 635 2E 2
+cstackBANK0 BANK0 1 20 20 2C 1
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK1 BANK1 1 A0 A0 36 1
+clrtext CODE 0 7F8 7F8 8 2
+bssBANK2 BANK2 1 120 120 28 1
+dataBANK1 BANK1 1 D6 D6 2 1
+bssBANK1 BANK1 1 D8 D8 1 1
+bssBANK0 BANK0 1 4C 4C 8 1
+strings STRING 0 800 800 1B 2
+idataBANK1 CODE 0 2 2 2 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-BANK0 0032-006F 1
-BANK1 00A0-00EF 1
-BANK2 0120-016F 1
-CODE 0002-0003 2
-CODE 00C1-00FF 2
-CODE 02A7-0FFF 2
-COMMON 0079-007D 1
-CONST 0002-0003 2
-CONST 00C1-00FF 2
-CONST 02A7-0FFF 2
+BANK0 0054-006F 1
+BANK1 00D9-00EF 1
+BANK2 0148-016F 1
+CODE 081B-0E9A 2
+CONST 081B-0E9A 2
 EEDATA 2100-21FF 2
-ENTRY 0002-0003 2
-ENTRY 00C1-00FF 2
-ENTRY 02A7-0FFF 2
+ENTRY 081B-0E9A 2
 IDLOC 2000-2003 2
-RAM 0032-006F 1
-RAM 00A0-00EF 1
-RAM 0120-016F 1
+RAM 0054-006F 1
+RAM 00D9-00EF 1
+RAM 0148-016F 1
 SFR0 0000-001F 1
 SFR1 0080-009F 1
 SFR2 0100-011F 1
 SFR3 0180-01EF 1
-STACK 00A0-00EF 1
-STRCODE 0002-0003 2
-STRCODE 00C1-00FF 2
-STRCODE 02A7-0FFF 2
-STRING 0002-0003 2
-STRING 00C1-00FF 2
-STRING 02A7-0FFF 2
+STACK 0148-016F 1
+STRCODE 081B-0E9A 2
+STRING 081B-0E9A 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -85,165 +115,538 @@ STRING 02A7-0FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\interrupts.c":24 4 intentry CODE
-"C:\Users\moise\AppData\Local\Temp\s608.":1313 13 cinit CODE
-"C:\Users\moise\AppData\Local\Temp\s608.":1316 13 cinit CODE
-"C:\Users\moise\AppData\Local\Temp\s608.":1326 13 cinit CODE
-"C:\Users\moise\AppData\Local\Temp\s608.":1327 14 cinit CODE
-"C:\Users\moise\AppData\Local\Temp\s608.":1333 15 cinit CODE
-"C:\Users\moise\AppData\Local\Temp\s608.":1334 15 cinit CODE
-"C:\Users\moise\AppData\Local\Temp\s608.":1335 16 cinit CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":30 18 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":36 18 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":38 1B maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":43 1E maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":44 21 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":48 24 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":50 2C maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":52 32 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":53 35 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":54 36 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":56 37 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":57 3A maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":58 3B maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":60 3C maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":62 49 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":63 4C maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":64 52 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":65 53 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":66 57 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":67 5D maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":73 61 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":74 65 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":75 6B maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":77 76 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":79 7A maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":81 89 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":82 98 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":83 9B maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":81 AA maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":86 BD maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\main.c":68 C0 maintext CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":299 152 text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":302 155 text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":303 15A text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":304 15F text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":305 160 text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":306 16C text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":307 177 text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":308 17A text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":309 183 text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":310 186 text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":311 18A text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":312 18D text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":313 196 text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":314 199 text4 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":271 19A text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":274 19A text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":275 19D text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":277 19E text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":278 1A7 text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":281 1AB text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":282 1AF text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":285 1B3 text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":286 1B7 text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":289 1BB text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":292 1C6 text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":293 1CA text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":297 1CD text6 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":43 1CE text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":46 1CE text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":47 1CF text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":48 1D0 text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":50 1D3 text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":54 1D4 text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":56 1D6 text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":58 1D7 text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":59 1DA text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":62 1DB text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":63 1DE text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":68 1DF text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":71 1E0 text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":72 1E1 text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":75 1E4 text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":76 1E7 text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":78 1E8 text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":83 1E9 text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":84 1EA text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":85 1ED text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":88 1EE text2 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":316 1EF text3 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":319 1F2 text3 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":320 1FD text3 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":319 206 text3 CODE
-"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":8 20F text1 CODE
-"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":18 212 text1 CODE
-"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":19 216 text1 CODE
-"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":20 224 text1 CODE
-"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":21 228 text1 CODE
-"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":19 22C text1 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":213 22D text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":215 22E text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":216 230 text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":217 234 text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":218 234 text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":220 237 text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":221 239 text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":222 23B text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":223 23B text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":225 23C text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":226 23E text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":227 240 text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":228 240 text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":230 241 text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":231 243 text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":232 245 text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":233 245 text9 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\interrupts.c":24 247 text11 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\interrupts.c":31 247 text11 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\interrupts.c":34 249 text11 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\interrupts.c":36 24B text11 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\interrupts.c":37 24C text11 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\interrupts.c":38 24D text11 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\interrupts.c":40 24E text11 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\interrupts.c":43 254 text11 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":235 261 text8 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":237 262 text8 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":238 265 text8 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":239 269 text8 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":240 26C text8 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":241 275 text8 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":242 278 text8 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":18 279 text10 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":22 279 text10 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":23 27C text10 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":26 27E text10 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":28 27F text10 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":30 280 text10 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":35 282 text10 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":38 282 text10 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":40 283 text10 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\system.c":35 284 text10 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\UART.c":39 285 text13 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\UART.c":40 285 text13 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\UART.c":41 289 text13 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\UART.c":42 28A text13 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\UART.c":45 28B text13 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\UART.c":46 28B text13 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\UART.c":47 28D text13 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":323 28F text5 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":325 28F text5 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":326 293 text5 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":327 296 text5 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":244 297 text7 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":246 297 text7 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":247 29B text7 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\LCD_screen.c":248 29E text7 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\UART.c":24 29F text12 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\UART.c":25 2A0 text12 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\UART.c":26 2A0 text12 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\UART.c":27 2A4 text12 CODE
-"C:\travail\pic16_programming\pic16_c_template\pic16_c_template_1.X\UART.c":28 2A6 text12 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":42 4 intentry CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1445 13 cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1448 13 cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1509 13 cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1510 14 cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1511 15 cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1512 16 cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1513 17 cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1516 1A cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1517 1B cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1518 1C cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1521 1D cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1522 1E cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1523 1F cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1524 20 cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1525 21 cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1530 24 cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1531 27 cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1532 28 cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1533 2A cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1539 2B cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1540 2B cinit CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1541 2C cinit CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":24 2E text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":25 31 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":26 46 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":27 68 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":30 7D text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":31 8B text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":33 90 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":34 94 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":38 98 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":39 A6 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":41 AB text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":42 AF text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":46 B3 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":47 C1 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":49 C6 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":50 CA text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":53 CE text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":54 D5 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":55 DB text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":56 E2 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":57 E9 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":58 F0 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":59 F7 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":60 FE text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":61 105 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":63 109 text43 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":9 10A text9 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":20 10D text9 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":22 11A text9 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":23 12D text9 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":24 13D text9 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":20 16D text9 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":27 174 text9 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":28 17A text9 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":30 180 text9 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":31 186 text9 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":17 193 text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":22 196 text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":24 19C text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":25 1B3 text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":26 1B7 text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":27 1BB text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":29 1C1 text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":30 1D6 text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":31 1ED text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":32 1F1 text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":33 1F5 text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":34 1F9 text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":35 202 text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":36 206 text11 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":17 20B text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":22 20E text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":24 214 text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":25 22B text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":26 22F text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":27 233 text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":29 239 text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":30 24E text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":31 263 text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":32 269 text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":33 26D text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":34 271 text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":35 27A text44 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c":36 27E text44 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":42 283 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":46 283 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":49 285 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":51 287 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":52 288 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":53 289 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":58 28A text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":59 290 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":60 293 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":64 294 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":67 294 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":70 296 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":71 297 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":72 29E text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":73 2A6 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":74 2AE text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":75 2B0 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":76 2B6 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":77 2B8 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":78 2C6 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":79 2CB text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":81 2CF text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":82 2D0 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":86 2D0 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":90 2D2 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":91 2D3 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":93 2D9 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":94 2DE text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":95 2E0 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":96 2E6 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":97 2E8 text26 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":103 2EB text26 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":6 2F8 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":14 2F8 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":15 2FB text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":16 2FD text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":17 302 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":19 304 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":20 306 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":21 30B text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":23 30F text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":24 311 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":25 315 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":26 317 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":27 319 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":28 320 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":26 324 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":31 325 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":32 32C text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":33 334 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":34 33A text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":36 33B text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":37 342 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":39 346 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":40 349 text48 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c":41 34E text48 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":84 355 text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":87 358 text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":88 35D text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":89 362 text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":90 365 text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":91 373 text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":92 37E text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":93 381 text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":94 38C text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":95 38F text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":96 395 text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":97 398 text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":98 3A3 text17 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":99 3A6 text17 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":6 3A7 text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":13 3A7 text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":14 3AA text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":15 3AC text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":16 3B1 text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":18 3B3 text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":19 3B5 text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":20 3BA text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":21 3BE text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":22 3C0 text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":23 3C2 text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":24 3C9 text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":22 3CD text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":27 3CE text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":28 3D6 text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":29 3DC text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":30 3E3 text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":32 3E7 text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":33 3EA text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":34 3EF text25 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":6 3F6 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":13 3F6 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":14 3F7 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":15 3F9 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":16 3FE text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":18 400 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":19 402 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":20 407 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":21 40B text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":22 40D text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":23 40F text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":24 416 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":22 41A text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":27 41B text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":28 423 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":29 429 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":30 430 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":32 434 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":33 437 text47 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c":34 43C text47 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":84 443 text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":87 444 text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":88 449 text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":89 44E text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":90 451 text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":91 45D text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":92 466 text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":93 469 text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":94 472 text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":95 475 text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":96 479 text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":97 47C text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":98 485 text35 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":99 488 text35 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":6 489 text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":14 489 text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":15 48D text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":16 491 text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":17 493 text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":18 495 text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":19 49C text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":17 4A0 text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":22 4A1 text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":23 4A8 text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":24 4B0 text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":25 4B6 text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":27 4B7 text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":28 4BE text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":30 4C2 text13 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":6 4C9 text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":14 4C9 text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":15 4CB text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":16 4CF text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":17 4D1 text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":18 4D3 text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":19 4DA text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":17 4DE text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":22 4DF text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":23 4E6 text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":24 4EE text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":25 4F4 text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":27 4F5 text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":28 4FC text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c":30 500 text46 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":6 507 text12 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":13 507 text12 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":14 50D text12 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":15 50F text12 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":16 511 text12 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":17 518 text12 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":15 51C text12 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":20 51D text12 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":21 525 text12 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":22 52B text12 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":23 532 text12 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":25 536 text12 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":6 53D text45 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":13 53D text45 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":14 541 text45 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":15 543 text45 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":16 545 text45 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":17 54C text45 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":15 550 text45 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":20 551 text45 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":21 559 text45 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":22 55F text45 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":23 566 text45 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c":25 56A text45 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":36 571 text33 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":42 571 text33 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":43 57B text33 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":44 591 text33 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":45 59B text33 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":46 5A0 text33 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":47 5A3 text33 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":57 5A4 text6 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":60 5A4 text6 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":61 5A7 text6 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":63 5A8 text6 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":64 5B3 text6 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":67 5B7 text6 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":68 5BB text6 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":71 5BF text6 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":72 5C3 text6 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":75 5C7 text6 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":78 5D2 text6 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":82 5D4 text6 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":56 5D5 text10 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":60 5D8 text10 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":61 5E0 text10 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":62 5F1 text10 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":64 5FB text10 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":65 602 text10 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":66 605 text10 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":56 606 text29 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":60 609 text29 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":61 611 text29 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":62 622 text29 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":64 62C text29 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":65 631 text29 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":66 634 text29 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\main.c":31 635 maintext CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\main.c":33 635 maintext CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\main.c":35 638 maintext CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\main.c":39 643 maintext CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\main.c":46 64D maintext CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\main.c":49 653 maintext CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\main.c":43 662 maintext CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":11 663 text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":13 666 text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":14 668 text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":15 66C text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":16 66C text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":18 66F text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":19 673 text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":20 677 text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":21 677 text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":23 67A text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":24 67E text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":25 682 text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":26 682 text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":28 685 text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":29 689 text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":30 68D text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":31 68D text24 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":48 691 text22 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":51 694 text22 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":52 6AE text22 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":53 6B3 text22 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":54 6B7 text22 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":55 6BC text22 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":48 6BD text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":50 6BD text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":51 6C0 text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":52 6C1 text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":55 6C2 text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":56 6C5 text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":57 6C6 text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":60 6C7 text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":61 6CA text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":62 6CD text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":64 6D0 text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":65 6D3 text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":67 6D6 text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":68 6E5 text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":69 6E7 text1 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":77 6E8 text19 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":78 6EB text19 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":79 6ED text19 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":80 6FD text19 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":79 707 text19 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c":4 710 text21 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c":8 713 text21 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c":9 717 text21 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c":10 71D text21 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c":9 721 text21 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c":12 722 text21 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":48 738 text40 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":51 739 text40 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":52 753 text40 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":53 758 text40 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":54 75C text40 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":55 75F text40 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":8 760 text15 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":18 763 text15 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":19 767 text15 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":20 76D text15 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":19 771 text15 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":22 772 text15 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":23 776 text15 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":21 77A text15 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":26 784 text15 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":21 785 text15 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":101 786 text16 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":104 789 text16 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":105 794 text16 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":104 79E text16 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":106 7A7 text16 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":107 7AB text16 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":101 7AC text34 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":104 7AF text34 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":105 7BA text34 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":104 7C4 text34 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":106 7CD text34 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":107 7D1 text34 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c":4 7D2 text39 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c":8 7D3 text39 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c":9 7D7 text39 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c":10 7DD text39 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c":9 7E1 text39 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c":12 7E2 text39 CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1496 7F8 clrtext CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1497 7F8 clrtext CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1498 7F9 clrtext CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1499 7F9 clrtext CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1500 7FA clrtext CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1501 7FB clrtext CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1502 7FC clrtext CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1503 7FD clrtext CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1504 7FE clrtext CODE
+"C:\Users\moise\AppData\Local\Temp\s68g.":1505 7FF clrtext CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":36 E9B text4 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":38 E9B text4 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":39 E9C text4 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c":40 E9D text4 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":65 E9E text36 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":69 E9F text36 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":71 EA2 text36 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":65 EA3 text18 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":69 EA6 text18 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c":71 EA9 text18 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":10 EAA text3 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":12 EAA text3 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":14 EAD text3 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":16 EAE text3 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":18 EB0 text3 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":69 EB1 text38 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":70 EB2 text38 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":71 EB2 text38 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":72 EB6 text38 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":73 EB8 text38 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":32 EB9 text8 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":36 EB9 text8 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":37 EBC text8 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":40 EBE text8 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":43 EBE text8 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":45 EBF text8 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c":40 EC0 text8 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":42 EC1 text7 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":44 EC1 text7 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":45 EC5 text7 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":46 EC8 text7 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":84 EC9 text27 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":85 EC9 text27 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":86 ECD text27 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":87 ECE text27 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":90 ECF text27 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":91 ECF text27 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":92 ED1 text27 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":69 ED3 text20 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":70 ED6 text20 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":71 ED6 text20 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":72 ED9 text20 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":73 EDF text20 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":42 EE0 text32 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":45 EE0 text32 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":50 EED text32 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":57 EEE text2 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":58 EEE text2 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":62 EF1 text2 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":65 EF3 text2 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":68 EF7 text2 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":71 EFB text2 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c":73 EFC text2 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":49 EFD text28 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":52 EFD text28 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":53 F0B text28 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c":54 F10 text28 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":33 F11 text41 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":35 F12 text41 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":36 F15 text41 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":37 F19 text41 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":38 F1C text41 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":39 F25 text41 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":40 F28 text41 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":11 F29 text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":13 F2A text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":14 F2C text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":15 F30 text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":16 F30 text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":18 F33 text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":19 F35 text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":20 F37 text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":21 F37 text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":23 F38 text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":24 F3A text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":25 F3C text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":26 F3C text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":28 F3D text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":29 F3F text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":30 F41 text42 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":31 F41 text42 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":8 F43 text30 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":18 F44 text30 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":19 F48 text30 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":20 F56 text30 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":21 F5A text30 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":19 F5E text30 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":33 F5F text23 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":35 F62 text23 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":36 F65 text23 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":37 F6B text23 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":38 F6E text23 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":39 F79 text23 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c":40 F7C text23 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":8 F7D text14 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":18 F80 text14 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":19 F84 text14 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":20 F92 text14 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":21 F96 text14 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c":19 F9A text14 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":25 F9B text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":28 F9B text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":30 F9E text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":34 F9F text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":36 FA1 text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":38 FA2 text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":39 FA5 text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":42 FA6 text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":43 FA9 text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":48 FAA text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":51 FAB text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":52 FAC text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":55 FAF text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":56 FB2 text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":58 FB3 text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":63 FB4 text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":64 FB5 text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":65 FB8 text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":66 FB9 text5 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":77 FBA text37 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":78 FBB text37 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":79 FBD text37 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":80 FCB text37 CODE
+"C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c":79 FD5 text37 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":8 FDC text31 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":18 FDD text31 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":19 FE1 text31 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":20 FE7 text31 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":19 FEB text31 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":22 FEC text31 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":23 FF0 text31 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":21 FF4 text31 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":26 FFE text31 CODE
+"C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c":21 FFF text31 CODE
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -256,57 +659,80 @@ $dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__end_of_Lcd4_Port 48E 0 CODE 0 text9 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___lwdiv@dividend A2 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1_Lcd4_Write_String FA4 0 CODE 0 text34 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___awdiv@counter 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+time_shapping@minutes 28 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1_strcat 2000 0 CODE 0 text31 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___lwdiv@counter A7 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_Lcd4_Port D22 0 CODE 0 text24 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _RC0 38 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1_Lcd4_Write_Char 886 0 CODE 0 text35 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _RA2 2A 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_RC1 39 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _RC2 3A 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _RC3 3B 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _RB4 34 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _RA5 2D 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_RC4 3C 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_RC5 3D 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _RB6 36 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _RC6 3E 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_PR2 92 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __S0 2008 0 ABS 0 - -
-__S1 79 0 ABS 0 - -
+__S1 148 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
+_LOG 1D46 0 CODE 0 text18 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hintentry 22 0 CODE 0 intentry -
 __Lintentry 8 0 CODE 0 intentry -
 __CFG_BOREN$ON 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __pintentry 8 0 CODE 0 intentry dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_Lcd4_Cmd 4C2 0 CODE 0 text8 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_isr 48E 0 CODE 0 text11 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__end_of_Lcd4_Write_Char 334 0 CODE 0 text4 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1Lcd4_Set_Cursor@ligne 79 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_Lcd4_Cmd 1EBE 0 CODE 0 text23 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of___awdiv 6AA 0 CODE 0 text48 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_game_phase 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_isr 506 0 CODE 0 text26 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_Lcd4_Write_Char 74E 0 CODE 0 text17 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _TMR0 1 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_TMR1 E 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _RCIF 65 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _TXIF 64 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_Lcd4_Write_Char 2A4 0 CODE 0 text4 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-Lcd4_Write_Char@a 24 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-Lcd4_Write_Char@y 23 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_main 30 0 CODE 0 maintext dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\moise\AppData\Local\Temp\s608.obj
+_Lcd4_Write_Char 6AA 0 CODE 0 text17 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+Lcd4_Write_Char@a A5 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+Lcd4_Write_Char@y A4 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_game_phase B48 0 CODE 0 text33 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+time_shapping@minutes_buf 2E 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_utoa 326 0 CODE 0 text11 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_main C6A 0 CODE 0 maintext dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\moise\AppData\Local\Temp\s68g.obj
+__end_ofi1_uart_printf 1FB8 0 CODE 0 text37 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 btemp 7E 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__end_ofexp@coeff 248 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 ltemp 7E 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 ttemp 7E 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 wtemp 7E 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-start 22 0 CODE 0 init C:\Users\moise\AppData\Local\Temp\s608.obj
+start 22 0 CODE 0 init C:\Users\moise\AppData\Local\Temp\s68g.obj
+_set_tick_period_timer1_us 1DC0 0 CODE 0 text32 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_init_timer_2 1DDC 0 CODE 0 text2 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+display_player_nbr@string_player_number C5 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_system_init DD0 0 CODE 0 text1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_initUart 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-Lcd4_Write_Char@temp 22 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+Lcd4_Write_Char@temp A3 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+initiate_game@game_time C8 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1LOG@string 7D 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _RCREG 1A 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _TRISA 85 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__end_of_strcpy 45A 0 CODE 0 text1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_strcpy 1F36 0 CODE 0 text14 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+strlen@cp A7 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _TRISB 86 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _TRISC 87 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _TXREG 19 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _PORTA 5 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\moise\AppData\Local\Temp\s608.obj
+strcat@cp A3 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\moise\AppData\Local\Temp\s68g.obj
 _PORTB 6 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _SPBRG 99 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _PORTC 7 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1_LOG 1D3C 0 CODE 0 text36 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _ANSEL 11E 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+utoa@base AA 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 ltemp0 7E 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 ttemp0 7E 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 wtemp0 7E 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
@@ -319,7 +745,7 @@ wtemp2 82 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.productio
 ltemp3 80 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 ttemp3 87 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 wtemp3 84 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-strcpy@cp 21 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+strcpy@cp A2 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 ttemp4 7F 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 wtemp4 86 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 wtemp5 88 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
@@ -327,31 +753,59 @@ wtemp6 7F 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.productio
 interrupt_function 8 0 CODE 0 intentry dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hconfig 4010 0 CONFIG 0 config -
 __Lconfig 400E 0 CONFIG 0 config -
-__end_of__stringtab 20C 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-main@i 30 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-main@j 2B 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+utoa@c AF 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+?___awmod A0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of__stringtab 100C 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+?___lwmod A0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1_Lcd4_Cmd 1E22 0 CODE 0 text41 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_display_player_nbr 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+utoa@v AD 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_uart_getc 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+LOG@level AC 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-__end_of__stringdata 2A4 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+strcat@to A2 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of__stringdata 1036 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_isr 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_errno 77 0 COMMON 1 bssCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-strcpy@to 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_Lcd4_Write_String 3DE 0 CODE 0 text3 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__end_of_Lcd4_Cmd 4F2 0 CODE 0 text8 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1___awmod 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+strcpy@to A3 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_Lcd4_Write_String F0C 0 CODE 0 text16 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_Lcd4_Cmd 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1_utoa 506 0 CODE 0 text44 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1_strlen FA4 0 CODE 0 text39 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1strlen@s 76 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1display_player_nbr@string 26 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_Lcd4_Cmd 1EFA 0 CODE 0 text23 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hfunctab 0 0 CODE 0 functab -
 __Lfunctab 0 0 CODE 0 functab -
+i1_uart_putc 1D62 0 CODE 0 text38 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1_Lcd4_Write_Char 912 0 CODE 0 text35 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1_strcat 1FB8 0 CODE 0 text31 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_display_player_nbr BAA 0 CODE 0 text10 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hcommon 0 0 ABS 0 common -
 __Lcommon 0 0 ABS 0 common -
 _PIE1bits 8C 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_timer1_tick_nbr 50 0 BANK0 1 bssBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _PIR1bits C 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\moise\AppData\Local\Temp\s608.obj
-_initUart 39C 0 CODE 0 text2 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_timer2_tick_nbr 52 0 BANK0 1 bssBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\moise\AppData\Local\Temp\s68g.obj
+_TMR1IF 60 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_TMR2IF 61 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_initUart 1F36 0 CODE 0 text5 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___lwmod@dividend 72 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+?___awdiv 77 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_Lcd4_Port 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_strlen E70 0 CODE 0 text21 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _SPBRGH 9A 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _ANSELH 11F 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+?___lwdiv A0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_TMR2ON 92 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_strcpy 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Habs1 0 0 ABS 0 abs1 -
 __Labs1 0 0 ABS 0 abs1 -
 __Hsfr0 0 0 ABS 0 sfr0 -
@@ -360,134 +814,349 @@ __Hsfr1 0 0 ABS 0 sfr1 -
 __Lsfr1 0 0 ABS 0 sfr1 -
 __Hsfr2 0 0 ABS 0 sfr2 -
 __Lsfr2 0 0 ABS 0 sfr2 -
+i1utoa@buf 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hsfr3 0 0 ABS 0 sfr3 -
 __Lsfr3 0 0 ABS 0 sfr3 -
+i1___lwmod@counter 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1_display_player_nbr C6A 0 CODE 0 text29 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_uart_putc 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_uart_printf DD0 0 CODE 0 text19 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1utoa@val 78 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1display_player_nbr@string_player_number 36 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_Lcd4_Write_Char 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_uart_getc 50A 0 CODE 0 text13 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-Lcd4_Write_String@a 25 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-Lcd4_Write_String@i 26 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1_strcpy 1E86 0 CODE 0 text30 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_initiate_game 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_uart_getc 1D92 0 CODE 0 text27 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_set_tick_period_timer1_us 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___awmod 7EC 0 CODE 0 text47 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1Lcd4_Write_Char@a 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1uart_putc@data 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1Lcd4_Write_Char@y 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+display_player_nbr@player_number C4 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___lwmod A7A 0 CODE 0 text45 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1___lwdiv A0E 0 CODE 0 text46 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of___awmod 7EC 0 CODE 0 text25 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+Lcd4_Write_String@a B1 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+Lcd4_Write_String@i AF 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_gtype_of_game D7 0 BANK1 1 dataBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hcode 0 0 ABS 0 code -
 __Lcode 0 0 ABS 0 code -
-stackhi 0 0 ABS 0 - C:\Users\moise\AppData\Local\Temp\s608.obj
+LOG@string AD 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_LOG 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1_utoa 416 0 CODE 0 text44 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+isr@string 44 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\moise\AppData\Local\Temp\s68g.obj
+_initiate_game 214 0 CODE 0 text9 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
-__end_of_ConfigureOscillator 50A 0 CODE 0 text10 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_ConfigureOscillator 1D82 0 CODE 0 text8 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_uart_putc 53E 0 CODE 0 text12 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-stacklo 0 0 ABS 0 - C:\Users\moise\AppData\Local\Temp\s608.obj
+_strlen E20 0 CODE 0 text21 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___awmod@sign A6 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_uart_putc 1DA6 0 CODE 0 text20 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+stacklo 0 0 ABS 0 - C:\Users\moise\AppData\Local\Temp\s68g.obj
+_strcat EC0 0 CODE 0 text15 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 saved_w 7E 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hinit 22 0 CODE 0 init -
 __Linit 22 0 CODE 0 init -
-__end_of_main 182 0 CODE 0 maintext dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_main CC6 0 CODE 0 maintext dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Htext 0 0 ABS 0 text -
 __Ltext 0 0 ABS 0 text -
-_strcpy 41E 0 CODE 0 text1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_Lcd4_Write_String 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_strcpy 1EFA 0 CODE 0 text14 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_Lcd4_Port 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_Lcd4_Init 334 0 CODE 0 text6 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-end_of_initialization 2A 0 CODE 0 cinit dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+?i1_strlen 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_utoa 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_Lcd4_Init B48 0 CODE 0 text6 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+end_of_initialization 56 0 CODE 0 cinit dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___awdiv@sign 21 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_player_array 120 0 BANK2 1 bssBANK2 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1_strcpy 1EBE 0 CODE 0 text30 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_uart_putc 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__stringtab 200 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1_Lcd4_Set_Cursor EC0 0 CODE 0 text40 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__stringtab 1000 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___lwdiv@counter 77 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+time_shapping@time 24 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_Lcd4_Cmd 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__pdataBANK1 D6 0 BANK1 1 dataBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+time_shapping@hours 2A 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _RCSTAbits 18 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _TRISBbits 86 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _TXSTAbits 98 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_T1CONbits 10 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hstrings 0 0 ABS 0 strings -
+_T2CONbits 12 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Lstrings 0 0 ABS 0 strings -
-__pstrings 200 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_Lcd4_Port 45A 0 CODE 0 text9 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__pstrings 1000 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_Lcd4_Port CC6 0 CODE 0 text24 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_Lcd4_Clear 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__end_of_Lcd4_Shift_Right 52E 0 CODE 0 text5 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1Lcd4_Write_Char@temp 73 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_uart_printf 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_time_shapping 5C 0 CODE 0 text43 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+time_shapping@secondes 26 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+uart_printf@i A9 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1strlen@cp 77 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+display_player_nbr@string B4 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___lwdiv 992 0 CODE 0 text46 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1strcat@cp 73 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_strlen 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Lbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
 __Lbank2 0 0 ABS 0 bank2 -
+i1_display_player_nbr C0C 0 CODE 0 text29 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1utoa@base 7A 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hbank3 0 0 BANK3 1 bank3 -
 __Lbank3 0 0 BANK3 1 bank3 -
 ___latbits 1 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_initiate_game 326 0 CODE 0 text9 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
 __Lpowerup 0 0 CODE 0 powerup -
-__ptext1 41E 0 CODE 0 text1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__ptext2 39C 0 CODE 0 text2 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__ptext3 3DE 0 CODE 0 text3 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__ptext4 2A4 0 CODE 0 text4 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__ptext5 51E 0 CODE 0 text5 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__ptext6 334 0 CODE 0 text6 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__ptext7 52E 0 CODE 0 text7 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__ptext8 4C2 0 CODE 0 text8 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__ptext9 45A 0 CODE 0 text9 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1strcpy@cp 73 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_uart_printf 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext1 D7A 0 CODE 0 text1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext2 1DDC 0 CODE 0 text2 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+time_shapping@buffer 32 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext3 1D54 0 CODE 0 text3 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext4 1D36 0 CODE 0 text4 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext5 1F36 0 CODE 0 text5 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1___lwmod AE2 0 CODE 0 text45 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext6 B48 0 CODE 0 text6 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext7 1D82 0 CODE 0 text7 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__ptext8 1D72 0 CODE 0 text8 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext9 214 0 CODE 0 text9 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_system_init 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hclrtext 0 0 ABS 0 clrtext -
 __Lclrtext 0 0 ABS 0 clrtext -
-__end_of_initUart 3DE 0 CODE 0 text2 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__end_of_Lcd4_Clear 53E 0 CODE 0 text7 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_initUart 1F74 0 CODE 0 text5 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_ggame_time 4E 0 BANK0 1 bssBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_Lcd4_Clear 1D92 0 CODE 0 text7 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1utoa@c 23 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_game_phase AE2 0 CODE 0 text33 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_Lcd4_Init 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__end_of__initialization 2A 0 CODE 0 cinit dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_init_interrupt 1D3C 0 CODE 0 text4 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of__initialization 56 0 CODE 0 cinit dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+?i1___awmod 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+Lcd4_Set_Cursor@ligne A9 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___lwmod@divisor 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+game_phase@time_str 35 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _BAUDCTLbits 9B 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_Lcd4_Clear 52E 0 CODE 0 text7 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__end_of_uart_getc 51E 0 CODE 0 text13 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of___lwdiv 992 0 CODE 0 text13 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+time_shapping@secondes_buf 2C 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1_Lcd4_Port 1E52 0 CODE 0 text42 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+?i1___lwmod 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_Lcd4_Clear 1D82 0 CODE 0 text7 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_time_shapping 214 0 CODE 0 text43 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_system_init D7A 0 CODE 0 text1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+strlen@s A6 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1utoa@v 21 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_uart_getc 1DA6 0 CODE 0 text27 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1LOG@level 7C 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hidloc 0 0 IDLOC 0 idloc -
 __Lidloc 0 0 IDLOC 0 idloc -
-main@string 2E 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+utoa@buf B0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+utoa@val A8 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+main@string D5 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hstack 0 0 STACK 2 stack -
 __Lstack 0 0 STACK 2 stack -
-__end_of_isr 4C2 0 CODE 0 text11 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_strcat 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1___awmod 886 0 CODE 0 text47 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1strcat@to 72 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_strcpy 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___awmod 74E 0 CODE 0 text25 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_Lcd4_Set_Cursor 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___lwmod A0E 0 CODE 0 text12 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_isr 5F0 0 CODE 0 text26 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1uart_printf@i 7A 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __CFG_IESO$ON 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-main@character 2D 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__Hcinit 30 0 CODE 0 cinit -
+?_strlen A0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_init_timer_0 1D62 0 CODE 0 text3 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_init_timer_2 1DFA 0 CODE 0 text2 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_set_tick_period_timer1_us 1DDC 0 CODE 0 text32 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__Hcinit 5C 0 CODE 0 cinit -
+_glog_level D6 0 BANK1 1 dataBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Lcinit 26 0 CODE 0 cinit -
+i1strcpy@to 72 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_ConfigureOscillator 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___awdiv 5F0 0 CODE 0 text48 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___lwdiv 912 0 CODE 0 text13 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_main 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-main@address 2F 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_strcat 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_gcurrent_player D8 0 BANK1 1 bssBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_switch_player 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1Lcd4_Cmd@a 73 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_uart_printf E20 0 CODE 0 text19 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1strcat@from 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_Lcd4_Write_Char 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+time_shapping@hours_buf 30 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_LOG 1D54 0 CODE 0 text18 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_init_interrupt 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+clear_ram0 FF0 0 CODE 0 clrtext dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __size_of_Lcd4_Write_String 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__end_of_uart_putc 54E 0 CODE 0 text12 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-strcpy@from 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__ptext10 4F2 0 CODE 0 text10 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__size_of_Lcd4_Shift_Right 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__ptext11 48E 0 CODE 0 text11 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__ptext12 53E 0 CODE 0 text12 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__ptext13 50A 0 CODE 0 text13 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1strcpy@from 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_uart_putc 1DC0 0 CODE 0 text20 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+strcat@from A0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_switch_player 1E22 0 CODE 0 text28 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+strcpy@from A0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+uart_printf@string AB 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pbssBANK0 4C 0 BANK0 1 bssBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+game_phase@remaining_time 3E 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__pbssBANK1 D8 0 BANK1 1 bssBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_init_timer_0 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_init_timer_2 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+set_tick_period_timer1_us@period_us 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext10 BAA 0 CODE 0 text10 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext20 1DA6 0 CODE 0 text20 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+Lcd4_Set_Cursor@lCmdLsb AB 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+Lcd4_Set_Cursor@lCmdMsb AA 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext11 326 0 CODE 0 text11 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext30 1E86 0 CODE 0 text30 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext21 E20 0 CODE 0 text21 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext40 E70 0 CODE 0 text40 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext12 A0E 0 CODE 0 text12 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext31 1FB8 0 CODE 0 text31 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__ptext22 D22 0 CODE 0 text22 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext41 1E22 0 CODE 0 text41 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__ptext13 912 0 CODE 0 text13 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext32 1DC0 0 CODE 0 text32 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext23 1EBE 0 CODE 0 text23 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext42 1E52 0 CODE 0 text42 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+__size_of___awdiv 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__ptext14 1EFA 0 CODE 0 text14 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext33 AE2 0 CODE 0 text33 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__pidataBANK1 4 0 CODE 0 idataBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext24 CC6 0 CODE 0 text24 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext43 5C 0 CODE 0 text43 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext15 EC0 0 CODE 0 text15 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext34 F58 0 CODE 0 text34 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext25 74E 0 CODE 0 text25 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext44 416 0 CODE 0 text44 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext16 F0C 0 CODE 0 text16 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext35 886 0 CODE 0 text35 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext26 506 0 CODE 0 text26 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext45 A7A 0 CODE 0 text45 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext17 6AA 0 CODE 0 text17 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext36 1D3C 0 CODE 0 text36 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___awmod@divisor A0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of___lwmod A7A 0 CODE 0 text12 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext27 1D92 0 CODE 0 text27 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext46 992 0 CODE 0 text46 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___lwmod@divisor A0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext18 1D46 0 CODE 0 text18 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext37 1F74 0 CODE 0 text37 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __CFG_PWRTE$OFF 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__HbssCOMMON 0 0 ABS 0 bssCOMMON -
-__LbssCOMMON 0 0 ABS 0 bssCOMMON -
-__pbssCOMMON 77 0 COMMON 1 bssCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__end_of_Lcd4_Write_String 41E 0 CODE 0 text3 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext28 1DFA 0 CODE 0 text28 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext47 7EC 0 CODE 0 text47 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext19 DD0 0 CODE 0 text19 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext38 1D62 0 CODE 0 text38 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext29 C0C 0 CODE 0 text29 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext48 5F0 0 CODE 0 text48 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+initiate_game@player_nb CF 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__ptext39 FA4 0 CODE 0 text39 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_strlen 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_Lcd4_Write_String F58 0 CODE 0 text16 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _OSCCONbits 8F 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _INTCONbits B 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hend_init 26 0 CODE 0 end_init -
 __Lend_init 22 0 CODE 0 end_init -
+__end_of_Lcd4_Set_Cursor D7A 0 CODE 0 text22 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+initiate_game@i D0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___awdiv@divisor 77 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___lwdiv@divisor A0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1_Lcd4_Set_Cursor E70 0 CODE 0 text40 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+?i1___lwdiv 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_strcat F0C 0 CODE 0 text15 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hreset_vec 4 0 CODE 0 reset_vec -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-uart_putc@data 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__stringdata 27E 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__end_oflog@coeff 27E 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-intlevel0 0 0 CODE 0 functab C:\Users\moise\AppData\Local\Temp\s608.obj
+i1_Lcd4_Write_String F58 0 CODE 0 text34 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_display_player_nbr C0C 0 CODE 0 text10 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_Lcd4_Set_Cursor D22 0 CODE 0 text22 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+uart_putc@data A0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__stringdata 100C 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1Lcd4_Set_Cursor@lCmdLsb 7B 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1Lcd4_Set_Cursor@lCmdMsb 7A 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_display_player_nbr 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\moise\AppData\Local\Temp\s68g.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-intlevel1 0 0 CODE 0 functab C:\Users\moise\AppData\Local\Temp\s608.obj
-_Lcd4_Shift_Right 51E 0 CODE 0 text5 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-intlevel2 0 0 CODE 0 functab C:\Users\moise\AppData\Local\Temp\s608.obj
-intlevel3 0 0 CODE 0 functab C:\Users\moise\AppData\Local\Temp\s608.obj
-intlevel4 0 0 CODE 0 functab C:\Users\moise\AppData\Local\Temp\s608.obj
-intlevel5 0 0 CODE 0 functab C:\Users\moise\AppData\Local\Temp\s608.obj
+intlevel1 0 0 CODE 0 functab C:\Users\moise\AppData\Local\Temp\s68g.obj
+intlevel2 0 0 CODE 0 functab C:\Users\moise\AppData\Local\Temp\s68g.obj
+i1uart_printf@string 79 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+intlevel3 0 0 CODE 0 functab C:\Users\moise\AppData\Local\Temp\s68g.obj
+i1Lcd4_Port@a 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+intlevel4 0 0 CODE 0 functab C:\Users\moise\AppData\Local\Temp\s68g.obj
+__end_ofi1_strlen FF0 0 CODE 0 text39 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+intlevel5 0 0 CODE 0 functab C:\Users\moise\AppData\Local\Temp\s68g.obj
+_init_interrupt 1D36 0 CODE 0 text4 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_utoa 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1Lcd4_Write_String@a 21 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1Lcd4_Write_String@i 22 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_switch_player 1DFA 0 CODE 0 text28 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1_uart_printf 1F74 0 CODE 0 text37 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __CFG_CPD$OFF 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 start_initialization 26 0 CODE 0 cinit dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-Lcd4_Cmd@a 76 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__end_of_Lcd4_Init 39C 0 CODE 0 text6 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+Lcd4_Cmd@a A3 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___awdiv@quotient 22 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___lwdiv@quotient A5 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_init_timer_0 1D54 0 CODE 0 text3 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1display_player_nbr@player_number 38 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_Lcd4_Init BAA 0 CODE 0 text6 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __Hmaintext 0 0 ABS 0 maintext -
 __Lmaintext 0 0 ABS 0 maintext -
-__pmaintext 30 0 CODE 0 maintext dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__pmaintext C6A 0 CODE 0 maintext dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 _OPTION_REGbits 81 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1_Lcd4_Cmd 1E52 0 CODE 0 text41 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1___lwmod 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_LOG 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1___lwdiv 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_of_utoa 416 0 CODE 0 text11 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of___awmod 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_elapsed_time 4C 0 BANK0 1 bssBANK0 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1Lcd4_Set_Cursor@pixel_nb 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+i1___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __initialization 26 0 CODE 0 cinit dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-__stringbase 20A 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-Lcd4_Port@a 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1_Lcd4_Port 1E86 0 CODE 0 text42 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__stringbase 100A 0 STRING 0 strings dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_ofi1_Lcd4_Set_Cursor 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1_LOG 1D46 0 CODE 0 text36 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+Lcd4_Port@a A0 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__end_ofi1_uart_putc 1D72 0 CODE 0 text38 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___awmod@dividend A2 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __CFG_FOSC$INTRCCLK 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___lwmod@dividend A2 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+__size_of_time_shapping 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___awmod@counter A5 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___lwmod@counter A5 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __CFG_CP$OFF 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
-_ConfigureOscillator 4F2 0 CODE 0 text10 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+Lcd4_Set_Cursor@pixel_nb A4 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+_ConfigureOscillator 1D72 0 CODE 0 text8 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+initiate_game@type_of_game C7 0 BANK1 1 cstackBANK1 dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
+___awdiv@dividend 79 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/production\pic16_c_template_1.X.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -513,10 +1182,31 @@ _ConfigureOscillator 4F2 0 CODE 0 text10 dist/XC8_PIC16F690/production\pic16_c_t
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-reset_vec 0 0 0 2 2
-intentry 0 4 8 BD 2
+reset_vec 0 0 0 4 2
+intentry 0 4 8 7FC 2
 config 0 2007 400E 1 2
-cstackCOMMON 1 70 70 9 1
-cstackBANK0 1 20 20 12 1
-strings 0 100 200 52 2
-text4 0 152 2A4 155 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK1 1 A0 A0 39 1
+cstackBANK0 1 20 20 34 1
+bssBANK2 1 120 120 28 1
+text31 0 FDC 1FB8 24 2
+text37 0 FBA 1F74 22 2
+text5 0 F9B 1F36 1F 2
+text14 0 F7D 1EFA 1E 2
+text23 0 F5F 1EBE 1E 2
+text30 0 F43 1E86 1C 2
+strings 0 800 1000 1B 2
+text42 0 F29 1E52 1A 2
+text41 0 F11 1E22 18 2
+text28 0 EFD 1DFA 14 2
+text2 0 EEE 1DDC F 2
+text32 0 EE0 1DC0 E 2
+text20 0 ED3 1DA6 D 2
+text27 0 EC9 1D92 A 2
+text7 0 EC1 1D82 8 2
+text8 0 EB9 1D72 8 2
+text38 0 EB1 1D62 8 2
+text3 0 EAA 1D54 7 2
+text18 0 EA3 1D46 7 2
+text36 0 E9E 1D3C 5 2
+text4 0 E9B 1D36 3 2

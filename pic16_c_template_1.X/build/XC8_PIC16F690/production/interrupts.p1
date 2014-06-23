@@ -1,11 +1,17 @@
 Version 3.2 HI-TECH Software Intermediate Code
+[s S13 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S13 . RABIF INTF T0IF RABIE INTE T0IE PEIE GIE ]
+[u S12 `S13 1 ]
+[n S12 . . ]
+"329 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+[v _INTCONbits `VS12 ~T0 @X0 0 e@11 ]
 [s S15 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S15 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF ]
 [s S16 :1 `uc 1 :1 `uc 1 ]
 [n S16 . T1IF T2IF ]
 [u S14 `S15 1 `S16 1 ]
 [n S14 . . . ]
-"393 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+"393
 [v _PIR1bits `VS14 ~T0 @X0 0 e@12 ]
 [s S32 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S32 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
@@ -13,10 +19,28 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S31 . . ]
 "835
 [v _RCSTAbits `VS31 ~T0 @X0 0 e@24 ]
-"24 uart.h
+"26 uart.h
 [v _uart_putc `(v ~T0 @X0 0 ef1`uc ]
-"26
+"28
 [v _uart_getc `(uc ~T0 @X0 0 ef ]
+"46 game_timer/header/game_timer.h
+[v _switch_player `(v ~T0 @X0 0 ef ]
+"3662 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+[v _TMR1IF `Vb ~T0 @X0 0 e@96 ]
+"28 timer.h
+[v _set_tick_period_timer1_us `(v ~T0 @X0 0 ef1`ui ]
+"3542 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+[v _RC2 `Vb ~T0 @X0 0 e@58 ]
+"104 C:\CAE_tools\Microchip\xc8\v1.31\include\stdlib.h
+[v _utoa `(*uc ~T0 @X0 0 ef3`*uc`ui`i ]
+"27 LCD_screen.h
+[v _Lcd4_Set_Cursor `(v ~T0 @X0 0 ef2`uc`uc ]
+"30
+[v _Lcd4_Write_String `(v ~T0 @X0 0 ef1`*uc ]
+"3668 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+[v _TMR2IF `Vb ~T0 @X0 0 e@97 ]
+"45 game_timer/header/game_timer.h
+[v _game_phase `(v ~T0 @X0 0 ef ]
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic16f690.h: 47: extern volatile unsigned char INDF @ 0x000;
@@ -1393,53 +1417,272 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 210: typedef int16_t intptr_t;
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
 [; ;stdbool.h: 12: typedef unsigned char bool;
-[; ;uart.h: 24: void uart_putc(unsigned char data);
-[; ;uart.h: 25: void uart_printf(char * string);
-[; ;uart.h: 26: unsigned char uart_getc(void);
-[; ;uart.h: 27: char * uart_get_str(void);
-[; ;uart.h: 28: void __interrupt ISR(void);
-[v F1502 `(v ~T0 @X0 1 tf ]
-"24 interrupts.c
-[v _isr `IF1502 ~T0 @X0 1 e ]
-"25
+[; ;interrupt.h: 24: void init_interrupt();
+[; ;interrupt.h: 25: void interrupt isr(void);
+[; ;uart.h: 24: void initUart(void);
+[; ;uart.h: 26: void uart_putc(unsigned char data);
+[; ;uart.h: 27: void uart_printf(char * string);
+[; ;uart.h: 28: unsigned char uart_getc(void);
+[; ;uart.h: 29: int uart_get_str(char * buffer);
+[; ;timer.h: 26: void init_timer_0();
+[; ;timer.h: 27: void init_timer_1();
+[; ;timer.h: 28: void set_tick_period_timer1_us(unsigned period_us);
+[; ;timer.h: 29: void init_timer_2();
+[; ;LCD_screen.h: 24: void Lcd4_Port(char a);
+[; ;LCD_screen.h: 25: void Lcd4_Cmd(char a);
+[; ;LCD_screen.h: 26: void Lcd4_Clear();
+[; ;LCD_screen.h: 27: void Lcd4_Set_Cursor(char a, char b);
+[; ;LCD_screen.h: 28: void Lcd4_Init();
+[; ;LCD_screen.h: 29: void Lcd4_Write_Char(char a);
+[; ;LCD_screen.h: 30: void Lcd4_Write_String(char *a);
+[; ;LCD_screen.h: 31: void Lcd4_Shift_Right();
+[; ;LCD_screen.h: 32: void Lcd4_Shift_Left();
+[; ;misc.h: 25: int itoh(int n);
+[; ;misc.h: 26: void time_shapping(char * buffer, int time);
+[; ;misc.h: 27: void LOG(char * string, char level);
+[; ;game_timer.h: 24: typedef enum {TIME_PER_GAME, TIME_PER_ROUND} game_type_t;
+[; ;game_timer.h: 26: typedef struct player_t
+[; ;game_timer.h: 27: {
+[; ;game_timer.h: 28: unsigned char player_number;
+[; ;game_timer.h: 29: unsigned int played_time;
+[; ;game_timer.h: 30: struct player_t * next_player;
+[; ;game_timer.h: 31: }player;
+[; ;game_timer.h: 40: int initiate_game ( char player_nb,
+[; ;game_timer.h: 41: game_type_t type_of_game,
+[; ;game_timer.h: 42: unsigned int game_time);
+[; ;game_timer.h: 45: void game_phase();
+[; ;game_timer.h: 46: void switch_player();
+[; ;game_timer.h: 47: void display_player_nbr(unsigned char player_number);
+[; ;stdlib.h: 4: typedef int ptrdiff_t;
+[; ;stdlib.h: 5: typedef unsigned size_t;
+[; ;stdlib.h: 6: typedef unsigned short wchar_t;
+[; ;stdlib.h: 16: extern int errno;
+[; ;stdlib.h: 27: typedef struct {
+[; ;stdlib.h: 28: int rem;
+[; ;stdlib.h: 29: int quot;
+[; ;stdlib.h: 30: } div_t;
+[; ;stdlib.h: 31: typedef struct {
+[; ;stdlib.h: 32: unsigned rem;
+[; ;stdlib.h: 33: unsigned quot;
+[; ;stdlib.h: 34: } udiv_t;
+[; ;stdlib.h: 35: typedef struct {
+[; ;stdlib.h: 36: long quot;
+[; ;stdlib.h: 37: long rem;
+[; ;stdlib.h: 38: } ldiv_t;
+[; ;stdlib.h: 39: typedef struct {
+[; ;stdlib.h: 40: unsigned long quot;
+[; ;stdlib.h: 41: unsigned long rem;
+[; ;stdlib.h: 42: } uldiv_t;
+[; ;stdlib.h: 65: extern double atof(const char *);
+[; ;stdlib.h: 66: extern double strtod(const char *, const char **);
+[; ;stdlib.h: 67: extern int atoi(const char *);
+[; ;stdlib.h: 68: extern unsigned xtoi(const char *);
+[; ;stdlib.h: 69: extern long atol(const char *);
+[; ;stdlib.h: 70: extern long strtol(const char *, char **, int);
+[; ;stdlib.h: 72: extern int rand(void);
+[; ;stdlib.h: 73: extern void srand(unsigned int);
+[; ;stdlib.h: 74: extern void * calloc(size_t, size_t);
+[; ;stdlib.h: 75: extern div_t div(int numer, int denom);
+[; ;stdlib.h: 76: extern udiv_t udiv(unsigned numer, unsigned denom);
+[; ;stdlib.h: 77: extern ldiv_t ldiv(long numer, long denom);
+[; ;stdlib.h: 78: extern uldiv_t uldiv(unsigned long numer,unsigned long denom);
+[; ;stdlib.h: 79: extern unsigned long _lrotl(unsigned long value, unsigned int shift);
+[; ;stdlib.h: 80: extern unsigned long _lrotr(unsigned long value, unsigned int shift);
+[; ;stdlib.h: 81: extern unsigned int _rotl(unsigned int value, unsigned int shift);
+[; ;stdlib.h: 82: extern unsigned int _rotr(unsigned int value, unsigned int shift);
+[; ;stdlib.h: 87: extern void * malloc(size_t);
+[; ;stdlib.h: 88: extern void free(void *);
+[; ;stdlib.h: 89: extern void * realloc(void *, size_t);
+[; ;stdlib.h: 91: extern void abort(void);
+[; ;stdlib.h: 92: extern void exit(int);
+[; ;stdlib.h: 93: extern int atexit(void (*)(void));
+[; ;stdlib.h: 94: extern char * getenv(const char *);
+[; ;stdlib.h: 95: extern char ** environ;
+[; ;stdlib.h: 96: extern int system(char *);
+[; ;stdlib.h: 97: extern void qsort(void *, size_t, size_t, int (*)(const void *, const void *));
+[; ;stdlib.h: 98: extern void * bsearch(const void *, void *, size_t, size_t, int(*)(const void *, const void *));
+[; ;stdlib.h: 99: extern int abs(int);
+[; ;stdlib.h: 100: extern long labs(long);
+[; ;stdlib.h: 103: extern char * itoa(char * buf, int val, int base);
+[; ;stdlib.h: 104: extern char * utoa(char * buf, unsigned val, int base);
+[; ;stdlib.h: 109: extern char * ltoa(char * buf, long val, int base);
+[; ;stdlib.h: 110: extern char * ultoa(char * buf, unsigned long val, int base);
+[; ;stdlib.h: 112: extern char * ftoa(float f, int * status);
+"32 interrupts.c
+[v _timer1_tick_nbr `i ~T0 @X0 1 e ]
+[i _timer1_tick_nbr
+-> 0 `i
+]
+[; ;interrupts.c: 32: int timer1_tick_nbr =0;
+"33
+[v _timer2_tick_nbr `i ~T0 @X0 1 e ]
+[i _timer2_tick_nbr
+-> 0 `i
+]
+[; ;interrupts.c: 33: int timer2_tick_nbr =0;
+"34
+[v _elapsed_time `ui ~T0 @X0 1 e ]
+[i _elapsed_time
+-> -> 0 `i `ui
+]
+[; ;interrupts.c: 34: unsigned int elapsed_time = 0;
+"36
+[v _init_interrupt `(v ~T0 @X0 1 ef ]
 {
-[; ;interrupts.c: 24: void interrupt isr(void)
-[; ;interrupts.c: 25: {
+[; ;interrupts.c: 36: void init_interrupt(){
+[e :U _init_interrupt ]
+[f ]
+[; ;interrupts.c: 38: INTCONbits.GIE = 1;
+"38
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+[; ;interrupts.c: 39: INTCONbits.PEIE =1;
+"39
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+[; ;interrupts.c: 40: }
+"40
+[e :UE 137 ]
+}
+[v F1492 `(v ~T0 @X0 1 tf ]
+"42
+[v _isr `IF1492 ~T0 @X0 1 e ]
+"43
+{
+[; ;interrupts.c: 42: void interrupt isr(void)
+[; ;interrupts.c: 43: {
 [e :U _isr ]
 [f ]
-[; ;interrupts.c: 31: if (PIR1bits.RCIF)
-"31
-[e $ ! != -> . . _PIR1bits 0 5 `i -> -> -> 0 `i `Vuc `i 133  ]
-[; ;interrupts.c: 32: {
-"32
+[; ;interrupts.c: 46: if (PIR1bits.RCIF)
+"46
+[e $ ! != -> . . _PIR1bits 0 5 `i -> -> -> 0 `i `Vuc `i 139  ]
+[; ;interrupts.c: 47: {
+"47
 {
-[; ;interrupts.c: 34: if (RCSTAbits.OERR)
-"34
-[e $ ! != -> . . _RCSTAbits 0 1 `i -> -> -> 0 `i `Vuc `i 134  ]
-[; ;interrupts.c: 35: {
-"35
+[; ;interrupts.c: 49: if (RCSTAbits.FERR)
+"49
+[e $ ! != -> . . _RCSTAbits 0 2 `i -> -> -> 0 `i `Vuc `i 140  ]
+[; ;interrupts.c: 50: {
+"50
 {
-[; ;interrupts.c: 36: RCSTAbits.CREN = 0;
-"36
-[e = . . _RCSTAbits 0 4 -> -> 0 `i `uc ]
-[; ;interrupts.c: 37: RCSTAbits.CREN = 1;
-"37
-[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
-[; ;interrupts.c: 38: return;
-"38
-[e $UE 132  ]
-"39
+[; ;interrupts.c: 51: RCSTAbits.SPEN = 0;
+"51
+[e = . . _RCSTAbits 0 7 -> -> 0 `i `uc ]
+[; ;interrupts.c: 52: RCSTAbits.SPEN = 1;
+"52
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
+[; ;interrupts.c: 53: return;
+"53
+[e $UE 138  ]
+"54
 }
-[e :U 134 ]
-[; ;interrupts.c: 39: }
-[; ;interrupts.c: 40: uart_putc(uart_getc());
-"40
+[e :U 140 ]
+[; ;interrupts.c: 54: }
+[; ;interrupts.c: 58: uart_putc(uart_getc());
+"58
 [e ( _uart_putc (1 ( _uart_getc ..  ]
-"41
+[; ;interrupts.c: 59: switch_player();
+"59
+[e ( _switch_player ..  ]
+[; ;interrupts.c: 60: return;
+"60
+[e $UE 138  ]
+"64
 }
-[e :U 133 ]
-[; ;interrupts.c: 41: }
-[; ;interrupts.c: 43: }
-"43
-[e :UE 132 ]
+[e :U 139 ]
+[; ;interrupts.c: 64: }
+[; ;interrupts.c: 67: if (TMR1IF)
+"67
+[e $ ! _TMR1IF 141  ]
+[; ;interrupts.c: 68: {
+"68
+{
+"69
+[v _string `uc ~T0 @X0 -> 8 `i a ]
+[; ;interrupts.c: 69: char string [8];
+[; ;interrupts.c: 70: TMR1IF = 0;
+"70
+[e = _TMR1IF -> -> 0 `i `b ]
+[; ;interrupts.c: 71: set_tick_period_timer1_us(1000);
+"71
+[e ( _set_tick_period_timer1_us (1 -> -> 1000 `i `ui ]
+[; ;interrupts.c: 72: timer1_tick_nbr ++;
+"72
+[e ++ _timer1_tick_nbr -> 1 `i ]
+[; ;interrupts.c: 73: if (timer1_tick_nbr== 1000){
+"73
+[e $ ! == _timer1_tick_nbr -> 1000 `i 142  ]
+{
+[; ;interrupts.c: 74: timer1_tick_nbr = 0;
+"74
+[e = _timer1_tick_nbr -> 0 `i ]
+[; ;interrupts.c: 75: elapsed_time++;
+"75
+[e ++ _elapsed_time -> -> 1 `i `ui ]
+[; ;interrupts.c: 76: RC2 = 1- RC2;
+"76
+[e = _RC2 -> - -> 1 `i -> _RC2 `i `b ]
+[; ;interrupts.c: 77: utoa (string, elapsed_time, 10);
+"77
+[e ( _utoa (3 , , &U _string _elapsed_time -> 10 `i ]
+[; ;interrupts.c: 78: Lcd4_Set_Cursor(0,0);
+"78
+[e ( _Lcd4_Set_Cursor (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;interrupts.c: 79: Lcd4_Write_String(string);
+"79
+[e ( _Lcd4_Write_String (1 &U _string ]
+"80
+}
+[e :U 142 ]
+[; ;interrupts.c: 80: }
+[; ;interrupts.c: 81: return;
+"81
+[e $UE 138  ]
+"82
+}
+[e :U 141 ]
+[; ;interrupts.c: 82: }
+[; ;interrupts.c: 86: if (TMR2IF)
+"86
+[e $ ! _TMR2IF 143  ]
+[; ;interrupts.c: 87: {
+"87
+{
+"88
+[v _string `uc ~T0 @X0 -> 9 `i a ]
+[; ;interrupts.c: 88: char string [9];
+[; ;interrupts.c: 90: TMR2IF = 0;
+"90
+[e = _TMR2IF -> -> 0 `i `b ]
+[; ;interrupts.c: 91: timer2_tick_nbr ++;
+"91
+[e ++ _timer2_tick_nbr -> 1 `i ]
+[; ;interrupts.c: 93: if (timer2_tick_nbr== 100){
+"93
+[e $ ! == _timer2_tick_nbr -> 100 `i 144  ]
+{
+[; ;interrupts.c: 94: timer2_tick_nbr = 0;
+"94
+[e = _timer2_tick_nbr -> 0 `i ]
+[; ;interrupts.c: 95: elapsed_time++;
+"95
+[e ++ _elapsed_time -> -> 1 `i `ui ]
+[; ;interrupts.c: 96: RC2 = 1- RC2;
+"96
+[e = _RC2 -> - -> 1 `i -> _RC2 `i `b ]
+[; ;interrupts.c: 97: game_phase();
+"97
+[e ( _game_phase ..  ]
+"98
+}
+[e :U 144 ]
+[; ;interrupts.c: 98: }
+[; ;interrupts.c: 100: return;
+"100
+[e $UE 138  ]
+"101
+}
+[e :U 143 ]
+[; ;interrupts.c: 101: }
+[; ;interrupts.c: 103: }
+"103
+[e :UE 138 ]
 }

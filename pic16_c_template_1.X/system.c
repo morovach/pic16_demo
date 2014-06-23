@@ -12,24 +12,29 @@
 #include <stdbool.h>       /* For true/false definition */
 
 #include "system.h"
-#include "misc.h"
+#include "interrupt.h"
+#include "timer.h"
+#include "uart.h"
+#include "LCD_screen.h"
+#include "game_timer/header/game_timer.h"
+
+/******************************************
+ Global variable definition
+ */
+char glog_level = INFO_LVL;
+game_type_t gtype_of_game = TIME_PER_ROUND;
+unsigned int ggame_time = 0;
+player * gcurrent_player;
+player player_array[10];
+
 /* Refer to the device datasheet for information about available
 oscillator configurations. */
 void ConfigureOscillator(void)
 {
 
-    //Timer is set to 4MHz
+    //Timer is set to 8MHz
     OSCCONbits.SCS=0x1;
     OSCCONbits.IRCF=0x7;
-
-    //Timer mode, clocked by the system clock (Fosc/4)
-    OPTION_REGbits.T0CS = 0;
-    //Enable the prescaler
-    OPTION_REGbits.PSA = 0;
-    //Prescaler = 256
-    OPTION_REGbits.PS = 0x7;
-
-    //Final clock of the timer: 8MHz /(4 *256) = 8 KHz;
 
     //Wait for the oscillator to be ready
     while(OSCCONbits.HTS==0)
@@ -40,49 +45,25 @@ void ConfigureOscillator(void)
 }
 
 
-void initUart(void)
-{
-    //Enable interrupts
-    INTCONbits.GIE = 1;
-    INTCONbits.PEIE =1;
-    PIE1bits.RCIE =1;
+void system_init(void){
+    //Set all ports to be output
+    TRISA = 0x0;
+    TRISB = 0x0;
+    TRISC = 0x0;
 
-    TXSTAbits.TXEN = 0;
-    //The baudrate for the UART is : FOSC/((64*[SPBRGH:SPBRG])+1) where : means a concatenation
-    //Here we have thus a 9600 bauds for the UART
+    //Put all values to 0
+    PORTA = 0x00;
+    PORTB = 0x00;
+    PORTC = 0x00;
 
-    SPBRG  = (_XTAL_FREQ/BAUDRATE/64)-1;
-    //SPBRG  = 12;
-    SPBRGH = 0x00;
-
-    ANSEL =0;
-    ANSELH= 0;
-
-    //Set RX pin as input and TX as output
-    TRISBbits.TRISB5 = 1;
-    TRISBbits.TRISB7 = 0;
-
-    //PUT the UART in Asynchronous mode and enables it
-
-    //8Bits in a frame
-    TXSTAbits.TX9 = 0;
-
-    //Asynchronous
-    TXSTAbits.SYNC = 0;
-    TXREG = 0;
-
-    //On divise la frequence d'horloge par 64
-    TXSTAbits.BRGH = 0;
-    BAUDCTLbits.BRG16 = 0;
     
-    BAUDCTLbits.ABDEN = 0;
+    ConfigureOscillator();
+    init_interrupt();
+    init_timer_0();
+    //init_timer_1();
+    init_timer_2();
+    initUart();
 
-    //Reset the uart and enable it
-    //Enable the USART TX RX and Whole block
-    
-    TXSTAbits.TXEN = 1;
-    RCSTAbits.CREN = 1;
-    RCSTAbits.SPEN = 1;
-
-
+    __delay_ms(500);
+    Lcd4_Init();
 }

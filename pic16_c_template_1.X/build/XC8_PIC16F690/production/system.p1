@@ -1,4 +1,10 @@
 Version 3.2 HI-TECH Software Intermediate Code
+"25 system.c
+[c E1533 0 1 .. ]
+[n E1533 . TIME_PER_GAME TIME_PER_ROUND  ]
+"30 game_timer/header/game_timer.h
+[s S132 `uc 1 `ui 1 `*S132 1 ]
+[n S132 player_t player_number played_time next_player ]
 [s S61 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 ]
 [n S61 . SCS LTS HTS OSTS IRCF ]
 [s S62 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -7,64 +13,32 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S60 . . . ]
 "1523 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
 [v _OSCCONbits `VS60 ~T0 @X0 0 e@143 ]
-[s S45 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S45 . PS PSA T0SE T0CS INTEDG nRABPU ]
-[s S46 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S46 . PS0 PS1 PS2 ]
-[u S44 `S45 1 `S46 1 ]
-[n S44 . . . ]
-"1161
-[v _OPTION_REGbits `VS44 ~T0 @X0 0 e@129 ]
-[s S13 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S13 . RABIF INTF T0IF RABIE INTE T0IE PEIE GIE ]
-[u S12 `S13 1 ]
-[n S12 . . ]
-"329
-[v _INTCONbits `VS12 ~T0 @X0 0 e@11 ]
-[s S54 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S54 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE ]
-[s S55 :1 `uc 1 :1 `uc 1 ]
-[n S55 . T1IE T2IE ]
-[u S53 `S54 1 `S55 1 ]
-[n S53 . . . ]
-"1378
-[v _PIE1bits `VS53 ~T0 @X0 0 e@140 ]
-[s S94 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S94 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
-[s S95 :3 `uc 1 :1 `uc 1 ]
-[n S95 . . SENB ]
-[u S93 `S94 1 `S95 1 ]
-[n S93 . . . ]
-"2318
-[v _TXSTAbits `VS93 ~T0 @X0 0 e@152 ]
-"2367
-[v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
-"2428
-[v _SPBRGH `Vuc ~T0 @X0 0 e@154 ]
-"2936
-[v _ANSEL `Vuc ~T0 @X0 0 e@286 ]
-"2997
-[v _ANSELH `Vuc ~T0 @X0 0 e@287 ]
-[s S50 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S50 . . TRISB4 TRISB5 TRISB6 TRISB7 ]
-[u S49 `S50 1 ]
-[n S49 . . ]
-"1273
-[v _TRISBbits `VS49 ~T0 @X0 0 e@134 ]
-"879
-[v _TXREG `Vuc ~T0 @X0 0 e@25 ]
-[s S101 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S101 . ABDEN WUE . BRG16 SCKP . RCIDL ABDOVF ]
-[u S100 `S101 1 ]
-[n S100 . . ]
-"2506
-[v _BAUDCTLbits `VS100 ~T0 @X0 0 e@155 ]
-[s S32 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S32 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
-[u S31 `S32 1 ]
-[n S31 . . ]
-"835
-[v _RCSTAbits `VS31 ~T0 @X0 0 e@24 ]
+"1210
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"1259
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"1297
+[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"158
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+"207
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"245
+[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
+"24 interrupt.h
+[v _init_interrupt `(v ~T0 @X0 0 ef ]
+"26 timer.h
+[v _init_timer_0 `(v ~T0 @X0 0 ef ]
+"29
+[v _init_timer_2 `(v ~T0 @X0 0 ef ]
+"66 system.h
+[v _initUart `(v ~T0 @X0 0 ef ]
+[v F1459 `(v ~T0 @X0 1 tf1`ul ]
+"154 C:\CAE_tools\Microchip\xc8\v1.31\include\pic.h
+[v __delay `JF1459 ~T0 @X0 0 e ]
+[p i __delay ]
+"28 LCD_screen.h
+[v _Lcd4_Init `(v ~T0 @X0 0 ef ]
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic16f690.h: 47: extern volatile unsigned char INDF @ 0x000;
@@ -1443,119 +1417,148 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdbool.h: 12: typedef unsigned char bool;
 [; ;system.h: 47: typedef enum {
 [; ;system.h: 48: OK ,
-[; ;system.h: 49: MISC_ERR
-[; ;system.h: 51: } err_t;
-[; ;system.h: 63: void ConfigureOscillator(void);
-[; ;system.h: 64: void initUart(void);
-[; ;misc.h: 25: int itoh(int n);
-"18 system.c
+[; ;system.h: 49: SIZEERR ,
+[; ;system.h: 50: MISC_ERR
+[; ;system.h: 52: } err_t;
+[; ;system.h: 64: void ConfigureOscillator(void);
+[; ;system.h: 65: void system_init(void);
+[; ;system.h: 66: void initUart(void);
+[; ;interrupt.h: 24: void init_interrupt();
+[; ;interrupt.h: 25: void interrupt isr(void);
+[; ;timer.h: 26: void init_timer_0();
+[; ;timer.h: 27: void init_timer_1();
+[; ;timer.h: 28: void set_tick_period_timer1_us(unsigned period_us);
+[; ;timer.h: 29: void init_timer_2();
+[; ;uart.h: 24: void initUart(void);
+[; ;uart.h: 26: void uart_putc(unsigned char data);
+[; ;uart.h: 27: void uart_printf(char * string);
+[; ;uart.h: 28: unsigned char uart_getc(void);
+[; ;uart.h: 29: int uart_get_str(char * buffer);
+[; ;LCD_screen.h: 24: void Lcd4_Port(char a);
+[; ;LCD_screen.h: 25: void Lcd4_Cmd(char a);
+[; ;LCD_screen.h: 26: void Lcd4_Clear();
+[; ;LCD_screen.h: 27: void Lcd4_Set_Cursor(char a, char b);
+[; ;LCD_screen.h: 28: void Lcd4_Init();
+[; ;LCD_screen.h: 29: void Lcd4_Write_Char(char a);
+[; ;LCD_screen.h: 30: void Lcd4_Write_String(char *a);
+[; ;LCD_screen.h: 31: void Lcd4_Shift_Right();
+[; ;LCD_screen.h: 32: void Lcd4_Shift_Left();
+[; ;game_timer.h: 24: typedef enum {TIME_PER_GAME, TIME_PER_ROUND} game_type_t;
+[; ;game_timer.h: 26: typedef struct player_t
+[; ;game_timer.h: 27: {
+[; ;game_timer.h: 28: unsigned char player_number;
+[; ;game_timer.h: 29: unsigned int played_time;
+[; ;game_timer.h: 30: struct player_t * next_player;
+[; ;game_timer.h: 31: }player;
+[; ;game_timer.h: 40: int initiate_game ( char player_nb,
+[; ;game_timer.h: 41: game_type_t type_of_game,
+[; ;game_timer.h: 42: unsigned int game_time);
+[; ;game_timer.h: 45: void game_phase();
+[; ;game_timer.h: 46: void switch_player();
+[; ;game_timer.h: 47: void display_player_nbr(unsigned char player_number);
+"24 system.c
+[v _glog_level `uc ~T0 @X0 1 e ]
+[i _glog_level
+-> -> 1 `i `uc
+]
+[; ;system.c: 24: char glog_level = 1;
+"25
+[v _gtype_of_game `E1533 ~T0 @X0 1 e ]
+[i _gtype_of_game
+-> . `E1533 1 `E1533
+]
+[; ;system.c: 25: game_type_t gtype_of_game = TIME_PER_ROUND;
+"26
+[v _ggame_time `ui ~T0 @X0 1 e ]
+[i _ggame_time
+-> -> 0 `i `ui
+]
+[; ;system.c: 26: unsigned int ggame_time = 0;
+"27
+[v _gcurrent_player `*S132 ~T0 @X0 1 e ]
+[; ;system.c: 27: player * gcurrent_player;
+"28
+[v _player_array `S132 ~T0 @X0 -> 10 `i e ]
+[; ;system.c: 28: player player_array[10];
+"32
 [v _ConfigureOscillator `(v ~T0 @X0 1 ef ]
-"19
+"33
 {
-[; ;system.c: 18: void ConfigureOscillator(void)
-[; ;system.c: 19: {
+[; ;system.c: 32: void ConfigureOscillator(void)
+[; ;system.c: 33: {
 [e :U _ConfigureOscillator ]
 [f ]
-[; ;system.c: 22: OSCCONbits.SCS=0x1;
-"22
-[e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
-[; ;system.c: 23: OSCCONbits.IRCF=0x7;
-"23
-[e = . . _OSCCONbits 0 4 -> -> 7 `i `uc ]
-[; ;system.c: 26: OPTION_REGbits.T0CS = 0;
-"26
-[e = . . _OPTION_REGbits 0 3 -> -> 0 `i `uc ]
-[; ;system.c: 28: OPTION_REGbits.PSA = 0;
-"28
-[e = . . _OPTION_REGbits 0 1 -> -> 0 `i `uc ]
-[; ;system.c: 30: OPTION_REGbits.PS = 0x7;
-"30
-[e = . . _OPTION_REGbits 0 0 -> -> 7 `i `uc ]
-[; ;system.c: 35: while(OSCCONbits.HTS==0)
-"35
-[e $U 133  ]
-[e :U 134 ]
-[; ;system.c: 36: {
+[; ;system.c: 36: OSCCONbits.SCS=0x1;
 "36
-{
-[; ;system.c: 37: ;
-"38
-}
-[e :U 133 ]
-"35
-[e $ == -> . . _OSCCONbits 0 2 `i -> 0 `i 134  ]
-[e :U 135 ]
-[; ;system.c: 38: }
-[; ;system.c: 40: }
+[e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
+[; ;system.c: 37: OSCCONbits.IRCF=0x7;
+"37
+[e = . . _OSCCONbits 0 4 -> -> 7 `i `uc ]
+[; ;system.c: 40: while(OSCCONbits.HTS==0)
 "40
-[e :UE 132 ]
-}
-"43
-[v _initUart `(v ~T0 @X0 1 ef ]
-"44
+[e $U 134  ]
+[e :U 135 ]
+[; ;system.c: 41: {
+"41
 {
-[; ;system.c: 43: void initUart(void)
-[; ;system.c: 44: {
-[e :U _initUart ]
-[f ]
-[; ;system.c: 46: INTCONbits.GIE = 1;
-"46
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-[; ;system.c: 47: INTCONbits.PEIE =1;
-"47
-[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-[; ;system.c: 48: PIE1bits.RCIE =1;
+[; ;system.c: 42: ;
+"43
+}
+[e :U 134 ]
+"40
+[e $ == -> . . _OSCCONbits 0 2 `i -> 0 `i 135  ]
+[e :U 136 ]
+[; ;system.c: 43: }
+[; ;system.c: 45: }
+"45
+[e :UE 133 ]
+}
 "48
-[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
-[; ;system.c: 50: TXSTAbits.TXEN = 0;
+[v _system_init `(v ~T0 @X0 1 ef ]
+{
+[; ;system.c: 48: void system_init(void){
+[e :U _system_init ]
+[f ]
+[; ;system.c: 50: TRISA = 0x0;
 "50
-[e = . . _TXSTAbits 0 5 -> -> 0 `i `uc ]
-[; ;system.c: 54: SPBRG = (8000000UL/9600/64)-1;
-"54
-[e = _SPBRG -> - / / -> 8000000 `ul -> -> -> 9600 `i `l `ul -> -> -> 64 `i `l `ul -> -> -> 1 `i `l `ul `uc ]
-[; ;system.c: 56: SPBRGH = 0x00;
+[e = _TRISA -> -> 0 `i `uc ]
+[; ;system.c: 51: TRISB = 0x0;
+"51
+[e = _TRISB -> -> 0 `i `uc ]
+[; ;system.c: 52: TRISC = 0x0;
+"52
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;system.c: 55: PORTA = 0x00;
+"55
+[e = _PORTA -> -> 0 `i `uc ]
+[; ;system.c: 56: PORTB = 0x00;
 "56
-[e = _SPBRGH -> -> 0 `i `uc ]
-[; ;system.c: 58: ANSEL =0;
-"58
-[e = _ANSEL -> -> 0 `i `uc ]
-[; ;system.c: 59: ANSELH= 0;
-"59
-[e = _ANSELH -> -> 0 `i `uc ]
-[; ;system.c: 62: TRISBbits.TRISB5 = 1;
+[e = _PORTB -> -> 0 `i `uc ]
+[; ;system.c: 57: PORTC = 0x00;
+"57
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;system.c: 60: ConfigureOscillator();
+"60
+[e ( _ConfigureOscillator ..  ]
+[; ;system.c: 61: init_interrupt();
+"61
+[e ( _init_interrupt ..  ]
+[; ;system.c: 62: init_timer_0();
 "62
-[e = . . _TRISBbits 0 2 -> -> 1 `i `uc ]
-[; ;system.c: 63: TRISBbits.TRISB7 = 0;
-"63
-[e = . . _TRISBbits 0 4 -> -> 0 `i `uc ]
-[; ;system.c: 68: TXSTAbits.TX9 = 0;
+[e ( _init_timer_0 ..  ]
+[; ;system.c: 64: init_timer_2();
+"64
+[e ( _init_timer_2 ..  ]
+[; ;system.c: 65: initUart();
+"65
+[e ( _initUart ..  ]
+[; ;system.c: 67: _delay((unsigned long)((500)*(8000000UL/4000.0)));
+"67
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+[; ;system.c: 68: Lcd4_Init();
 "68
-[e = . . _TXSTAbits 0 6 -> -> 0 `i `uc ]
-[; ;system.c: 71: TXSTAbits.SYNC = 0;
-"71
-[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
-[; ;system.c: 72: TXREG = 0;
-"72
-[e = _TXREG -> -> 0 `i `uc ]
-[; ;system.c: 75: TXSTAbits.BRGH = 0;
-"75
-[e = . . _TXSTAbits 0 2 -> -> 0 `i `uc ]
-[; ;system.c: 76: BAUDCTLbits.BRG16 = 0;
-"76
-[e = . . _BAUDCTLbits 0 3 -> -> 0 `i `uc ]
-[; ;system.c: 78: BAUDCTLbits.ABDEN = 0;
-"78
-[e = . . _BAUDCTLbits 0 0 -> -> 0 `i `uc ]
-[; ;system.c: 83: TXSTAbits.TXEN = 1;
-"83
-[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
-[; ;system.c: 84: RCSTAbits.CREN = 1;
-"84
-[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
-[; ;system.c: 85: RCSTAbits.SPEN = 1;
-"85
-[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
-[; ;system.c: 88: }
-"88
-[e :UE 136 ]
+[e ( _Lcd4_Init ..  ]
+[; ;system.c: 69: }
+"69
+[e :UE 137 ]
 }
