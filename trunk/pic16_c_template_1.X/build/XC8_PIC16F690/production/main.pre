@@ -1978,15 +1978,85 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 
+# 27 "C:\CAE_tools\Microchip\xc8\v1.31\include\stdlib.h"
+typedef struct {
+int rem;
+int quot;
+} div_t;
+typedef struct {
+unsigned rem;
+unsigned quot;
+} udiv_t;
+typedef struct {
+long quot;
+long rem;
+} ldiv_t;
+typedef struct {
+unsigned long quot;
+unsigned long rem;
+} uldiv_t;
+
+# 65
+extern double atof(const char *);
+extern double strtod(const char *, const char **);
+extern int atoi(const char *);
+extern unsigned xtoi(const char *);
+extern long atol(const char *);
+extern long strtol(const char *, char **, int);
+
+extern int rand(void);
+extern void srand(unsigned int);
+extern void * calloc(size_t, size_t);
+extern div_t div(int numer, int denom);
+extern udiv_t udiv(unsigned numer, unsigned denom);
+extern ldiv_t ldiv(long numer, long denom);
+extern uldiv_t uldiv(unsigned long numer,unsigned long denom);
+extern unsigned long _lrotl(unsigned long value, unsigned int shift);
+extern unsigned long _lrotr(unsigned long value, unsigned int shift);
+extern unsigned int _rotl(unsigned int value, unsigned int shift);
+extern unsigned int _rotr(unsigned int value, unsigned int shift);
+
+
+
+
+extern void * malloc(size_t);
+extern void free(void *);
+extern void * realloc(void *, size_t);
+
+extern void abort(void);
+extern void exit(int);
+extern int atexit(void (*)(void));
+extern char * getenv(const char *);
+extern char ** environ;
+extern int system(char *);
+extern void qsort(void *, size_t, size_t, int (*)(const void *, const void *));
+extern void * bsearch(const void *, void *, size_t, size_t, int(*)(const void *, const void *));
+extern int abs(int);
+extern long labs(long);
+
+
+extern char * itoa(char * buf, int val, int base);
+extern char * utoa(char * buf, unsigned val, int base);
+
+
+
+
+extern char * ltoa(char * buf, long val, int base);
+extern char * ultoa(char * buf, unsigned long val, int base);
+
+extern char * ftoa(float f, int * status);
+
 # 47 "system.h"
 typedef enum {
 OK ,
+SIZEERR ,
 MISC_ERR
 
 } err_t;
 
-# 63
+# 64
 void ConfigureOscillator(void);
+void system_init(void);
 void initUart(void);
 
 # 11 "user.h"
@@ -1995,30 +2065,14 @@ void delay_ms(int delay_ms);
 void wait_1_sec(void);
 
 # 24 "uart.h"
+void initUart(void);
+
 void uart_putc(unsigned char data);
 void uart_printf(char * string);
 unsigned char uart_getc(void);
-char * uart_get_str(void);
-void __interrupt ISR(void);
+int uart_get_str(char * buffer);
 
 # 24 "LCD_screen.h"
-err_t test_screen_1L();
-err_t test_screen_2L();
-
-
-
-void Lcd8_Port(char a);
-void Lcd8_Cmd(char a);
-void Lcd8_Clear();
-void Lcd8_Set_Cursor(char a, char b);
-void Lcd8_Init();
-void Lcd8_Write_Char(char a);
-void Lcd8_Write_String(char *a);
-void Lcd8_Shift_Right();
-void Lcd8_Shift_Left();
-
-
-
 void Lcd4_Port(char a);
 void Lcd4_Cmd(char a);
 void Lcd4_Clear();
@@ -2029,66 +2083,55 @@ void Lcd4_Write_String(char *a);
 void Lcd4_Shift_Right();
 void Lcd4_Shift_Left();
 
-# 30 "main.c"
+# 26 "timer.h"
+void init_timer_0();
+void init_timer_1();
+void set_tick_period_timer1_us(unsigned period_us);
+void init_timer_2();
+
+# 24 "game_timer/header/game_timer.h"
+typedef enum {TIME_PER_GAME, TIME_PER_ROUND} game_type_t;
+
+typedef struct player_t
+{
+unsigned char player_number;
+unsigned int played_time;
+struct player_t * next_player;
+}player;
+
+# 40
+int initiate_game ( char player_nb,
+game_type_t type_of_game,
+unsigned int game_time);
+
+
+void game_phase();
+void switch_player();
+void display_player_nbr(unsigned char player_number);
+
+# 31 "main.c"
 void main(void)
 {
+system_init();
 
-
-
-
-ConfigureOscillator();
-
-initUart();
-
-
-
-
-TRISC = 0x0;
-PORTC = 0x0;
-
+initiate_game(3,TIME_PER_GAME,3670U);
 
 char * string;
+
 strcpy(string, "end of line\n");
 
-int j=1;
-
-TRISA = 0x0;
-TRISB = 0x0;
-TRISC = 0x0;
-
-PORTA = 0x00;
-PORTB = 0x00;
-PORTC = 0x00;
-
-_delay((unsigned long)((2000)*(8000000UL/4000.0)));
-
-Lcd4_Init();
-char character = 0x49;
-char address = 0x00;
-Lcd4_Cmd(0x08);
-Lcd4_Cmd(address);
-int i = 0;
-while(1){
 
 
+while(1)
+{
 
+uart_printf(string);
 
-Lcd4_Cmd(0x08);
-Lcd4_Cmd(address);
-_delay((unsigned long)((10)*(8000000UL/4000.0)));
-
-Lcd4_Write_String("salut");
 
 _delay((unsigned long)((500)*(8000000UL/4000.0)));
 
-for(i=0;i<15;i++){
-Lcd4_Shift_Right();
-_delay((unsigned long)((300)*(8000000UL/4000.0)));
+# 57
 }
 
-Lcd4_Clear();
-
-}
-
-# 94
+# 63
 }

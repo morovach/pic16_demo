@@ -21,8 +21,9 @@ extern "C" {
 
 #endif	/* UART_H */
 
+void initUart(void);
+
 void uart_putc(unsigned char data);
 void uart_printf(char * string);
 unsigned char uart_getc(void);
-char * uart_get_str(void);
-void __interrupt ISR(void);
+int uart_get_str(char * buffer);

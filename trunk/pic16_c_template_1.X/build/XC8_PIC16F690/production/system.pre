@@ -1971,33 +1971,79 @@ typedef unsigned char bool;
 # 47 "system.h"
 typedef enum {
 OK ,
+SIZEERR ,
 MISC_ERR
 
 } err_t;
 
-# 63
+# 64
 void ConfigureOscillator(void);
+void system_init(void);
 void initUart(void);
 
-# 25 "misc.h"
-int itoh(int n);
+# 24 "interrupt.h"
+void init_interrupt();
+void interrupt isr(void);
 
-# 18 "system.c"
+# 26 "timer.h"
+void init_timer_0();
+void init_timer_1();
+void set_tick_period_timer1_us(unsigned period_us);
+void init_timer_2();
+
+# 24 "uart.h"
+void initUart(void);
+
+void uart_putc(unsigned char data);
+void uart_printf(char * string);
+unsigned char uart_getc(void);
+int uart_get_str(char * buffer);
+
+# 24 "LCD_screen.h"
+void Lcd4_Port(char a);
+void Lcd4_Cmd(char a);
+void Lcd4_Clear();
+void Lcd4_Set_Cursor(char a, char b);
+void Lcd4_Init();
+void Lcd4_Write_Char(char a);
+void Lcd4_Write_String(char *a);
+void Lcd4_Shift_Right();
+void Lcd4_Shift_Left();
+
+# 24 "game_timer/header/game_timer.h"
+typedef enum {TIME_PER_GAME, TIME_PER_ROUND} game_type_t;
+
+typedef struct player_t
+{
+unsigned char player_number;
+unsigned int played_time;
+struct player_t * next_player;
+}player;
+
+# 40
+int initiate_game ( char player_nb,
+game_type_t type_of_game,
+unsigned int game_time);
+
+
+void game_phase();
+void switch_player();
+void display_player_nbr(unsigned char player_number);
+
+# 24 "system.c"
+char glog_level = 1;
+game_type_t gtype_of_game = TIME_PER_ROUND;
+unsigned int ggame_time = 0;
+player * gcurrent_player;
+player player_array[10];
+
+# 32
 void ConfigureOscillator(void)
 {
 
 
 OSCCONbits.SCS=0x1;
 OSCCONbits.IRCF=0x7;
-
-
-OPTION_REGbits.T0CS = 0;
-
-OPTION_REGbits.PSA = 0;
-
-OPTION_REGbits.PS = 0x7;
-
-
 
 
 while(OSCCONbits.HTS==0)
@@ -2008,49 +2054,25 @@ while(OSCCONbits.HTS==0)
 }
 
 
-void initUart(void)
-{
+void system_init(void){
 
-INTCONbits.GIE = 1;
-INTCONbits.PEIE =1;
-PIE1bits.RCIE =1;
-
-TXSTAbits.TXEN = 0;
+TRISA = 0x0;
+TRISB = 0x0;
+TRISC = 0x0;
 
 
-
-SPBRG = (8000000UL/9600/64)-1;
-
-SPBRGH = 0x00;
-
-ANSEL =0;
-ANSELH= 0;
+PORTA = 0x00;
+PORTB = 0x00;
+PORTC = 0x00;
 
 
-TRISBbits.TRISB5 = 1;
-TRISBbits.TRISB7 = 0;
+ConfigureOscillator();
+init_interrupt();
+init_timer_0();
 
+init_timer_2();
+initUart();
 
-
-
-TXSTAbits.TX9 = 0;
-
-
-TXSTAbits.SYNC = 0;
-TXREG = 0;
-
-
-TXSTAbits.BRGH = 0;
-BAUDCTLbits.BRG16 = 0;
-
-BAUDCTLbits.ABDEN = 0;
-
-
-
-
-TXSTAbits.TXEN = 1;
-RCSTAbits.CREN = 1;
-RCSTAbits.SPEN = 1;
-
-
+_delay((unsigned long)((500)*(8000000UL/4000.0)));
+Lcd4_Init();
 }

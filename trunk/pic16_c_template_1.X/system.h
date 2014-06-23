@@ -42,10 +42,11 @@
 
 
 /******************************************************************************/
-/* System scruture definition                                                 */
+/* System structure definition                                                 */
 /******************************************************************************/
 typedef enum {
     OK      ,
+    SIZEERR ,
     MISC_ERR
 
 }  err_t;
@@ -61,4 +62,16 @@ functions, and other non-peripheral microcontroller initialization functions
 go here. */
 
 void ConfigureOscillator(void); /* Handles clock switching/osc initialization */
+void system_init(void);
 void initUart(void);
+
+/******************************************************************************/
+/*custom define                                                               */
+/******************************************************************************/
+#define DBG_LVL 0
+#define INFO_LVL 1
+#define ALARM_LVL 2
+
+/******************************************************************************/
+/* Global varriable instanciation                                             */
+/******************************************************************************/
