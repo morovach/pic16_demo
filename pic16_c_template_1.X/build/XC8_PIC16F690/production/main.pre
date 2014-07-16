@@ -1,13 +1,13 @@
 
 # 1 "main.c"
 
-# 21 "C:\CAE_tools\Microchip\xc8\v1.31\include\htc.h"
+# 21 "D:\CAE_Tools\Microchip\xc8\v1.32\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 47 "C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h"
+# 47 "D:\CAE_Tools\Microchip\xc8\v1.32\include\pic16f690.h"
 extern volatile unsigned char INDF @ 0x000;
 
 asm("INDF equ 00h");
@@ -1857,25 +1857,25 @@ extern volatile __bit nW @ (((unsigned) &SSPSTAT)*8) + 2;
 extern volatile __bit nWRITE @ (((unsigned) &SSPSTAT)*8) + 2;
 
 
-# 27 "C:\CAE_tools\Microchip\xc8\v1.31\include\pic.h"
+# 27 "D:\CAE_Tools\Microchip\xc8\v1.32\include\pic.h"
 #pragma intrinsic(__nop)
 extern void __nop(void);
 
 # 80
 extern unsigned int flash_read(unsigned short addr);
 
-# 41 "C:\CAE_tools\Microchip\xc8\v1.31\include\eeprom_routines.h"
+# 41 "D:\CAE_Tools\Microchip\xc8\v1.32\include\eeprom_routines.h"
 extern void eeprom_write(unsigned char addr, unsigned char value);
 extern unsigned char eeprom_read(unsigned char addr);
 extern void eecpymem(volatile unsigned char *to, __eeprom unsigned char *from, unsigned char size);
 extern void memcpyee(__eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 
 
-# 153 "C:\CAE_tools\Microchip\xc8\v1.31\include\pic.h"
+# 153 "D:\CAE_Tools\Microchip\xc8\v1.32\include\pic.h"
 #pragma intrinsic(_delay)
 extern __nonreentrant void _delay(unsigned long);
 
-# 4 "C:\CAE_tools\Microchip\xc8\v1.31\include\string.h"
+# 4 "D:\CAE_Tools\Microchip\xc8\v1.32\include\string.h"
 typedef int ptrdiff_t;
 typedef unsigned size_t;
 typedef unsigned short wchar_t;
@@ -1888,7 +1888,7 @@ extern void * memcpy(void *, const void *, size_t);
 extern void * memmove(void *, const void *, size_t);
 extern void * memset(void *, int, size_t);
 
-# 35
+# 42
 extern char * strcat(char *, const char *);
 extern char * strcpy(char *, const char *);
 extern char * strncat(char *, const char *, size_t);
@@ -1915,7 +1915,7 @@ extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
 
-# 7 "C:\CAE_tools\Microchip\xc8\v1.31\include\stdarg.h"
+# 7 "D:\CAE_Tools\Microchip\xc8\v1.32\include\stdarg.h"
 typedef void * va_list[1];
 
 #pragma intrinsic(__va_start)
@@ -1924,7 +1924,7 @@ extern void * __va_start(void);
 #pragma intrinsic(__va_arg)
 extern void * __va_arg(void *, ...);
 
-# 23 "C:\CAE_tools\Microchip\xc8\v1.31\include\stdio.h"
+# 23 "D:\CAE_Tools\Microchip\xc8\v1.32\include\stdio.h"
 extern int errno;
 
 # 54
@@ -1934,7 +1934,7 @@ char * ptr;
 void (* func)(char);
 };
 
-# 17 "C:\CAE_tools\Microchip\xc8\v1.31\include\conio.h"
+# 17 "D:\CAE_Tools\Microchip\xc8\v1.32\include\conio.h"
 extern int errno;
 
 
@@ -1951,7 +1951,7 @@ extern __bit kbhit(void);
 extern char * cgets(char *);
 extern void cputs(const char *);
 
-# 99 "C:\CAE_tools\Microchip\xc8\v1.31\include\stdio.h"
+# 99 "D:\CAE_Tools\Microchip\xc8\v1.32\include\stdio.h"
 extern int cprintf(char *, ...);
 #pragma printf_check(cprintf)
 
@@ -1978,7 +1978,7 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 
-# 27 "C:\CAE_tools\Microchip\xc8\v1.31\include\stdlib.h"
+# 27 "D:\CAE_Tools\Microchip\xc8\v1.32\include\stdlib.h"
 typedef struct {
 int rem;
 int quot;
@@ -2046,7 +2046,7 @@ extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
 
-# 47 "system.h"
+# 22 "system.h"
 typedef enum {
 OK ,
 SIZEERR ,
@@ -2054,7 +2054,7 @@ MISC_ERR
 
 } err_t;
 
-# 64
+# 39
 void ConfigureOscillator(void);
 void system_init(void);
 void initUart(void);
@@ -2113,25 +2113,10 @@ void display_player_nbr(unsigned char player_number);
 void main(void)
 {
 system_init();
-
-initiate_game(3,TIME_PER_GAME,3670U);
-
-char * string;
-
-strcpy(string, "end of line\n");
-
-
+initiate_game(2,TIME_PER_GAME,900U);
 
 while(1)
 {
-
-uart_printf(string);
-
-
-_delay((unsigned long)((500)*(8000000UL/4000.0)));
-
-# 57
+;
 }
-
-# 63
 }

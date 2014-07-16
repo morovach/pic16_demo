@@ -23,7 +23,7 @@
     </conf>
     <conf name="XC8_PIC16F54" type="2">
       <platformToolSN></platformToolSN>
-      <languageToolchainDir>C:\CAE_tools\Microchip\xc8\v1.31\bin</languageToolchainDir>
+      <languageToolchainDir>D:\CAE_Tools\Microchip\xc8\v1.32\bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>
@@ -59,7 +59,7 @@
     </conf>
     <conf name="XC8_PIC16F785" type="2">
       <platformToolSN></platformToolSN>
-      <languageToolchainDir>C:\CAE_tools\Microchip\xc8\v1.31\bin</languageToolchainDir>
+      <languageToolchainDir>D:\CAE_Tools\Microchip\xc8\v1.32\bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>
@@ -95,7 +95,7 @@
     </conf>
     <conf name="XC8_PIC16F690" type="2">
       <platformToolSN></platformToolSN>
-      <languageToolchainDir>C:\CAE_tools\Microchip\xc8\v1.31\bin</languageToolchainDir>
+      <languageToolchainDir>D:\CAE_Tools\Microchip\xc8\v1.32\bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>
@@ -131,7 +131,7 @@
     </conf>
     <conf name="XC8_PIC16F1947" type="2">
       <platformToolSN></platformToolSN>
-      <languageToolchainDir>C:\CAE_tools\Microchip\xc8\v1.31\bin</languageToolchainDir>
+      <languageToolchainDir>D:\CAE_Tools\Microchip\xc8\v1.32\bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>
@@ -167,7 +167,7 @@
     </conf>
     <conf name="XC8_PIC16F1827" type="2">
       <platformToolSN></platformToolSN>
-      <languageToolchainDir>C:\CAE_tools\Microchip\xc8\v1.31\bin</languageToolchainDir>
+      <languageToolchainDir>D:\CAE_Tools\Microchip\xc8\v1.32\bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>

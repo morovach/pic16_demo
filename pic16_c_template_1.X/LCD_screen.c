@@ -57,7 +57,6 @@ void Lcd4_Set_Cursor(char ligne, char pixel_nb)
 void Lcd4_Init()
 {
 
-    RW = 0;
     RS = 0;
 
     __delay_ms(10);
@@ -83,6 +82,7 @@ void Lcd4_Init()
 
 void Lcd4_Write_Char(char a)
 {
+    __delay_ms(10);
    char temp,y;
    temp = a&0x0F;
    y = a&0xF0;
@@ -103,7 +103,7 @@ void Lcd4_Write_String(char *a)
 	int i;
 	for(i=0;a[i]!='\0';i++)
 	 Lcd4_Write_Char(a[i]);
-        LOG(a,0);
+        //LOG(a,0);
 }
 
 void Lcd4_Shift_Right()

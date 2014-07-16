@@ -5,5 +5,6 @@ timer.h  \
 LCD_screen.h  \
 game_timer/header/game_timer.h  \
 uart.h  \
+system.h  \
 interrupt.h  \
 misc.h 

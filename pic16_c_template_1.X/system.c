@@ -47,7 +47,11 @@ void ConfigureOscillator(void)
 
 void system_init(void){
     //Set all ports to be output
-    TRISA = 0x0;
+    //RA0 is an input
+    RABIE = 0x1;
+    TRISA = 0x1;
+    //Interrupt on RA0
+    IOCA0 = 1;
     TRISB = 0x0;
     TRISC = 0x0;
 

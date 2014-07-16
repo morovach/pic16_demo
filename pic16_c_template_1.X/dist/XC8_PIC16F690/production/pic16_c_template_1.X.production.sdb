@@ -3,23 +3,7 @@
 [d edition pro ]
 [d chip 16F690 ]
 [d frameptr 6 ]
-"35 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\main.c
-[e E1776 . `uc
-TIME_PER_GAME 0
-TIME_PER_ROUND 1
-]
-"25 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c
-[e E1533 . `uc
-TIME_PER_GAME 0
-TIME_PER_ROUND 1
-]
-"105 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c
-[e E1618 . `uc
-OK 0
-SIZEERR 1
-MISC_ERR 2
-]
-"11 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c
+"11 D:\travail\divers\pic\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c
 [e E271 . `uc
 TIME_PER_GAME 0
 TIME_PER_ROUND 1
@@ -30,94 +14,109 @@ OK 0
 SIZEERR 1
 MISC_ERR 2
 ]
-"4 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\abdiv.c
+"34 D:\travail\divers\pic\trunk\pic16_c_template_1.X\main.c
+[e E1776 . `uc
+TIME_PER_GAME 0
+TIME_PER_ROUND 1
+]
+"25 D:\travail\divers\pic\trunk\pic16_c_template_1.X\system.c
+[e E1533 . `uc
+TIME_PER_GAME 0
+TIME_PER_ROUND 1
+]
+"105 D:\travail\divers\pic\trunk\pic16_c_template_1.X\UART.c
+[e E1618 . `uc
+OK 0
+SIZEERR 1
+MISC_ERR 2
+]
+"4 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\abdiv.c
 [v ___abdiv __abdiv `(c  1 e 1 0 ]
-"4 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\abmod.c
+"4 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\abmod.c
 [v ___abmod __abmod `(c  1 e 1 0 ]
-"33 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\abtoft.c
+"33 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\abtoft.c
 [v ___abtoft __abtoft `(f  1 e 3 0 ]
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\aldiv.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
-"5 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\almod.c
+"5 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\almod.c
 [v ___almod __almod `(l  1 e 4 0 ]
-"42 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\altoft.c
+"42 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\altoft.c
 [v ___altoft __altoft `(f  1 e 3 0 ]
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\atdiv.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\atdiv.c
 [v ___atdiv __atdiv `(m  1 e 3 0 ]
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\atmod.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\atmod.c
 [v ___atmod __atmod `(m  1 e 3 0 ]
-"37 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\attoft.c
+"37 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\attoft.c
 [v ___attoft __attoft `(f  1 e 3 0 ]
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
 [v i1___awmod __awmod `(i  1 e 2 0 ]
-"32 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awtoft.c
+"32 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\awtoft.c
 [v ___awtoft __awtoft `(f  1 e 3 0 ]
-"4 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\bmul.c
-[v ___bmul __bmul `(uc  1 e 1 0 ]
-"62 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\float.c
+"62 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
-"86 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\ftadd.c
+"86 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"4 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\ftge.c
+"4 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\ftge.c
 [v ___ftge __ftge `(b  1 e 0 0 ]
-"51 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\ftmul.c
+"62 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 3 0 ]
-"15 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\ftneg.c
+"15 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\ftneg.c
 [v ___ftneg __ftneg `(f  1 e 3 0 ]
-"18 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\ftsub.c
+"18 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
-"44 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\fttol.c
+"44 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\fttol.c
 [v ___fttol __fttol `(l  1 e 4 0 ]
-"4 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c
+"4 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\itoa.c
 [v _itoa itoa `(*.1uc  1 e 1 0 ]
 "17
 [v _utoa utoa `(*.4uc  1 e 1 0 ]
 [v i1_utoa utoa `(*.1uc  1 e 1 0 ]
-"4 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lbdiv.c
+"4 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lbdiv.c
 [v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
-"4 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lbmod.c
+"4 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lbmod.c
 [v ___lbmod __lbmod `(uc  1 e 1 0 ]
-"27 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lbtoft.c
+"27 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lbtoft.c
 [v ___lbtoft __lbtoft `(f  1 e 3 0 ]
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lldiv.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\llmod.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\llmod.c
 [v ___llmod __llmod `(ul  1 e 4 0 ]
-"35 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lltoft.c
+"35 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lltoft.c
 [v ___lltoft __lltoft `(f  1 e 3 0 ]
-"9 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lmul.c
-[v ___lmul __lmul `(ul  1 e 4 0 ]
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\ltdiv.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\ltdiv.c
 [v ___ltdiv __ltdiv `(um  1 e 3 0 ]
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\ltmod.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\ltmod.c
 [v ___ltmod __ltmod `(um  1 e 3 0 ]
-"30 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lttoft.c
+"30 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lttoft.c
 [v ___lttoft __lttoft `(f  1 e 3 0 ]
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 [v i1___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 [v i1___lwmod __lwmod `(ui  1 e 2 0 ]
-"28 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwtoft.c
+"28 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lwtoft.c
 [v ___lwtoft __lwtoft `(f  1 e 3 0 ]
-"8 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c
+"8 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\strcat.c
 [v _strcat strcat `(*.4uc  1 e 1 0 ]
 [v i1_strcat strcat `(*.1uc  1 e 1 0 ]
-"8 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c
+"8 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\strcpy.c
 [v _strcpy strcpy `(*.4uc  1 e 1 0 ]
 [v i1_strcpy strcpy `(*.1uc  1 e 1 0 ]
-"4 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c
+"4 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
-[v i1_strlen strlen `(ui  1 e 2 0 ]
-"9 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\tmul.c
-[v ___tmul __tmul `(um  1 e 3 0 ]
-"3 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\wmul.c
+"15 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\pic\eeprom.c
+"15 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\pic\eeprom.c
 [v _eecpymem eecpymem `(v  1 e 0 0 ]
 "24
 [v _memcpyee memcpyee `(v  1 e 0 0 ]
@@ -145,22 +144,22 @@ MISC_ERR 2
 [v ___fttoee __fttoee `(f  1 e 3 0 ]
 "131
 [v ___fltoee __fltoee `(d  1 e 3 0 ]
-"49 C:\CAE_tools\Microchip\xc8\v1.31\sources\pic\ftdiv.c
+"49 D:\CAE_Tools\Microchip\xc8\v1.32\sources\pic\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"9 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c
+"9 D:\travail\divers\pic\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c
 [v _initiate_game initiate_game `(i  1 e 2 0 ]
 "36
 [v _game_phase game_phase `(v  1 e 0 0 ]
 "49
 [v _switch_player switch_player `(v  1 e 0 0 ]
-"56
+"61
 [v _display_player_nbr display_player_nbr `(v  1 e 0 0 ]
 [v i1_display_player_nbr display_player_nbr `(v  1 e 0 0 ]
-"36 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c
+"37 D:\travail\divers\pic\trunk\pic16_c_template_1.X\interrupts.c
 [v _init_interrupt init_interrupt `(v  1 e 0 0 ]
-"42
+"43
 [v _isr isr `II(v  1 e 0 0 ]
-"11 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c
+"11 D:\travail\divers\pic\trunk\pic16_c_template_1.X\LCD_screen.c
 [v _Lcd4_Port Lcd4_Port `(v  1 e 0 0 ]
 [v i1_Lcd4_Port Lcd4_Port `(v  1 e 0 0 ]
 "33
@@ -173,7 +172,7 @@ MISC_ERR 2
 [v i1_Lcd4_Set_Cursor Lcd4_Set_Cursor `(v  1 e 0 0 ]
 "57
 [v _Lcd4_Init Lcd4_Init `(v  1 e 0 0 ]
-"84
+"83
 [v _Lcd4_Write_Char Lcd4_Write_Char `(v  1 e 0 0 ]
 [v i1_Lcd4_Write_Char Lcd4_Write_Char `(v  1 e 0 0 ]
 "101
@@ -183,18 +182,17 @@ MISC_ERR 2
 [v _Lcd4_Shift_Right Lcd4_Shift_Right `(v  1 e 0 0 ]
 "115
 [v _Lcd4_Shift_Left Lcd4_Shift_Left `(v  1 e 0 0 ]
-"31 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\main.c
+"31 D:\travail\divers\pic\trunk\pic16_c_template_1.X\main.c
 [v _main main `(v  1 e 0 0 ]
-"24 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c
+"24 D:\travail\divers\pic\trunk\pic16_c_template_1.X\misc.c
 [v _time_shapping time_shapping `(v  1 e 0 0 ]
 "65
 [v _LOG LOG `(v  1 e 0 0 ]
-[v i1_LOG LOG `(v  1 e 0 0 ]
-"32 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c
+"32 D:\travail\divers\pic\trunk\pic16_c_template_1.X\system.c
 [v _ConfigureOscillator ConfigureOscillator `(v  1 e 0 0 ]
 "48
 [v _system_init system_init `(v  1 e 0 0 ]
-"10 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c
+"10 D:\travail\divers\pic\trunk\pic16_c_template_1.X\timer.c
 [v _init_timer_0 init_timer_0 `(v  1 e 0 0 ]
 "20
 [v _init_timer_1 init_timer_1 `(v  1 e 0 0 ]
@@ -202,25 +200,23 @@ MISC_ERR 2
 [v _set_tick_period_timer1_us set_tick_period_timer1_us `(v  1 e 0 0 ]
 "57
 [v _init_timer_2 init_timer_2 `(v  1 e 0 0 ]
-"25 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c
+"25 D:\travail\divers\pic\trunk\pic16_c_template_1.X\UART.c
 [v _initUart initUart `(v  1 e 0 0 ]
 "69
 [v _uart_putc uart_putc `(v  1 e 0 0 ]
-[v i1_uart_putc uart_putc `(v  1 e 0 0 ]
 "77
 [v _uart_printf uart_printf `(v  1 e 0 0 ]
-[v i1_uart_printf uart_printf `(v  1 e 0 0 ]
 "84
 [v _uart_getc uart_getc `(uc  1 e 1 0 ]
 "95
 [v _uart_get_str uart_get_str `(i  1 e 2 0 ]
-"24 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\user.c
+"24 D:\travail\divers\pic\trunk\pic16_c_template_1.X\user.c
 [v _wait_1_ms wait_1_ms `(v  1 e 0 0 ]
 "33
 [v _delay_ms delay_ms `(v  1 e 0 0 ]
 "41
 [v _wait_1_sec wait_1_sec `(v  1 e 0 0 ]
-"53 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+"53 D:\CAE_Tools\Microchip\xc8\v1.32\include\pic16f690.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
 "158
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
@@ -228,7 +224,7 @@ MISC_ERR 2
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
 "245
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
-[s S19 . 1 `uc 1 RABIF 1 0 :1:0 
+[s S99 . 1 `uc 1 RABIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 RABIE 1 0 :1:3 
@@ -238,9 +234,9 @@ MISC_ERR 2
 `uc 1 GIE 1 0 :1:7 
 ]
 "329
-[u S28 . 1 `S19 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES28  1 e 1 @11 ]
-[s S40 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S108 . 1 `S99 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES108  1 e 1 @11 ]
+[s S120 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -249,14 +245,14 @@ MISC_ERR 2
 `uc 1 ADIF 1 0 :1:6 
 ]
 "393
-[s S48 . 1 `uc 1 T1IF 1 0 :1:0 
+[s S128 . 1 `uc 1 T1IF 1 0 :1:0 
 `uc 1 T2IF 1 0 :1:1 
 ]
-[u S51 . 1 `S40 1 . 1 0 `S48 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES51  1 e 1 @12 ]
+[u S131 . 1 `S120 1 . 1 0 `S128 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES131  1 e 1 @12 ]
 "480
 [v _TMR1 TMR1 `VEus  1 e 2 @14 ]
-[s S500 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S547 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 TMR1CS 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
 `uc 1 T1OSCEN 1 0 :1:3 
@@ -265,18 +261,18 @@ MISC_ERR 2
 `uc 1 T1GINV 1 0 :1:7 
 ]
 "519
-[s S508 . 1 `uc 1 . 1 0 :4:0 
+[s S555 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 T1CKPS0 1 0 :1:4 
 `uc 1 T1CKPS1 1 0 :1:5 
 ]
-[u S512 . 1 `S500 1 . 1 0 `S508 1 . 1 0 ]
-[v _T1CONbits T1CONbits `VES512  1 e 1 @16 ]
-[s S546 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[u S559 . 1 `S547 1 . 1 0 `S555 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES559  1 e 1 @16 ]
+[s S593 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 TOUTPS 1 0 :4:3 
 ]
 "595
-[s S550 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S597 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 TOUTPS0 1 0 :1:3 
@@ -284,15 +280,15 @@ MISC_ERR 2
 `uc 1 TOUTPS2 1 0 :1:5 
 `uc 1 TOUTPS3 1 0 :1:6 
 ]
-[u S558 . 1 `S546 1 . 1 0 `S550 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES558  1 e 1 @18 ]
+[u S605 . 1 `S593 1 . 1 0 `S597 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES605  1 e 1 @18 ]
 "835
-[v _RCSTAbits RCSTAbits `VES28  1 e 1 @24 ]
+[v _RCSTAbits RCSTAbits `VES108  1 e 1 @24 ]
 "879
 [v _TXREG TXREG `VEuc  1 e 1 @25 ]
 "885
 [v _RCREG RCREG `VEuc  1 e 1 @26 ]
-[s S474 . 1 `uc 1 PS 1 0 :3:0 
+[s S521 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -300,46 +296,46 @@ MISC_ERR 2
 `uc 1 nRABPU 1 0 :1:7 
 ]
 "1161
-[s S481 . 1 `uc 1 PS0 1 0 :1:0 
+[s S528 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 ]
-[u S485 . 1 `S474 1 . 1 0 `S481 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES485  1 e 1 @129 ]
+[u S532 . 1 `S521 1 . 1 0 `S528 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES532  1 e 1 @129 ]
 "1210
 [v _TRISA TRISA `VEuc  1 e 1 @133 ]
 "1259
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
-[s S345 . 1 `uc 1 . 1 0 :4:0 
+[s S390 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TRISB4 1 0 :1:4 
 `uc 1 TRISB5 1 0 :1:5 
 `uc 1 TRISB6 1 0 :1:6 
 `uc 1 TRISB7 1 0 :1:7 
 ]
 "1273
-[u S351 . 1 `S345 1 . 1 0 ]
-[v _TRISBbits TRISBbits `VES351  1 e 1 @134 ]
+[u S396 . 1 `S390 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES396  1 e 1 @134 ]
 "1297
 [v _TRISC TRISC `VEuc  1 e 1 @135 ]
 "1378
-[v _PIE1bits PIE1bits `VES51  1 e 1 @140 ]
-[s S202 . 1 `uc 1 SCS 1 0 :1:0 
+[v _PIE1bits PIE1bits `VES131  1 e 1 @140 ]
+[s S238 . 1 `uc 1 SCS 1 0 :1:0 
 `uc 1 LTS 1 0 :1:1 
 `uc 1 HTS 1 0 :1:2 
 `uc 1 OSTS 1 0 :1:3 
 `uc 1 IRCF 1 0 :3:4 
 ]
 "1523
-[s S208 . 1 `uc 1 . 1 0 :4:0 
+[s S244 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 IRCF0 1 0 :1:4 
 `uc 1 IRCF1 1 0 :1:5 
 `uc 1 IRCF2 1 0 :1:6 
 ]
-[u S213 . 1 `S202 1 . 1 0 `S208 1 . 1 0 ]
-[v _OSCCONbits OSCCONbits `VES213  1 e 1 @143 ]
+[u S249 . 1 `S238 1 . 1 0 `S244 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES249  1 e 1 @143 ]
 "1618
 [v _PR2 PR2 `VEuc  1 e 1 @146 ]
-[s S313 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S358 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -349,17 +345,17 @@ MISC_ERR 2
 `uc 1 CSRC 1 0 :1:7 
 ]
 "2318
-[s S322 . 1 `uc 1 . 1 0 :3:0 
+[s S367 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 SENB 1 0 :1:3 
 ]
-[u S325 . 1 `S313 1 . 1 0 `S322 1 . 1 0 ]
-[v _TXSTAbits TXSTAbits `VES325  1 e 1 @152 ]
+[u S370 . 1 `S358 1 . 1 0 `S367 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES370  1 e 1 @152 ]
 "2367
 [v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
 "2428
 [v _SPBRGH SPBRGH `VEuc  1 e 1 @154 ]
 "2506
-[v _BAUDCTLbits BAUDCTLbits `VES28  1 e 1 @155 ]
+[v _BAUDCTLbits BAUDCTLbits `VES108  1 e 1 @155 ]
 "2592
 [v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
 "2598
@@ -376,10 +372,16 @@ MISC_ERR 2
 [v _CARRY CARRY `VEb  1 e 0 @24 ]
 "3378
 [v _GIE GIE `VEb  1 e 0 @95 ]
+"3414
+[v _IOCA0 IOCA0 `VEb  1 e 0 @1200 ]
+"3514
+[v _RA0 RA0 `VEb  1 e 0 @40 ]
 "3518
 [v _RA2 RA2 `VEb  1 e 0 @42 ]
-"3524
-[v _RA5 RA5 `VEb  1 e 0 @45 ]
+"3526
+[v _RABIE RABIE `VEb  1 e 0 @91 ]
+"3528
+[v _RABIF RABIF `VEb  1 e 0 @88 ]
 "3530
 [v _RB4 RB4 `VEb  1 e 0 @52 ]
 "3534
@@ -408,36 +410,34 @@ MISC_ERR 2
 [v _WR WR `VEb  1 e 0 @3169 ]
 "3796
 [v _WREN WREN `VEb  1 e 0 @3170 ]
-"32 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c
+"33 D:\travail\divers\pic\trunk\pic16_c_template_1.X\interrupts.c
 [v _timer1_tick_nbr timer1_tick_nbr `i  1 e 2 0 ]
-"33
-[v _timer2_tick_nbr timer2_tick_nbr `i  1 e 2 0 ]
 "34
+[v _timer2_tick_nbr timer2_tick_nbr `i  1 e 2 0 ]
+"35
 [v _elapsed_time elapsed_time `ui  1 e 2 0 ]
-"24 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c
+"24 D:\travail\divers\pic\trunk\pic16_c_template_1.X\system.c
 [v _glog_level glog_level `uc  1 e 1 0 ]
 "25
-[v _gtype_of_game gtype_of_game `E1533  1 e 1 0 ]
+[v _gtype_of_game gtype_of_game `E271  1 e 1 0 ]
 "26
 [v _ggame_time ggame_time `ui  1 e 2 0 ]
 "27
-[s S198 player_t 4 `uc 1 player_number 1 0 `ui 1 played_time 2 1 `*.5S198 1 next_player 1 3 ]
-[v _gcurrent_player gcurrent_player `*.5S198  1 e 1 0 ]
+[s S22 player_t 4 `uc 1 player_number 1 0 `ui 1 played_time 2 1 `*.5S22 1 next_player 1 3 ]
+[v _gcurrent_player gcurrent_player `*.5S22  1 e 1 0 ]
 "28
-[v _player_array player_array `[10]S198  1 e 40 0 ]
-"31 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\main.c
+[v _player_array player_array `[10]S22  1 e 40 0 ]
+"31 D:\travail\divers\pic\trunk\pic16_c_template_1.X\main.c
 [v _main main `(v  1 e 0 0 ]
 {
-"37
-[v main@string string `*.1uc  1 a 1 53 ]
-"63
+"40
 } 0
-"48 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c
+"48 D:\travail\divers\pic\trunk\pic16_c_template_1.X\system.c
 [v _system_init system_init `(v  1 e 0 0 ]
 {
-"69
+"73
 } 0
-"57 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c
+"57 D:\travail\divers\pic\trunk\pic16_c_template_1.X\timer.c
 [v _init_timer_2 init_timer_2 `(v  1 e 0 0 ]
 {
 "73
@@ -447,62 +447,62 @@ MISC_ERR 2
 {
 "18
 } 0
-"36 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c
+"37 D:\travail\divers\pic\trunk\pic16_c_template_1.X\interrupts.c
 [v _init_interrupt init_interrupt `(v  1 e 0 0 ]
 {
-"40
+"41
 } 0
-"25 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c
+"25 D:\travail\divers\pic\trunk\pic16_c_template_1.X\UART.c
 [v _initUart initUart `(v  1 e 0 0 ]
 {
 "66
 } 0
-"57 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c
+"57 D:\travail\divers\pic\trunk\pic16_c_template_1.X\LCD_screen.c
 [v _Lcd4_Init Lcd4_Init `(v  1 e 0 0 ]
 {
-"82
+"81
 } 0
 "42
 [v _Lcd4_Clear Lcd4_Clear `(i  1 e 2 0 ]
 {
 "46
 } 0
-"32 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\system.c
+"32 D:\travail\divers\pic\trunk\pic16_c_template_1.X\system.c
 [v _ConfigureOscillator ConfigureOscillator `(v  1 e 0 0 ]
 {
 "45
 } 0
-"9 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c
+"9 D:\travail\divers\pic\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c
 [v _initiate_game initiate_game `(i  1 e 2 0 ]
 {
 [v initiate_game@player_nb player_nb `uc  1 a 1 wreg ]
 "20
-[v initiate_game@i i `i  1 a 2 48 ]
+[v initiate_game@i i `i  1 a 2 47 ]
 "9
 [v initiate_game@player_nb player_nb `uc  1 a 1 wreg ]
 "10
-[v initiate_game@type_of_game type_of_game `E271  1 p 1 39 ]
+[v initiate_game@type_of_game type_of_game `E271  1 p 1 38 ]
 "11
-[v initiate_game@game_time game_time `ui  1 p 2 40 ]
+[v initiate_game@game_time game_time `ui  1 p 2 39 ]
 "20
-[v initiate_game@player_nb player_nb `uc  1 a 1 47 ]
+[v initiate_game@player_nb player_nb `uc  1 a 1 46 ]
 "34
 } 0
-"56
+"61
 [v _display_player_nbr display_player_nbr `(v  1 e 0 0 ]
 {
 [v display_player_nbr@player_number player_number `uc  1 a 1 wreg ]
-"58
-[v display_player_nbr@string string `[16]uc  1 a 16 20 ]
-"59
-[v display_player_nbr@string_player_number string_player_number `[2]uc  1 a 2 37 ]
-"56
+"63
+[v display_player_nbr@string string `[16]uc  1 a 16 19 ]
+"64
+[v display_player_nbr@string_player_number string_player_number `[2]uc  1 a 2 36 ]
+"61
 [v display_player_nbr@player_number player_number `uc  1 a 1 wreg ]
-"60
-[v display_player_nbr@player_number player_number `uc  1 a 1 36 ]
-"66
+"65
+[v display_player_nbr@player_number player_number `uc  1 a 1 35 ]
+"71
 } 0
-"17 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c
+"17 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\itoa.c
 [v _utoa utoa `(*.4uc  1 e 1 0 ]
 {
 [v utoa@buf buf `*.4uc  1 a 1 wreg ]
@@ -518,7 +518,7 @@ MISC_ERR 2
 [v utoa@buf buf `*.4uc  1 a 1 16 ]
 "37
 } 0
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 {
 "11
@@ -528,32 +528,32 @@ MISC_ERR 2
 [v ___lwmod@dividend dividend `ui  1 p 2 2 ]
 "26
 } 0
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "11
-[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+[v ___lwdiv@quotient quotient `ui  1 a 2 6 ]
 "12
-[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+[v ___lwdiv@counter counter `uc  1 a 1 5 ]
 "6
 [v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
 [v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
 "31
 } 0
-"8 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c
+"8 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\strcpy.c
 [v _strcpy strcpy `(*.4uc  1 e 1 0 ]
 {
 [v strcpy@to to `*.4uc  1 a 1 wreg ]
 "15
-[v strcpy@cp cp `*.4uc  1 a 1 2 ]
+[v strcpy@cp cp `*.4uc  1 a 1 3 ]
 "8
 [v strcpy@to to `*.4uc  1 a 1 wreg ]
 [v strcpy@from from `*.24DCCuc  1 p 1 0 ]
 "18
-[v strcpy@to to `*.4uc  1 a 1 3 ]
+[v strcpy@to to `*.4uc  1 a 1 2 ]
 "24
 } 0
-"8 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c
+"8 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\strcat.c
 [v _strcat strcat `(*.4uc  1 e 1 0 ]
 {
 [v strcat@to to `*.4uc  1 a 1 wreg ]
@@ -566,72 +566,32 @@ MISC_ERR 2
 [v strcat@to to `*.4uc  1 a 1 2 ]
 "26
 } 0
-"101 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c
+"101 D:\travail\divers\pic\trunk\pic16_c_template_1.X\LCD_screen.c
 [v _Lcd4_Write_String Lcd4_Write_String `(v  1 e 0 0 ]
 {
 [v Lcd4_Write_String@a a `*.4uc  1 a 1 wreg ]
 "103
-[v Lcd4_Write_String@i i `i  1 a 2 15 ]
+[v Lcd4_Write_String@i i `i  1 a 2 7 ]
 "101
 [v Lcd4_Write_String@a a `*.4uc  1 a 1 wreg ]
 "104
-[v Lcd4_Write_String@a a `*.4uc  1 a 1 17 ]
+[v Lcd4_Write_String@a a `*.4uc  1 a 1 9 ]
 "107
 } 0
-"84
+"83
 [v _Lcd4_Write_Char Lcd4_Write_Char `(v  1 e 0 0 ]
 {
 [v Lcd4_Write_Char@a a `uc  1 a 1 wreg ]
 "86
 [v Lcd4_Write_Char@y y `uc  1 a 1 4 ]
 [v Lcd4_Write_Char@temp temp `uc  1 a 1 3 ]
-"84
+"83
 [v Lcd4_Write_Char@a a `uc  1 a 1 wreg ]
-"87
+"85
 [v Lcd4_Write_Char@a a `uc  1 a 1 5 ]
 "99
 } 0
-"65 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c
-[v _LOG LOG `(v  1 e 0 0 ]
-{
-[v LOG@string string `*.4uc  1 a 1 wreg ]
-[v LOG@string string `*.4uc  1 a 1 wreg ]
-[v LOG@level level `uc  1 p 1 12 ]
-[v LOG@string string `*.4uc  1 a 1 13 ]
-"71
-} 0
-"77 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c
-[v _uart_printf uart_printf `(v  1 e 0 0 ]
-{
-[v uart_printf@string string `*.4uc  1 a 1 wreg ]
-"78
-[v uart_printf@i i `i  1 a 2 9 ]
-"77
-[v uart_printf@string string `*.4uc  1 a 1 wreg ]
-[v uart_printf@string string `*.4uc  1 a 1 11 ]
-"82
-} 0
-"69
-[v _uart_putc uart_putc `(v  1 e 0 0 ]
-{
-[v uart_putc@data data `uc  1 a 1 wreg ]
-[v uart_putc@data data `uc  1 a 1 wreg ]
-[v uart_putc@data data `uc  1 a 1 0 ]
-"73
-} 0
-"4 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c
-[v _strlen strlen `(ui  1 e 2 0 ]
-{
-[v strlen@s s `*.4DCCuc  1 a 1 wreg ]
-"6
-[v strlen@cp cp `*.4DCCuc  1 a 1 7 ]
-"4
-[v strlen@s s `*.4DCCuc  1 a 1 wreg ]
-"8
-[v strlen@s s `*.4DCCuc  1 a 1 6 ]
-"13
-} 0
-"48 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c
+"48
 [v _Lcd4_Set_Cursor Lcd4_Set_Cursor `(v  1 e 0 0 ]
 {
 [v Lcd4_Set_Cursor@ligne ligne `uc  1 a 1 wreg ]
@@ -663,7 +623,7 @@ MISC_ERR 2
 [v Lcd4_Port@a a `uc  1 a 1 0 ]
 "32
 } 0
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
 {
 "11
@@ -674,35 +634,41 @@ MISC_ERR 2
 [v ___awmod@dividend dividend `i  1 p 2 2 ]
 "35
 } 0
-"42 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\interrupts.c
+"43 D:\travail\divers\pic\trunk\pic16_c_template_1.X\interrupts.c
 [v _isr isr `II(v  1 e 0 0 ]
 {
-"69
-[v isr@string string `[8]uc  1 a 8 36 ]
-"103
+"115
 } 0
-"84 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c
+"69 D:\travail\divers\pic\trunk\pic16_c_template_1.X\UART.c
+[v _uart_putc uart_putc `(v  1 e 0 0 ]
+{
+[v uart_putc@data data `uc  1 a 1 wreg ]
+[v uart_putc@data data `uc  1 a 1 wreg ]
+[v uart_putc@data data `uc  1 a 1 0 ]
+"73
+} 0
+"84
 [v _uart_getc uart_getc `(uc  1 e 1 0 ]
 {
 "93
 } 0
-"49 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c
+"49 D:\travail\divers\pic\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c
 [v _switch_player switch_player `(v  1 e 0 0 ]
 {
-"54
+"59
 } 0
-"56
+"61
 [v i1_display_player_nbr display_player_nbr `(v  1 e 0 0 ]
 {
 [v i1display_player_nbr@player_number player_number `uc  1 a 1 wreg ]
 [v i1display_player_nbr@string display_player_nbr `[16]uc  1 a 16 6 ]
 [v i1display_player_nbr@string_player_number display_player_nbr `[2]uc  1 a 2 22 ]
 [v i1display_player_nbr@player_number player_number `uc  1 a 1 wreg ]
-"60
+"65
 [v i1display_player_nbr@player_number player_number `uc  1 a 1 24 ]
-"66
+"71
 } 0
-"8 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcpy.c
+"8 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\strcpy.c
 [v i1_strcpy strcpy `(*.1uc  1 e 1 0 ]
 {
 [v i1strcpy@to to `*.4uc  1 a 1 wreg ]
@@ -713,7 +679,7 @@ MISC_ERR 2
 [v i1strcpy@to to `*.4uc  1 a 1 2 ]
 "24
 } 0
-"8 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strcat.c
+"8 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\strcat.c
 [v i1_strcat strcat `(*.1uc  1 e 1 0 ]
 {
 [v i1strcat@to to `*.4uc  1 a 1 wreg ]
@@ -724,13 +690,7 @@ MISC_ERR 2
 [v i1strcat@to to `*.4uc  1 a 1 2 ]
 "26
 } 0
-"42 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\timer.c
-[v _set_tick_period_timer1_us set_tick_period_timer1_us `(v  1 e 0 0 ]
-{
-[v set_tick_period_timer1_us@period_us period_us `ui  1 p 2 0 ]
-"50
-} 0
-"36 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c
+"36 D:\travail\divers\pic\trunk\pic16_c_template_1.X\game_timer/src/game_timer.c
 [v _game_phase game_phase `(v  1 e 0 0 ]
 {
 "40
@@ -739,64 +699,28 @@ MISC_ERR 2
 [v game_phase@remaining_time remaining_time `ui  1 a 2 30 ]
 "47
 } 0
-"101 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c
+"101 D:\travail\divers\pic\trunk\pic16_c_template_1.X\LCD_screen.c
 [v i1_Lcd4_Write_String Lcd4_Write_String `(v  1 e 0 0 ]
 {
 [v i1Lcd4_Write_String@a a `*.4uc  1 a 1 wreg ]
-[v i1Lcd4_Write_String@i Lcd4_Write_String `i  1 a 2 2 ]
+[v i1Lcd4_Write_String@i Lcd4_Write_String `i  1 a 2 8 ]
 [v i1Lcd4_Write_String@a a `*.4uc  1 a 1 wreg ]
 "104
-[v i1Lcd4_Write_String@a a `*.4uc  1 a 1 1 ]
+[v i1Lcd4_Write_String@a a `*.4uc  1 a 1 7 ]
 "107
 } 0
-"84
+"83
 [v i1_Lcd4_Write_Char Lcd4_Write_Char `(v  1 e 0 0 ]
 {
 [v i1Lcd4_Write_Char@a a `uc  1 a 1 wreg ]
 [v i1Lcd4_Write_Char@y Lcd4_Write_Char `uc  1 a 1 4 ]
 [v i1Lcd4_Write_Char@temp Lcd4_Write_Char `uc  1 a 1 3 ]
 [v i1Lcd4_Write_Char@a a `uc  1 a 1 wreg ]
-"87
+"85
 [v i1Lcd4_Write_Char@a a `uc  1 a 1 5 ]
 "99
 } 0
-"65 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c
-[v i1_LOG LOG `(v  1 e 0 0 ]
-{
-[v i1LOG@string string `*.4uc  1 a 1 wreg ]
-[v i1LOG@string string `*.4uc  1 a 1 wreg ]
-[v i1LOG@level level `uc  1 p 1 12 ]
-[v i1LOG@string string `*.4uc  1 a 1 13 ]
-"71
-} 0
-"77 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\UART.c
-[v i1_uart_printf uart_printf `(v  1 e 0 0 ]
-{
-[v i1uart_printf@string string `*.4uc  1 a 1 wreg ]
-[v i1uart_printf@i uart_printf `i  1 a 2 10 ]
-[v i1uart_printf@string string `*.4uc  1 a 1 wreg ]
-[v i1uart_printf@string string `*.4uc  1 a 1 9 ]
-"82
-} 0
-"69
-[v i1_uart_putc uart_putc `(v  1 e 0 0 ]
-{
-[v i1uart_putc@data data `uc  1 a 1 wreg ]
-[v i1uart_putc@data data `uc  1 a 1 wreg ]
-[v i1uart_putc@data data `uc  1 a 1 0 ]
-"73
-} 0
-"4 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\strlen.c
-[v i1_strlen strlen `(ui  1 e 2 0 ]
-{
-[v i1strlen@s s `*.4DCCuc  1 a 1 wreg ]
-[v i1strlen@cp strlen `*.4DCCuc  1 a 1 7 ]
-[v i1strlen@s s `*.4DCCuc  1 a 1 wreg ]
-"8
-[v i1strlen@s s `*.4DCCuc  1 a 1 6 ]
-"13
-} 0
-"48 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\LCD_screen.c
+"48
 [v i1_Lcd4_Set_Cursor Lcd4_Set_Cursor `(v  1 e 0 0 ]
 {
 [v i1Lcd4_Set_Cursor@ligne ligne `uc  1 a 1 wreg ]
@@ -826,7 +750,7 @@ MISC_ERR 2
 [v i1Lcd4_Port@a a `uc  1 a 1 0 ]
 "32
 } 0
-"24 C:\travail\pic_chess_timer\trunk\pic16_c_template_1.X\misc.c
+"24 D:\travail\divers\pic\trunk\pic16_c_template_1.X\misc.c
 [v _time_shapping time_shapping `(v  1 e 0 0 ]
 {
 [v time_shapping@buffer buffer `*.4uc  1 a 1 wreg ]
@@ -848,20 +772,20 @@ MISC_ERR 2
 [v time_shapping@buffer buffer `*.4uc  1 a 1 18 ]
 "63
 } 0
-"17 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\itoa.c
+"17 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\itoa.c
 [v i1_utoa utoa `(*.1uc  1 e 1 0 ]
 {
 [v i1utoa@buf buf `*.4uc  1 a 1 wreg ]
-[v i1utoa@v utoa `ui  1 a 2 1 ]
-[v i1utoa@c utoa `uc  1 a 1 3 ]
+[v i1utoa@v utoa `ui  1 a 2 0 ]
+[v i1utoa@c utoa `uc  1 a 1 2 ]
 [v i1utoa@buf buf `*.4uc  1 a 1 wreg ]
 [v i1utoa@val val `ui  1 p 2 8 ]
 [v i1utoa@base base `i  1 p 2 10 ]
 "22
-[v i1utoa@buf buf `*.4uc  1 a 1 0 ]
+[v i1utoa@buf buf `*.4uc  1 a 1 3 ]
 "37
 } 0
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwmod.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lwmod.c
 [v i1___lwmod __lwmod `(ui  1 e 2 0 ]
 {
 [v i1___lwmod@counter __lwmod `uc  1 a 1 5 ]
@@ -869,7 +793,7 @@ MISC_ERR 2
 [v i1___lwmod@dividend dividend `ui  1 p 2 2 ]
 "26
 } 0
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\lwdiv.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\lwdiv.c
 [v i1___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 [v i1___lwdiv@quotient __lwdiv `ui  1 a 2 5 ]
@@ -878,7 +802,7 @@ MISC_ERR 2
 [v i1___lwdiv@dividend dividend `ui  1 p 2 2 ]
 "31
 } 0
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awmod.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\awmod.c
 [v i1___awmod __awmod `(i  1 e 2 0 ]
 {
 [v i1___awmod@sign __awmod `uc  1 a 1 6 ]
@@ -887,7 +811,7 @@ MISC_ERR 2
 [v i1___awmod@dividend dividend `i  1 p 2 2 ]
 "35
 } 0
-"6 C:\CAE_tools\Microchip\xc8\v1.31\sources\common\awdiv.c
+"6 D:\CAE_Tools\Microchip\xc8\v1.32\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "11

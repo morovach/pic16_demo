@@ -38,19 +38,29 @@ void game_phase(){
     extern unsigned int ggame_time;
     unsigned int remaining_time;
     char time_str[9];
-    
-    (gcurrent_player->played_time) ++;
-    remaining_time = ggame_time - (gcurrent_player->played_time);
-    time_shapping(time_str, remaining_time);
-    Lcd4_Set_Cursor(0,0);
-    Lcd4_Write_String(time_str);
+    extern char gGameIsStarted;
+
+    if (gGameIsStarted)
+    {
+        (gcurrent_player->played_time) ++;
+        remaining_time = ggame_time - (gcurrent_player->played_time);
+        time_shapping(time_str, remaining_time);
+        Lcd4_Set_Cursor(0,0);
+        Lcd4_Write_String(time_str);
+    }
+
 }
 
 void switch_player(){
     extern player * gcurrent_player;
+    extern game_type_t gtype_of_game;
 
     gcurrent_player = (gcurrent_player->next_player);
     display_player_nbr(gcurrent_player->player_number);
+    if (gtype_of_game == TIME_PER_ROUND)
+    {
+    gcurrent_player->played_time = 0;
+    }
 }
 
 void display_player_nbr(unsigned char player_number)

@@ -5,16 +5,23 @@ Version 3.2 HI-TECH Software Intermediate Code
 "30 game_timer/header/game_timer.h
 [s S132 `uc 1 `ui 1 `*S132 1 ]
 [n S132 player_t player_number played_time next_player ]
+"1509 D:\CAE_Tools\Microchip\xc8\v1.32\include\pic16f690.h
 [s S61 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 ]
 [n S61 . SCS LTS HTS OSTS IRCF ]
+"1516
 [s S62 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S62 . . IRCF0 IRCF1 IRCF2 ]
+"1508
 [u S60 `S61 1 `S62 1 ]
 [n S60 . . . ]
-"1523 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+"1523
 [v _OSCCONbits `VS60 ~T0 @X0 0 e@143 ]
+"3526
+[v _RABIE `Vb ~T0 @X0 0 e@91 ]
 "1210
 [v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"3414
+[v _IOCA0 `Vb ~T0 @X0 0 e@1200 ]
 "1259
 [v _TRISB `Vuc ~T0 @X0 0 e@134 ]
 "1297
@@ -31,10 +38,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _init_timer_0 `(v ~T0 @X0 0 ef ]
 "29
 [v _init_timer_2 `(v ~T0 @X0 0 ef ]
-"66 system.h
+"41 system.h
 [v _initUart `(v ~T0 @X0 0 ef ]
 [v F1459 `(v ~T0 @X0 1 tf1`ul ]
-"154 C:\CAE_tools\Microchip\xc8\v1.31\include\pic.h
+"154 D:\CAE_Tools\Microchip\xc8\v1.32\include\pic.h
 [v __delay `JF1459 ~T0 @X0 0 e ]
 [p i __delay ]
 "28 LCD_screen.h
@@ -42,7 +49,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic16f690.h: 47: extern volatile unsigned char INDF @ 0x000;
-"49 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+"49 D:\CAE_Tools\Microchip\xc8\v1.32\include\pic16f690.h
 [; ;pic16f690.h: 49: asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
 [; ;pic16f690.h: 53: extern volatile unsigned char TMR0 @ 0x001;
@@ -1415,14 +1422,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 210: typedef int16_t intptr_t;
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
 [; ;stdbool.h: 12: typedef unsigned char bool;
-[; ;system.h: 47: typedef enum {
-[; ;system.h: 48: OK ,
-[; ;system.h: 49: SIZEERR ,
-[; ;system.h: 50: MISC_ERR
-[; ;system.h: 52: } err_t;
-[; ;system.h: 64: void ConfigureOscillator(void);
-[; ;system.h: 65: void system_init(void);
-[; ;system.h: 66: void initUart(void);
+[; ;system.h: 22: typedef enum {
+[; ;system.h: 23: OK ,
+[; ;system.h: 24: SIZEERR ,
+[; ;system.h: 25: MISC_ERR
+[; ;system.h: 27: } err_t;
+[; ;system.h: 39: void ConfigureOscillator(void);
+[; ;system.h: 40: void system_init(void);
+[; ;system.h: 41: void initUart(void);
 [; ;interrupt.h: 24: void init_interrupt();
 [; ;interrupt.h: 25: void interrupt isr(void);
 [; ;timer.h: 26: void init_timer_0();
@@ -1519,46 +1526,52 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;system.c: 48: void system_init(void){
 [e :U _system_init ]
 [f ]
-[; ;system.c: 50: TRISA = 0x0;
-"50
-[e = _TRISA -> -> 0 `i `uc ]
-[; ;system.c: 51: TRISB = 0x0;
+[; ;system.c: 51: RABIE = 0x1;
 "51
-[e = _TRISB -> -> 0 `i `uc ]
-[; ;system.c: 52: TRISC = 0x0;
+[e = _RABIE -> -> 1 `i `b ]
+[; ;system.c: 52: TRISA = 0x1;
 "52
-[e = _TRISC -> -> 0 `i `uc ]
-[; ;system.c: 55: PORTA = 0x00;
+[e = _TRISA -> -> 1 `i `uc ]
+[; ;system.c: 54: IOCA0 = 1;
+"54
+[e = _IOCA0 -> -> 1 `i `b ]
+[; ;system.c: 55: TRISB = 0x0;
 "55
-[e = _PORTA -> -> 0 `i `uc ]
-[; ;system.c: 56: PORTB = 0x00;
+[e = _TRISB -> -> 0 `i `uc ]
+[; ;system.c: 56: TRISC = 0x0;
 "56
-[e = _PORTB -> -> 0 `i `uc ]
-[; ;system.c: 57: PORTC = 0x00;
-"57
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;system.c: 60: ConfigureOscillator();
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;system.c: 59: PORTA = 0x00;
+"59
+[e = _PORTA -> -> 0 `i `uc ]
+[; ;system.c: 60: PORTB = 0x00;
 "60
-[e ( _ConfigureOscillator ..  ]
-[; ;system.c: 61: init_interrupt();
+[e = _PORTB -> -> 0 `i `uc ]
+[; ;system.c: 61: PORTC = 0x00;
 "61
-[e ( _init_interrupt ..  ]
-[; ;system.c: 62: init_timer_0();
-"62
-[e ( _init_timer_0 ..  ]
-[; ;system.c: 64: init_timer_2();
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;system.c: 64: ConfigureOscillator();
 "64
-[e ( _init_timer_2 ..  ]
-[; ;system.c: 65: initUart();
+[e ( _ConfigureOscillator ..  ]
+[; ;system.c: 65: init_interrupt();
 "65
-[e ( _initUart ..  ]
-[; ;system.c: 67: _delay((unsigned long)((500)*(8000000UL/4000.0)));
-"67
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
-[; ;system.c: 68: Lcd4_Init();
+[e ( _init_interrupt ..  ]
+[; ;system.c: 66: init_timer_0();
+"66
+[e ( _init_timer_0 ..  ]
+[; ;system.c: 68: init_timer_2();
 "68
-[e ( _Lcd4_Init ..  ]
-[; ;system.c: 69: }
+[e ( _init_timer_2 ..  ]
+[; ;system.c: 69: initUart();
 "69
+[e ( _initUart ..  ]
+[; ;system.c: 71: _delay((unsigned long)((500)*(8000000UL/4000.0)));
+"71
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+[; ;system.c: 72: Lcd4_Init();
+"72
+[e ( _Lcd4_Init ..  ]
+[; ;system.c: 73: }
+"73
 [e :UE 137 ]
 }

@@ -31,33 +31,10 @@
 void main(void)
 {
     system_init();
-
-    initiate_game(3,TIME_PER_GAME,3670U);
-
-    char * string;
-    //string = calloc(20,sizeof(char));
-    strcpy(string, "end of line\n");
-    
-
+    initiate_game(2,TIME_PER_GAME,900U);
 
     while(1)
     {
-
-        uart_printf(string);
-        
-        
-        __delay_ms(500);
-
-         /*for(i=0;i<15;i++)
-         {
-             Lcd4_Shift_Right();
-             __delay_ms(300);
-         }*/
-        
+        ;
     }
-
-   
-
-
-
 }

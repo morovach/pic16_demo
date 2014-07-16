@@ -11,6 +11,7 @@
 #include <stdint.h>         /* For uint8_t definition */
 #include <stdbool.h>        /* For true/false definition */
 
+#include "system.h"
 #include "interrupt.h"
 #include "uart.h"
 #include "timer.h"
@@ -56,7 +57,6 @@ void interrupt isr(void)
          *  Put action below
          * **************************/
         uart_putc(uart_getc());
-        switch_player();
         return;
         /*****************************
          *  Stop of action
@@ -66,7 +66,7 @@ void interrupt isr(void)
     //Timer 1 interrupt
     if (TMR1IF)
     {
-        char string [8];
+        /*char string [8];
         TMR1IF = 0;
         set_tick_period_timer1_us(1000);
         timer1_tick_nbr ++;
@@ -77,7 +77,7 @@ void interrupt isr(void)
             utoa (string, elapsed_time, 10);
             Lcd4_Set_Cursor(0,0);
             Lcd4_Write_String(string);
-        }
+        }*/
         return;
     }
 
@@ -90,13 +90,25 @@ void interrupt isr(void)
         TMR2IF = 0;
         timer2_tick_nbr ++;
         //The timer 2 ticks every 0.010 second => *100 = 1s
-        if (timer2_tick_nbr== 100){
+        //The time had to be adjusted.
+        if (timer2_tick_nbr== 80){
             timer2_tick_nbr = 0;
             elapsed_time++;
             RC2 = 1- RC2;
             game_phase();
         }
         
+        return;
+    }
+
+    if(RABIF != 0x00)
+    {
+        if (RA0 == 1)
+        {
+            switch_player();
+            __delay_ms(500);
+        }
+        RABIF = 0x00;
         return;
     }
 
