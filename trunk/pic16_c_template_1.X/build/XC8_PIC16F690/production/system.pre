@@ -1,13 +1,13 @@
 
 # 1 "system.c"
 
-# 21 "C:\CAE_tools\Microchip\xc8\v1.31\include\htc.h"
+# 21 "D:\CAE_Tools\Microchip\xc8\v1.32\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 47 "C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h"
+# 47 "D:\CAE_Tools\Microchip\xc8\v1.32\include\pic16f690.h"
 extern volatile unsigned char INDF @ 0x000;
 
 asm("INDF equ 00h");
@@ -1857,25 +1857,25 @@ extern volatile __bit nW @ (((unsigned) &SSPSTAT)*8) + 2;
 extern volatile __bit nWRITE @ (((unsigned) &SSPSTAT)*8) + 2;
 
 
-# 27 "C:\CAE_tools\Microchip\xc8\v1.31\include\pic.h"
+# 27 "D:\CAE_Tools\Microchip\xc8\v1.32\include\pic.h"
 #pragma intrinsic(__nop)
 extern void __nop(void);
 
 # 80
 extern unsigned int flash_read(unsigned short addr);
 
-# 41 "C:\CAE_tools\Microchip\xc8\v1.31\include\eeprom_routines.h"
+# 41 "D:\CAE_Tools\Microchip\xc8\v1.32\include\eeprom_routines.h"
 extern void eeprom_write(unsigned char addr, unsigned char value);
 extern unsigned char eeprom_read(unsigned char addr);
 extern void eecpymem(volatile unsigned char *to, __eeprom unsigned char *from, unsigned char size);
 extern void memcpyee(__eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 
 
-# 153 "C:\CAE_tools\Microchip\xc8\v1.31\include\pic.h"
+# 153 "D:\CAE_Tools\Microchip\xc8\v1.32\include\pic.h"
 #pragma intrinsic(_delay)
 extern __nonreentrant void _delay(unsigned long);
 
-# 13 "C:\CAE_tools\Microchip\xc8\v1.31\include\stdint.h"
+# 13 "D:\CAE_Tools\Microchip\xc8\v1.32\include\stdint.h"
 typedef signed char int8_t;
 
 # 20
@@ -1965,10 +1965,10 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 12 "C:\CAE_tools\Microchip\xc8\v1.31\include\stdbool.h"
+# 12 "D:\CAE_Tools\Microchip\xc8\v1.32\include\stdbool.h"
 typedef unsigned char bool;
 
-# 47 "system.h"
+# 22 "system.h"
 typedef enum {
 OK ,
 SIZEERR ,
@@ -1976,7 +1976,7 @@ MISC_ERR
 
 } err_t;
 
-# 64
+# 39
 void ConfigureOscillator(void);
 void system_init(void);
 void initUart(void);
@@ -2056,7 +2056,11 @@ while(OSCCONbits.HTS==0)
 
 void system_init(void){
 
-TRISA = 0x0;
+
+RABIE = 0x1;
+TRISA = 0x1;
+
+IOCA0 = 1;
 TRISB = 0x0;
 TRISC = 0x0;
 

@@ -1,20 +1,27 @@
 Version 3.2 HI-TECH Software Intermediate Code
+"318 D:\CAE_Tools\Microchip\xc8\v1.32\include\pic16f690.h
 [s S13 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S13 . RABIF INTF T0IF RABIE INTE T0IE PEIE GIE ]
+"317
 [u S12 `S13 1 ]
 [n S12 . . ]
-"329 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+"329
 [v _INTCONbits `VS12 ~T0 @X0 0 e@11 ]
+"379
 [s S15 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S15 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF ]
+"388
 [s S16 :1 `uc 1 :1 `uc 1 ]
 [n S16 . T1IF T2IF ]
+"378
 [u S14 `S15 1 `S16 1 ]
 [n S14 . . . ]
 "393
 [v _PIR1bits `VS14 ~T0 @X0 0 e@12 ]
+"824
 [s S32 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S32 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"823
 [u S31 `S32 1 ]
 [n S31 . . ]
 "835
@@ -23,28 +30,28 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _uart_putc `(v ~T0 @X0 0 ef1`uc ]
 "28
 [v _uart_getc `(uc ~T0 @X0 0 ef ]
-"46 game_timer/header/game_timer.h
-[v _switch_player `(v ~T0 @X0 0 ef ]
-"3662 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+"3662 D:\CAE_Tools\Microchip\xc8\v1.32\include\pic16f690.h
 [v _TMR1IF `Vb ~T0 @X0 0 e@96 ]
-"28 timer.h
-[v _set_tick_period_timer1_us `(v ~T0 @X0 0 ef1`ui ]
-"3542 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
-[v _RC2 `Vb ~T0 @X0 0 e@58 ]
-"104 C:\CAE_tools\Microchip\xc8\v1.31\include\stdlib.h
-[v _utoa `(*uc ~T0 @X0 0 ef3`*uc`ui`i ]
-"27 LCD_screen.h
-[v _Lcd4_Set_Cursor `(v ~T0 @X0 0 ef2`uc`uc ]
-"30
-[v _Lcd4_Write_String `(v ~T0 @X0 0 ef1`*uc ]
-"3668 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+"3668
 [v _TMR2IF `Vb ~T0 @X0 0 e@97 ]
+"3542
+[v _RC2 `Vb ~T0 @X0 0 e@58 ]
 "45 game_timer/header/game_timer.h
 [v _game_phase `(v ~T0 @X0 0 ef ]
+"3528 D:\CAE_Tools\Microchip\xc8\v1.32\include\pic16f690.h
+[v _RABIF `Vb ~T0 @X0 0 e@88 ]
+"3514
+[v _RA0 `Vb ~T0 @X0 0 e@40 ]
+"46 game_timer/header/game_timer.h
+[v _switch_player `(v ~T0 @X0 0 ef ]
+[v F1459 `(v ~T0 @X0 1 tf1`ul ]
+"154 D:\CAE_Tools\Microchip\xc8\v1.32\include\pic.h
+[v __delay `JF1459 ~T0 @X0 0 e ]
+[p i __delay ]
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic16f690.h: 47: extern volatile unsigned char INDF @ 0x000;
-"49 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+"49 D:\CAE_Tools\Microchip\xc8\v1.32\include\pic16f690.h
 [; ;pic16f690.h: 49: asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
 [; ;pic16f690.h: 53: extern volatile unsigned char TMR0 @ 0x001;
@@ -1417,6 +1424,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 210: typedef int16_t intptr_t;
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
 [; ;stdbool.h: 12: typedef unsigned char bool;
+[; ;system.h: 22: typedef enum {
+[; ;system.h: 23: OK ,
+[; ;system.h: 24: SIZEERR ,
+[; ;system.h: 25: MISC_ERR
+[; ;system.h: 27: } err_t;
+[; ;system.h: 39: void ConfigureOscillator(void);
+[; ;system.h: 40: void system_init(void);
+[; ;system.h: 41: void initUart(void);
 [; ;interrupt.h: 24: void init_interrupt();
 [; ;interrupt.h: 25: void interrupt isr(void);
 [; ;uart.h: 24: void initUart(void);
@@ -1508,80 +1523,77 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdlib.h: 109: extern char * ltoa(char * buf, long val, int base);
 [; ;stdlib.h: 110: extern char * ultoa(char * buf, unsigned long val, int base);
 [; ;stdlib.h: 112: extern char * ftoa(float f, int * status);
-"32 interrupts.c
+"33 interrupts.c
 [v _timer1_tick_nbr `i ~T0 @X0 1 e ]
 [i _timer1_tick_nbr
 -> 0 `i
 ]
-[; ;interrupts.c: 32: int timer1_tick_nbr =0;
-"33
+[; ;interrupts.c: 33: int timer1_tick_nbr =0;
+"34
 [v _timer2_tick_nbr `i ~T0 @X0 1 e ]
 [i _timer2_tick_nbr
 -> 0 `i
 ]
-[; ;interrupts.c: 33: int timer2_tick_nbr =0;
-"34
+[; ;interrupts.c: 34: int timer2_tick_nbr =0;
+"35
 [v _elapsed_time `ui ~T0 @X0 1 e ]
 [i _elapsed_time
 -> -> 0 `i `ui
 ]
-[; ;interrupts.c: 34: unsigned int elapsed_time = 0;
-"36
+[; ;interrupts.c: 35: unsigned int elapsed_time = 0;
+"37
 [v _init_interrupt `(v ~T0 @X0 1 ef ]
 {
-[; ;interrupts.c: 36: void init_interrupt(){
+[; ;interrupts.c: 37: void init_interrupt(){
 [e :U _init_interrupt ]
 [f ]
-[; ;interrupts.c: 38: INTCONbits.GIE = 1;
-"38
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-[; ;interrupts.c: 39: INTCONbits.PEIE =1;
+[; ;interrupts.c: 39: INTCONbits.GIE = 1;
 "39
-[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-[; ;interrupts.c: 40: }
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+[; ;interrupts.c: 40: INTCONbits.PEIE =1;
 "40
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+[; ;interrupts.c: 41: }
+"41
 [e :UE 137 ]
 }
-[v F1492 `(v ~T0 @X0 1 tf ]
-"42
-[v _isr `IF1492 ~T0 @X0 1 e ]
+[v F1503 `(v ~T0 @X0 1 tf ]
 "43
+[v _isr `IF1503 ~T0 @X0 1 e ]
+"44
 {
-[; ;interrupts.c: 42: void interrupt isr(void)
-[; ;interrupts.c: 43: {
+[; ;interrupts.c: 43: void interrupt isr(void)
+[; ;interrupts.c: 44: {
 [e :U _isr ]
 [f ]
-[; ;interrupts.c: 46: if (PIR1bits.RCIF)
-"46
-[e $ ! != -> . . _PIR1bits 0 5 `i -> -> -> 0 `i `Vuc `i 139  ]
-[; ;interrupts.c: 47: {
+[; ;interrupts.c: 47: if (PIR1bits.RCIF)
 "47
+[e $ ! != -> . . _PIR1bits 0 5 `i -> -> -> 0 `i `Vuc `i 139  ]
+[; ;interrupts.c: 48: {
+"48
 {
-[; ;interrupts.c: 49: if (RCSTAbits.FERR)
-"49
-[e $ ! != -> . . _RCSTAbits 0 2 `i -> -> -> 0 `i `Vuc `i 140  ]
-[; ;interrupts.c: 50: {
+[; ;interrupts.c: 50: if (RCSTAbits.FERR)
 "50
-{
-[; ;interrupts.c: 51: RCSTAbits.SPEN = 0;
+[e $ ! != -> . . _RCSTAbits 0 2 `i -> -> -> 0 `i `Vuc `i 140  ]
+[; ;interrupts.c: 51: {
 "51
-[e = . . _RCSTAbits 0 7 -> -> 0 `i `uc ]
-[; ;interrupts.c: 52: RCSTAbits.SPEN = 1;
+{
+[; ;interrupts.c: 52: RCSTAbits.SPEN = 0;
 "52
-[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
-[; ;interrupts.c: 53: return;
+[e = . . _RCSTAbits 0 7 -> -> 0 `i `uc ]
+[; ;interrupts.c: 53: RCSTAbits.SPEN = 1;
 "53
-[e $UE 138  ]
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
+[; ;interrupts.c: 54: return;
 "54
+[e $UE 138  ]
+"55
 }
 [e :U 140 ]
-[; ;interrupts.c: 54: }
-[; ;interrupts.c: 58: uart_putc(uart_getc());
-"58
-[e ( _uart_putc (1 ( _uart_getc ..  ]
-[; ;interrupts.c: 59: switch_player();
+[; ;interrupts.c: 55: }
+[; ;interrupts.c: 59: uart_putc(uart_getc());
 "59
-[e ( _switch_player ..  ]
+[e ( _uart_putc (1 ( _uart_getc ..  ]
 [; ;interrupts.c: 60: return;
 "60
 [e $UE 138  ]
@@ -1595,44 +1607,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;interrupts.c: 68: {
 "68
 {
-"69
-[v _string `uc ~T0 @X0 -> 8 `i a ]
-[; ;interrupts.c: 69: char string [8];
-[; ;interrupts.c: 70: TMR1IF = 0;
-"70
-[e = _TMR1IF -> -> 0 `i `b ]
-[; ;interrupts.c: 71: set_tick_period_timer1_us(1000);
-"71
-[e ( _set_tick_period_timer1_us (1 -> -> 1000 `i `ui ]
-[; ;interrupts.c: 72: timer1_tick_nbr ++;
-"72
-[e ++ _timer1_tick_nbr -> 1 `i ]
-[; ;interrupts.c: 73: if (timer1_tick_nbr== 1000){
-"73
-[e $ ! == _timer1_tick_nbr -> 1000 `i 142  ]
-{
-[; ;interrupts.c: 74: timer1_tick_nbr = 0;
-"74
-[e = _timer1_tick_nbr -> 0 `i ]
-[; ;interrupts.c: 75: elapsed_time++;
-"75
-[e ++ _elapsed_time -> -> 1 `i `ui ]
-[; ;interrupts.c: 76: RC2 = 1- RC2;
-"76
-[e = _RC2 -> - -> 1 `i -> _RC2 `i `b ]
-[; ;interrupts.c: 77: utoa (string, elapsed_time, 10);
-"77
-[e ( _utoa (3 , , &U _string _elapsed_time -> 10 `i ]
-[; ;interrupts.c: 78: Lcd4_Set_Cursor(0,0);
-"78
-[e ( _Lcd4_Set_Cursor (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-[; ;interrupts.c: 79: Lcd4_Write_String(string);
-"79
-[e ( _Lcd4_Write_String (1 &U _string ]
-"80
-}
-[e :U 142 ]
-[; ;interrupts.c: 80: }
 [; ;interrupts.c: 81: return;
 "81
 [e $UE 138  ]
@@ -1642,7 +1616,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;interrupts.c: 82: }
 [; ;interrupts.c: 86: if (TMR2IF)
 "86
-[e $ ! _TMR2IF 143  ]
+[e $ ! _TMR2IF 142  ]
 [; ;interrupts.c: 87: {
 "87
 {
@@ -1655,34 +1629,66 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;interrupts.c: 91: timer2_tick_nbr ++;
 "91
 [e ++ _timer2_tick_nbr -> 1 `i ]
-[; ;interrupts.c: 93: if (timer2_tick_nbr== 100){
-"93
-[e $ ! == _timer2_tick_nbr -> 100 `i 144  ]
-{
-[; ;interrupts.c: 94: timer2_tick_nbr = 0;
+[; ;interrupts.c: 94: if (timer2_tick_nbr== 80){
 "94
-[e = _timer2_tick_nbr -> 0 `i ]
-[; ;interrupts.c: 95: elapsed_time++;
+[e $ ! == _timer2_tick_nbr -> 80 `i 143  ]
+{
+[; ;interrupts.c: 95: timer2_tick_nbr = 0;
 "95
-[e ++ _elapsed_time -> -> 1 `i `ui ]
-[; ;interrupts.c: 96: RC2 = 1- RC2;
+[e = _timer2_tick_nbr -> 0 `i ]
+[; ;interrupts.c: 96: elapsed_time++;
 "96
-[e = _RC2 -> - -> 1 `i -> _RC2 `i `b ]
-[; ;interrupts.c: 97: game_phase();
+[e ++ _elapsed_time -> -> 1 `i `ui ]
+[; ;interrupts.c: 97: RC2 = 1- RC2;
 "97
-[e ( _game_phase ..  ]
+[e = _RC2 -> - -> 1 `i -> _RC2 `i `b ]
+[; ;interrupts.c: 98: game_phase();
 "98
-}
-[e :U 144 ]
-[; ;interrupts.c: 98: }
-[; ;interrupts.c: 100: return;
-"100
-[e $UE 138  ]
-"101
+[e ( _game_phase ..  ]
+"99
 }
 [e :U 143 ]
-[; ;interrupts.c: 101: }
-[; ;interrupts.c: 103: }
-"103
+[; ;interrupts.c: 99: }
+[; ;interrupts.c: 101: return;
+"101
+[e $UE 138  ]
+"102
+}
+[e :U 142 ]
+[; ;interrupts.c: 102: }
+[; ;interrupts.c: 104: if(RABIF != 0x00)
+"104
+[e $ ! != -> _RABIF `i -> 0 `i 144  ]
+[; ;interrupts.c: 105: {
+"105
+{
+[; ;interrupts.c: 106: if (RA0 == 1)
+"106
+[e $ ! == -> _RA0 `i -> 1 `i 145  ]
+[; ;interrupts.c: 107: {
+"107
+{
+[; ;interrupts.c: 108: switch_player();
+"108
+[e ( _switch_player ..  ]
+[; ;interrupts.c: 109: _delay((unsigned long)((500)*(8000000UL/4000.0)));
+"109
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"110
+}
+[e :U 145 ]
+[; ;interrupts.c: 110: }
+[; ;interrupts.c: 111: RABIF = 0x00;
+"111
+[e = _RABIF -> -> 0 `i `b ]
+[; ;interrupts.c: 112: return;
+"112
+[e $UE 138  ]
+"113
+}
+[e :U 144 ]
+[; ;interrupts.c: 113: }
+[; ;interrupts.c: 115: }
+"115
 [e :UE 138 ]
 }

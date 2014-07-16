@@ -1,24 +1,16 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
-"65 system.h
+"40 system.h
 [v _system_init `(v ~T0 @X0 0 ef ]
-"35 main.c
+"34 main.c
 [c E1776 0 1 .. ]
 [n E1776 . TIME_PER_GAME TIME_PER_ROUND  ]
 "40 game_timer/header/game_timer.h
 [v _initiate_game `(i ~T0 @X0 0 ef3`uc`E1776`ui ]
-"36 C:\CAE_tools\Microchip\xc8\v1.31\include\string.h
-[v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
-"27 uart.h
-[v _uart_printf `(v ~T0 @X0 0 ef1`*uc ]
-[v F1459 `(v ~T0 @X0 1 tf1`ul ]
-"154 C:\CAE_tools\Microchip\xc8\v1.31\include\pic.h
-[v __delay `JF1459 ~T0 @X0 0 e ]
-[p i __delay ]
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic16f690.h: 47: extern volatile unsigned char INDF @ 0x000;
-"49 C:\CAE_tools\Microchip\xc8\v1.31\include\pic16f690.h
+"49 D:\CAE_Tools\Microchip\xc8\v1.32\include\pic16f690.h
 [; ;pic16f690.h: 49: asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
 [; ;pic16f690.h: 53: extern volatile unsigned char TMR0 @ 0x001;
@@ -1369,29 +1361,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;string.h: 22: extern void * memcpy(void *, const void *, size_t);
 [; ;string.h: 23: extern void * memmove(void *, const void *, size_t);
 [; ;string.h: 24: extern void * memset(void *, int, size_t);
-[; ;string.h: 35: extern char * strcat(char *, const char *);
-[; ;string.h: 36: extern char * strcpy(char *, const char *);
-[; ;string.h: 37: extern char * strncat(char *, const char *, size_t);
-[; ;string.h: 38: extern char * strncpy(char *, const char *, size_t);
-[; ;string.h: 39: extern char * strdup(const char *);
-[; ;string.h: 40: extern char * strtok(char *, const char *);
-[; ;string.h: 43: extern int memcmp(const void *, const void *, size_t);
-[; ;string.h: 44: extern int strcmp(const char *, const char *);
-[; ;string.h: 45: extern int stricmp(const char *, const char *);
-[; ;string.h: 46: extern int strncmp(const char *, const char *, size_t);
-[; ;string.h: 47: extern int strnicmp(const char *, const char *, size_t);
-[; ;string.h: 48: extern void * memchr(const void *, int, size_t);
-[; ;string.h: 49: extern size_t strcspn(const char *, const char *);
-[; ;string.h: 50: extern char * strpbrk(const char *, const char *);
-[; ;string.h: 51: extern size_t strspn(const char *, const char *);
-[; ;string.h: 52: extern char * strstr(const char *, const char *);
-[; ;string.h: 53: extern char * stristr(const char *, const char *);
-[; ;string.h: 54: extern char * strerror(int);
-[; ;string.h: 55: extern size_t strlen(const char *);
-[; ;string.h: 56: extern char * strchr(const char *, int);
-[; ;string.h: 57: extern char * strichr(const char *, int);
-[; ;string.h: 58: extern char * strrchr(const char *, int);
-[; ;string.h: 59: extern char * strrichr(const char *, int);
+[; ;string.h: 42: extern char * strcat(char *, const char *);
+[; ;string.h: 43: extern char * strcpy(char *, const char *);
+[; ;string.h: 44: extern char * strncat(char *, const char *, size_t);
+[; ;string.h: 45: extern char * strncpy(char *, const char *, size_t);
+[; ;string.h: 46: extern char * strdup(const char *);
+[; ;string.h: 47: extern char * strtok(char *, const char *);
+[; ;string.h: 50: extern int memcmp(const void *, const void *, size_t);
+[; ;string.h: 51: extern int strcmp(const char *, const char *);
+[; ;string.h: 52: extern int stricmp(const char *, const char *);
+[; ;string.h: 53: extern int strncmp(const char *, const char *, size_t);
+[; ;string.h: 54: extern int strnicmp(const char *, const char *, size_t);
+[; ;string.h: 55: extern void * memchr(const void *, int, size_t);
+[; ;string.h: 56: extern size_t strcspn(const char *, const char *);
+[; ;string.h: 57: extern char * strpbrk(const char *, const char *);
+[; ;string.h: 58: extern size_t strspn(const char *, const char *);
+[; ;string.h: 59: extern char * strstr(const char *, const char *);
+[; ;string.h: 60: extern char * stristr(const char *, const char *);
+[; ;string.h: 61: extern char * strerror(int);
+[; ;string.h: 62: extern size_t strlen(const char *);
+[; ;string.h: 63: extern char * strchr(const char *, int);
+[; ;string.h: 64: extern char * strichr(const char *, int);
+[; ;string.h: 65: extern char * strrchr(const char *, int);
+[; ;string.h: 66: extern char * strrichr(const char *, int);
 [; ;stdarg.h: 7: typedef void * va_list[1];
 [; ;stdarg.h: 10: extern void * __va_start(void);
 [; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
@@ -1473,14 +1465,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdlib.h: 109: extern char * ltoa(char * buf, long val, int base);
 [; ;stdlib.h: 110: extern char * ultoa(char * buf, unsigned long val, int base);
 [; ;stdlib.h: 112: extern char * ftoa(float f, int * status);
-[; ;system.h: 47: typedef enum {
-[; ;system.h: 48: OK ,
-[; ;system.h: 49: SIZEERR ,
-[; ;system.h: 50: MISC_ERR
-[; ;system.h: 52: } err_t;
-[; ;system.h: 64: void ConfigureOscillator(void);
-[; ;system.h: 65: void system_init(void);
-[; ;system.h: 66: void initUart(void);
+[; ;system.h: 22: typedef enum {
+[; ;system.h: 23: OK ,
+[; ;system.h: 24: SIZEERR ,
+[; ;system.h: 25: MISC_ERR
+[; ;system.h: 27: } err_t;
+[; ;system.h: 39: void ConfigureOscillator(void);
+[; ;system.h: 40: void system_init(void);
+[; ;system.h: 41: void initUart(void);
 [; ;user.h: 11: void wait_1_ms(void);
 [; ;user.h: 12: void delay_ms(int delay_ms);
 [; ;user.h: 13: void wait_1_sec(void);
@@ -1526,37 +1518,24 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 33: system_init();
 "33
 [e ( _system_init ..  ]
-[; ;main.c: 35: initiate_game(3,TIME_PER_GAME,3670U);
-"35
-[e ( _initiate_game (3 , , -> -> 3 `i `uc -> . `E1776 0 `E1776 -> 3670 `ui ]
-"37
-[v _string `*uc ~T0 @X0 1 a ]
-[; ;main.c: 37: char * string;
-[; ;main.c: 39: strcpy(string, "end of line\n");
-"39
-[e ( _strcpy (2 , _string :s 1C ]
-[; ;main.c: 43: while(1)
-"43
+[; ;main.c: 34: initiate_game(2,TIME_PER_GAME,900U);
+"34
+[e ( _initiate_game (3 , , -> -> 2 `i `uc -> . `E1776 0 `E1776 -> 900 `ui ]
+[; ;main.c: 36: while(1)
+"36
 [e :U 140 ]
-[; ;main.c: 44: {
-"44
+[; ;main.c: 37: {
+"37
 {
-[; ;main.c: 46: uart_printf(string);
-"46
-[e ( _uart_printf (1 _string ]
-[; ;main.c: 49: _delay((unsigned long)((500)*(8000000UL/4000.0)));
-"49
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
-"57
+[; ;main.c: 38: ;
+"39
 }
 [e :U 139 ]
-"43
+"36
 [e $U 140  ]
 [e :U 141 ]
-[; ;main.c: 57: }
-[; ;main.c: 63: }
-"63
+[; ;main.c: 39: }
+[; ;main.c: 40: }
+"40
 [e :UE 138 ]
 }
-[a 1C 101 110 100 32 111 102 32 108 105 110 101 10 0 ]
-
